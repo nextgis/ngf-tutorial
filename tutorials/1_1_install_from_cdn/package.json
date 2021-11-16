@@ -1,0 +1,14 @@
+{
+  "name": "ngf-tutorial-cdn",
+  "version": "1.0.0",
+  "description": "load NextGIS Frontend libraries scripts from cdn",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "http-server -p 8080 ./src -o index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "14.0.0" 
+  },
+  "keywords": []
+}
