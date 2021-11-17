@@ -1,0 +1,16 @@
+{
+  "name": "ngf-tutorial-install-npm",
+  "version": "1.0.0",
+  "description": "Load NextGIS Frontend libraries scripts from cdn",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 8080 --open"
+  },
+  "dependencies": {
+    "@nextgis/ngw-leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "keywords": []
+}

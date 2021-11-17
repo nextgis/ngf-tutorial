@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Load NGF script from cdn</title>
+  <title>NGF browser module from cdn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     * {
@@ -19,19 +19,12 @@
       height: 100%;
     }
   </style>
-
-  <!-- <script src="https://unpkg.com/@nextgis/ngw-leaflet"></script> -->
-  <!-- <script src="https://unpkg.com/@nextgis/ngw-leaflet@1.9.4/lib/ngw-leaflet.global.js"></script> -->
-  <script src="https://unpkg.com/@nextgis/ngw-leaflet@1.9.4/lib/ngw-leaflet.global.prod.js"></script>
-
-  <!-- OR -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@nextgis/ngw-leaflet"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@nextgis/ngw-leaflet@1.9.4/lib/ngw-leaflet.global.prod.js"></script> -->
 </head>
 
 <body>
   <div id='map'></div>
-  <script>
+  <script type="module">
+    import NgwMap from "https://unpkg.com/@nextgis/ngw-leaflet@1.9.4/lib/ngw-leaflet.esm-browser.prod.js"
     const ngwMap = new NgwMap({
       baseUrl: 'https://demo.nextgis.com',
       target: 'map',
