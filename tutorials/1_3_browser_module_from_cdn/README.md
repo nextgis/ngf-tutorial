@@ -1,4 +1,4 @@
-# 1.1. Install from CDN
+# 1.3. Install from CDN
 
 A modern way to import the library in the browser directly into the html code of the page. Not supported by older browsers.
 

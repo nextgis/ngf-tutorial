@@ -1,8 +1,12 @@
 import NgwMap from "@nextgis/ngw-leaflet";
 
 NgwMap.create({
-  baseUrl: "https://demo.nextgis.com",
   target: "map",
+  center: [104, 52],
+  zoom: 7,
   osm: true,
-  webmapId: 4119,
+  // qmsId: 506,
+}).then((ngwMap) => {
+  // ngwMap.addBaseLayer("QMS", { qmsId: 506 });
+  // ngwMap.addBaseLayer("OSM");
 });

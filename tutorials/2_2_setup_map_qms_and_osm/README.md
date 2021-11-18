@@ -1,30 +1,6 @@
-# 1.2. Install from NPM
-
-Installing dependencies via npm is recommended when developing complex web applications using build systems such as webpack.
+# 2.2. Setup map. QMS and OSM
 
 ## Theory
-
-### Instal packages
-
-```bash
-npm i -S @nextgis/[package]
-```
-
-```bash
-yarn add @nextgis/[package]
-```
-
-### Usage
-
-Import the [package] in the project modules
-
-```javascript
-import Package from '@nextgis/[package]';
-// or
-import { Component, utility } from '@nextgis/[package]';
-
-const package = new Package(options);
-```
 
 ## Practice
 

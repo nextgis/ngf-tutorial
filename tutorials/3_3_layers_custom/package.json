@@ -1,5 +1,5 @@
 {
-  "name": "ngf-tutorial-layers_custom",
+  "name": "ngf-tutorial-layers-custom",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -7,10 +7,15 @@
     "start": "parcel src/index.html -p 8080 --open"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "^1.9.4"
+    "@nextgis/ngw-leaflet": "^1.9.6"
   },
   "devDependencies": {
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.4",
     "parcel-bundler": "^1.12.5"
   },
-  "keywords": []
+  "keywords": [],
+  "browserslist": [
+    "last 1 version"
+  ]
 }
