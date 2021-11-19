@@ -1,8 +1,40 @@
 import NgwMap from "@nextgis/ngw-leaflet";
 
-NgwMap.create({
+const id = "cafe";
+
+const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
   osm: true,
-  webmapId: 4119,
+  resources: [{ resource: 3991, fit: true, id }],
+});
+
+const onMapEvent = (ev) => {
+  console.log("map event", ev);
+};
+
+const toggleEventsControl = ngwMap.createToggleControl({
+  html: "E",
+  title: { on: "Stop event listener", off: "Start even listener" },
+  addClassOn: 'toggle-on',
+  onClick: (status) => {
+    if (status) {
+      // All events https://code-api.nextgis.com/interfaces/ngw_map.WebMapEvents.html
+      ngwMap.emitter.on("moveend", onMapEvent);
+    } else {
+      ngwMap.emitter.off("moveend", onMapEvent);
+    }
+  },
+});
+
+ngwMap.addControl(toggleEventsControl, "top-left");
+
+ngwMap.emitter.on("layer:toggle", (ev) => {
+  if (ev.id === id) {
+    console.log("layer:toggle", ev);
+  }
+});
+
+ngwMap.emitter.on("layer-" + id + ":toggle", (ev) => {
+  console.log("layer-" + id + ":toggle", ev);
 });

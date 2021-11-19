@@ -1072,10 +1072,10 @@
     "@types/events" "^3.0.0"
     events "^3.3.0"
 
-"@nextgis/ngw-kit@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@nextgis/ngw-kit/-/ngw-kit-1.9.6.tgz#28513b7f073bc91a04efa295fe724f60125a23d7"
-  integrity sha512-VDW4i9bAvpFPqyNtS6BaU+x2eTtiGxTywwQZsTPGLN2QL8WAFhYuVj/GmjGV8S2bOTmFvIAXnnXq1itlnYGWww==
+"@nextgis/ngw-kit@^1.9.6", "@nextgis/ngw-kit@^1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-kit/-/ngw-kit-1.9.7.tgz#963e903b6b423521402032a91689d8cb5227dc74"
+  integrity sha512-1fFZ7FPj2BbpFyhcJfsPgKyqQs9MUpadUX7znzZyuMzVfKAgVBja0170Mz1dCUq9mxy7HHsJBKLT/jb1Sz7D/A==
   dependencies:
     "@nextgis/cancelable-promise" "^1.8.4"
     "@nextgis/item" "^1.9.4"
@@ -1089,22 +1089,22 @@
     strict-event-emitter-types "^2.0.0"
 
 "@nextgis/ngw-leaflet@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@nextgis/ngw-leaflet/-/ngw-leaflet-1.9.6.tgz#0ca7d1cf2ca3dc781c0601d31c0a8fab434176a6"
-  integrity sha512-kQ5kCpRW9ukfmV3MwYkm9u1Zf2+a5fHoqt98gird5y0n3O6GeQxaRmc9/ErrBuGAkUcFUOAa8pWko4dEAVawaA==
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-leaflet/-/ngw-leaflet-1.9.7.tgz#1d5bc1c27ef6980d8f8b363dc2d084e4b335369e"
+  integrity sha512-FAhFtf9clu5Tmq9uUvJqW7v/kSbD8WxgZ6gf/YzJoKV9a87oE2sB/vHcI4595YfQ52iqIDOl46pbsvDx9yUaCQ==
   dependencies:
     "@nextgis/leaflet-map-adapter" "^1.9.4"
-    "@nextgis/ngw-map" "^1.9.6"
+    "@nextgis/ngw-map" "^1.9.7"
     leaflet.wms "^0.2.0"
 
-"@nextgis/ngw-map@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@nextgis/ngw-map/-/ngw-map-1.9.6.tgz#aef446b19e6ed048a4e12d603cb172fd06fcd09d"
-  integrity sha512-+IX+ZhHv7wHGZtygTZ4FkjTMPa6Z696yzK9qzyV5WWHClwRoG2dPujVg1My5xASbBwD8IjRriFSrxMeKXkRZ4A==
+"@nextgis/ngw-map@^1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-map/-/ngw-map-1.9.7.tgz#7e0608525ebc1f122f3c31795e6f67424dfd0741"
+  integrity sha512-jnRH4n3+P5tR+PNVy+JVXzTa8Bbijk7Tr1KWoIF36gq+9M8n2F57E6f1eLauAeDGdQ7TEoY1WyHejl0C61Y6Mw==
   dependencies:
     "@nextgis/icons" "^1.9.4"
     "@nextgis/ngw-connector" "^1.9.4"
-    "@nextgis/ngw-kit" "^1.9.6"
+    "@nextgis/ngw-kit" "^1.9.7"
     "@nextgis/qms-kit" "^1.9.4"
     "@nextgis/utils" "^1.9.4"
     "@nextgis/webmap" "^1.9.4"
@@ -1113,20 +1113,20 @@
     strict-event-emitter-types "^2.0.0"
 
 "@nextgis/ngw-mapbox@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@nextgis/ngw-mapbox/-/ngw-mapbox-1.9.6.tgz#9e6faf6b6fc8da8720aff190f6e2378c7a18c7e6"
-  integrity sha512-fEg5kSPCwIFVc6CO7yjg4fEW5P5xMTEiph9H2Z08VgwGHX0y0FuhpyfhwNmk8zwyZaC+LiL3hqiSy3K+wFxnCw==
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-mapbox/-/ngw-mapbox-1.9.7.tgz#2198bce484f9d61727708eff7fde45d0da91ebc2"
+  integrity sha512-rG38B6nftTwlm2qIdCHEfLyj2zViZqni1qOMpl/ia8uG4YMdbNQHSFt8EvFG890ghdOC5N7qmUWxLSFHzIR8ZA==
   dependencies:
     "@nextgis/mapboxgl-map-adapter" "^1.9.4"
-    "@nextgis/ngw-map" "^1.9.6"
+    "@nextgis/ngw-map" "^1.9.7"
     canvg "^3.0.9"
 
 "@nextgis/ngw-ol@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@nextgis/ngw-ol/-/ngw-ol-1.9.6.tgz#a29274aa80f6fa413b75e63fbe4a03906a906328"
-  integrity sha512-AXWeghQV3JSMRu3uXVVMwGhc0irkrmdfA6T1UCKzkSFpZf7SkYv0h5CpvLGcWU93aSHl68FeYXRHxr7oPBQO+w==
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-ol/-/ngw-ol-1.9.7.tgz#81570e1175732c1e483d1cfba3bcaf7cb19b2fa5"
+  integrity sha512-iqy5S1WLS2MW18RZ1XtSRq2AjT40OOnH7mO3ih3fuP5ZEFIFn1sjGLlDP6A+WU/xnQe61MFqUefkD4NxcUxcSg==
   dependencies:
-    "@nextgis/ngw-map" "^1.9.6"
+    "@nextgis/ngw-map" "^1.9.7"
     "@nextgis/ol-map-adapter" "^1.9.4"
     "@types/events" "^3.0.0"
     events "^3.3.0"
@@ -2554,9 +2554,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.896:
-  version "1.3.901"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.901.tgz#ce2c3157d61bce9f42f1e83225c17358ae9f4918"
-  integrity sha512-ToJdV2vzwT2jeAsw8zIggTFllJ4Kxvwghk39AhJEHHlIxor10wsFI3wo69p8nFc0s/ATWBqugPv/k3nW4Y9Mww==
+  version "1.3.903"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.903.tgz#e2d3c3809f4ef05fdbe5cc88969dfc94b1bd15b9"
+  integrity sha512-+PnYAyniRRTkNq56cqYDLq9LyklZYk0hqoDy9GpcU11H5QjRmFZVDbxtgHUMK/YzdNTcn1XWP5gb+hFlSCr20g==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -5411,9 +5411,9 @@ side-channel@^1.0.4:
     object-inspect "^1.9.0"
 
 signal-exit@^3.0.2:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.5.tgz#9e3e8cc0c75a99472b44321033a7702e7738252f"
-  integrity sha512-KWcOiKeQj6ZyXx7zq4YxSMgHRlod4czeBQZrPb8OKcohcqAXShm7E20kEMle9WBt26hFcAf0qLOcp5zmY7kOqQ==
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.6.tgz#24e630c4b0f03fea446a2bd299e62b4a6ca8d0af"
+  integrity sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
@@ -5482,9 +5482,9 @@ source-map-resolve@^0.5.0:
     urix "^0.1.0"
 
 source-map-support@~0.5.10, source-map-support@~0.5.20:
-  version "0.5.20"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.20.tgz#12166089f8f5e5e8c56926b377633392dd2cb6c9"
-  integrity sha512-n1lZZ8Ve4ksRqizaBQgxXDgKwttHDhyfQjA6YZZn8+AroHbsIz+JjwxQDxbp+7y5OYCI8t1Yk7etjD9CRd2hIw==
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
+  integrity sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
