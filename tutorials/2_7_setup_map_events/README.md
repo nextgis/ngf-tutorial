@@ -2,6 +2,10 @@
 
 ## Theory
 
+### More examples
+
+[events](https://code.nextgis.com/demo-examples-events)
+
 ## Practice
 
 To run this example, you need to execute these commands in the terminal

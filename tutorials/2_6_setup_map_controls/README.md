@@ -2,6 +2,10 @@
 
 ## Theory
 
+### More examples
+
+[custom-layer-controls](https://code.nextgis.com/demo-examples-custom-layer-controls)
+
 ## Practice
 
 To run this example, you need to execute these commands in the terminal

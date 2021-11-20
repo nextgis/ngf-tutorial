@@ -2,6 +2,10 @@
 
 ## Theory
 
+### More examples
+
+[ngw-layers](https://code.nextgis.com/demo-examples-ngw-layers)
+
 ## Practice
 
 To run this example, you need to execute these commands in the terminal

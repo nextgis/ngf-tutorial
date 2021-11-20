@@ -2,6 +2,10 @@
 
 ## Theory
 
+### More examples
+
+[geojson-layer](https://code.nextgis.com/demo-examples-geojson-layer)
+
 ## Practice
 
 To run this example, you need to execute these commands in the terminal

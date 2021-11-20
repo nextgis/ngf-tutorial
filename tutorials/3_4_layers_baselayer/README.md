@@ -2,6 +2,10 @@
 
 ## Theory
 
+### More examples
+
+[ngw-basemap](https://code.nextgis.com/demo-examples-ngw-basemap)
+
 ## Practice
 
 To run this example, you need to execute these commands in the terminal
