@@ -41,3 +41,10 @@ Learn NextGIS Frontend step by step with this tutorial.
 1. [Resources](tutorials/4_1_ngwmap_resources/README.md)
 2. [AddNgwLayer](tutorials/4_2_ngwmap_addngwlayer/README.md)
 3. [Identify](tutorials/4_3_ngwmap_identify/README.md)
+
+### 5. Vector
+
+1. [Painting](tutorials/5_1_vector_painting/README.md)
+2. [Selection](tutorials/5_2_vector_selection/README.md)
+3. [Popup](tutorials/5_3_vector_popup/README.md)
+4. [Filtering](tutorials/5_4_vector_filtering/README.md)
