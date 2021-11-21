@@ -1,0 +1,16 @@
+{
+  "name": "ngf-tutorial-no-map-ngw-kit",
+  "version": "1.0.0",
+  "description": "",
+  "module": "src/main.js",
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "dependencies": {
+    "@nextgis/ngw-kit": "^1.9.7"
+  },
+  "keywords": [],
+  "browserslist": [
+    "last 1 version"
+  ]
+}

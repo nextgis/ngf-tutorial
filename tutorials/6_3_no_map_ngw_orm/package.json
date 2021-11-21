@@ -1,0 +1,21 @@
+{
+  "name": "ngf-tutorial-no-map-ngw-orm",
+  "version": "1.0.0",
+  "description": "",
+  "module": "src/main.ts",
+  "scripts": {
+    "start": "ts-node ./src/main.ts"
+  },
+  "dependencies": {
+    "@nextgis/ngw-orm": "^1.9.7"
+  },
+  "keywords": [],
+  "browserslist": [
+    "last 1 version"
+  ],
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ngf-tutorial-no-map-ngw-connector",
+  "version": "1.0.0",
+  "description": "",
+  "module": "src/main.js",
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "dependencies": {
+    "@nextgis/ngw-connector": "^1.9.4"
+  },
+  "keywords": [],
+  "browserslist": [
+    "last 1 version"
+  ]
+}
