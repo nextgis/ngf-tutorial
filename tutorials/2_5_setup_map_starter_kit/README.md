@@ -13,4 +13,6 @@ npm start
 
 And then open [http://localhost:8080](http://localhost:8080).
 
+[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/2_5_setup_map_starter_kit) in the `codesandbox.io`.
+
 [BACK TO CONTENT](../../README.md)

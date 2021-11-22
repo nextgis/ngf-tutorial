@@ -16,7 +16,14 @@
     "@babel/preset-env": "7.16.4",
     "parcel-bundler": "^1.12.5"
   },
-  "keywords": [],
+  "keywords": [
+    "NGF",
+    "NGW",
+    "NextGIS",
+    "Frontend",
+    "tutorial"
+  ],
+  "license": "MIT",
   "browserslist": [
     "last 1 version"
   ]

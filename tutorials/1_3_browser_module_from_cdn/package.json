@@ -10,7 +10,14 @@
   "devDependencies": {
     "http-server": "14.0.0" 
   },
-  "keywords": [],
+  "keywords": [
+    "NGF",
+    "NGW",
+    "NextGIS",
+    "Frontend",
+    "tutorial"
+  ],
+  "license": "MIT",
   "browserslist": [
     "last 1 version"
   ]

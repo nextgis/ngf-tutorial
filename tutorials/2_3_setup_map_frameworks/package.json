@@ -17,7 +17,14 @@
     "parcel-bundler": "^1.12.5"
   },
   "resolutions": {},
-  "keywords": [],
+  "keywords": [
+    "NGF",
+    "NGW",
+    "NextGIS",
+    "Frontend",
+    "tutorial"
+  ],
+  "license": "MIT",
   "browserslist": [
     "last 1 version"
   ]

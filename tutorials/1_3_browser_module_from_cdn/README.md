@@ -30,4 +30,6 @@ If you just open the file index.html in the console, then the work of the exampl
 
 Also this example is available [here](https://code.nextgis.com/demo-examples-ngw-webmap)
 
+[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/1_3_browser_module_from_cdn) in the `codesandbox.io`.
+
 [BACK TO CONTENT](../../README.md)

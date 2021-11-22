@@ -51,6 +51,6 @@ If you just open the file index.html in the console, then the work of the exampl
 
 Also this example is available [here](https://code.nextgis.com/demo-examples-ngw-webmap)
 
-[codesandbox](https://githubbox.com/rendrom/ngf-tutorial/tree/master/tutorials/1_1_install_from_cdn)
+[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/1_1_install_from_cdn) in the `codesandbox.io`.
 
 [BACK TO CONTENT](../../README.md)

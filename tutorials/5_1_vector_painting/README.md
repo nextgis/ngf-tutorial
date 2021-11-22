@@ -20,4 +20,6 @@ npm start
 
 And then open [http://localhost:8080](http://localhost:8080).
 
+[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/5_1_vector_painting) in the `codesandbox.io`.
+
 [BACK TO CONTENT](../../README.md)

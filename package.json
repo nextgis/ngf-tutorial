@@ -1,15 +1,6 @@
 {
   "name": "root",
   "private": true,
-  "scripts": {
-  },
-  "devDependencies": {
-
-  },
-  "gitHooks": {
-
-  },
-
   "license": "MIT",
   "workspaces": [
     "tutorials/*"
