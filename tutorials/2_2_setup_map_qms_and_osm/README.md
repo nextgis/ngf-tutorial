@@ -1,8 +1,37 @@
 # 2.2. Setup map. QMS and OSM
 
+How often do you have to add a baselayer from third-party vendors when creating a map? Rarely? Often? Always? In any case, we have simplified this task to just a few configuration lines.
+
 ## Theory
 
+When initializing the card, you can specify the option
+
+```javascript
+NgwMap.create({
+  osm: true,
+});
+```
+
+or
+
+```javascript
+NgwMap.create({
+  qmsId: 448,
+});
+```
+
+And when the map is already created, you can use methods to add baselayer:
+
+```javascript
+ngwMap.addBaseLayer("QMS", { qmsId: 448 });
+ngwMap.addBaseLayer("OSM");
+```
+
 ## Practice
+
+Go to the website [https://qms.nextgis.com](https://qms.nextgis.com) find a suitable service, remember its ID and insert it into the `qmsId` parameter.
+
+Try running the example with different parameters and see what changes.
 
 To run this example, you need to execute these commands in the terminal
 

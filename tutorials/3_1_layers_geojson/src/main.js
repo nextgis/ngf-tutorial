@@ -22,12 +22,14 @@ NgwMap.create({
     });
   });
 
+  ngwMap.addGeoJsonLayer({
+    id: "line-layer",
+    type: "line",
+    order: 2,
+    interactive: false,
+    paint: { weight: 4, color: "purple" },
+  });
   fetchGeoJson(5304).then((geojson) => {
-    ngwMap.addGeoJsonLayer({
-      data: geojson,
-      type: "line",
-      order: 2,
-      paint: { weight: 4, color: "purple" },
-    });
+    ngwMap.setLayerData("line-layer", geojson);
   });
 });

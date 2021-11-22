@@ -9,6 +9,10 @@ const ngwMap = new NgwMap({
   osm: true,
 });
 
+// The code below is only necessary to show 
+// that different adapters work the same way 
+// even with such non-trivial mechanics
+
 ngwMap.onLoad().then(() => {
   const webMapLayer = ngwMap
     .addNgwLayer({

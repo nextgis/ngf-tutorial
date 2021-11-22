@@ -6,7 +6,7 @@ import NgwMap from "@nextgis/ngw-leaflet";
 
 // NgwMap.create({}).then((ngwMap) => {})
 
-const ngwMap = NgwMap.create({
+NgwMap.create({
   target: "map",
   osm: true,
   // == method one ==
