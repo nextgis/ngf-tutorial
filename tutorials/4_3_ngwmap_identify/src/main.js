@@ -11,7 +11,6 @@ ngwMap.addNgwLayer({
   fit: true,
   adapterOptions: {
     selectable: true,
-    selectedPaint: { color: "red" },
   },
 });
 

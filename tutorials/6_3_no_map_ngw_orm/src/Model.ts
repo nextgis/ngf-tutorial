@@ -3,7 +3,6 @@ import { PolygonLayer, NgwResource, Column } from "@nextgis/ngw-orm";
 @NgwResource({
   type: "vector_layer",
   display_name: "Лесосеки",
-
 })
 export default class Plot extends PolygonLayer {
   @Column({
@@ -188,29 +187,29 @@ export default class Plot extends PolygonLayer {
   })
   TYPE_LES!: string;
 
-//   @Column({
-//     display_name: "Основная порода подроста",
-//     datatype: "STRING",
-//   })
-//   MAIN_PORODA!: string;
+  @Column({
+    display_name: "Основная порода подроста",
+    datatype: "STRING",
+  })
+  MAIN_PORODA!: string;
 
-//   @Column({
-//     display_name: "Количество сохраненного подроста шт/га",
-//     datatype: "STRING",
-//   })
-//   QUANT_PODROST!: string;
+  @Column({
+    display_name: "Количество сохраненного подроста шт/га",
+    datatype: "STRING",
+  })
+  QUANT_PODROST!: string;
 
-//   @Column({
-//     display_name:
-//       "Фактический (назначенный) тип лесовосстановительного мероприятия",
-//     datatype: "STRING",
-//   })
-//   FACT_TYPE_MER!: string;
+  @Column({
+    display_name:
+      "Фактический (назначенный) тип лесовосстановительного мероприятия",
+    datatype: "STRING",
+  })
+  FACT_TYPE_MER!: string;
 
-//   @Column({
-//     display_name: "Год проведения лесовосстановления",
-//     datatype: "INTEGER",
-//   })
-//   YEAR_MER!: number;
+  @Column({
+    display_name: "Год проведения лесовосстановления",
+    datatype: "INTEGER",
+  })
+  YEAR_MER!: number;
 
 }

@@ -25,6 +25,54 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
+Any layer added to the web map gets a unique identifier
+
+```javascript
+ngwMap.addLayer("GEOJSON").then((layer) => {
+  console.log(layer.id); // automated generated ID
+});
+```
+
+But you can assign this ID manually. In this case, you will have to monitor the uniqueness of the layer identifier yourself
+
+```javascript
+ngwMap.addLayer("GEOJSON", { id: "my-geojson-layer" }).then((layer) => {
+  console.log(layer.id); // my-geojson-layer
+});
+```
+
+After the layer is created, you can use this layer itself or its identifier in any of the following methods:
+
+- addLayerData
+- clearLayerData
+- fitLayer
+- getLayer
+- getLayerId
+- hideLayer
+- isBaseLayer
+- isLayerVisible
+- propertiesFilter
+- removeLayer
+- removeLayerFilter
+- removeLayers
+- selectLayer
+- setLayerData
+- setLayerOpacity
+- showLayer
+- toggleLayer
+- unSelectLayer
+- unSelectLayers
+- updateLayer
+
+[WebMapLayers documentation](https://code-api.nextgis.com/classes/ngw_map.WebMapLayers.html)
+
+```javascript
+ngwMap.addLayer("GEOJSON", { id: "my-geojson-layer" }).then((layer) => {
+  ngwMap.fitLayer(layer);
+  ngwMap.hideLayer("my-geojson-layer");
+});
+```
+
 Find more information on working with vector layers in Part 6 of this tutorial.
 
 ### More examples

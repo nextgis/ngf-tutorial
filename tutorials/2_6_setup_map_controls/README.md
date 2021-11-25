@@ -50,7 +50,7 @@ There are two main methods for working with controls in NgwMap: [addControl](htt
   webMap.addControl(toggleControl, "top-right");
   ```
 
-You can assign names to controls. Then you will be able to configure these controls when initializing the map. This is convenient when working on extensions. There are only two built-in name controls: ZOOM and ATTRIBUTES.
+You can assign names to controls. Then you will be able to configure these controls when initializing the map. This is convenient when working on extensions. There are only two built-in name controls: `ZOOM` and `ATTRIBUTION`.
 
 ```javascript
 NgwMap.create({

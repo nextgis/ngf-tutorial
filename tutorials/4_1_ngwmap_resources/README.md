@@ -1,14 +1,14 @@
 # 4.1. NgwMap. Resources
 
-NgwMap assemblies are so convenient that we use them even where communication with NGW was not required.
-
 ## Theory
 
-In fact, NgwMap is an extension of the web map with methods and configuration options that simplify interaction with NGW API.
+NgwMap assemblies like `@nextgis/ngw-leaflet`, `@nextgis/ngw-ol` and `@nextgis/ngw-mapbox` are so convenient that we use them even where communication with NGW was not required.
+
+In fact, [NgwMap](https://code-api.nextgis.com/classes/ngw_map.NgwMap.html) is an extension of the [WebMap](https://code-api.nextgis.com/classes/ngw_map.WebMap.html) with methods and configuration options that simplify interaction with [NextGIS Web REST API](https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html#nextgis-web-rest-api).
 
 The main task is to have an easy way to display any cartographic resources on the map and be able to interact with them.
 
-The most basic way is to pass information about the added resources through the map initialization option `resources`:
+The most basic way is to pass information about the added resources through the map initialization option [resources](https://code-api.nextgis.com/interfaces/ngw_map.NgwMapOptions.html#resources):
 
 ```javascript
 NgwMap.create({
@@ -49,6 +49,10 @@ Resources can be raster and vector layers and their styles, and even an entire w
 [ngw-layers](https://code.nextgis.com/demo-examples-ngw-layers)
 
 ## Practice
+
+Run the example and try adding some other resources with [https://demo.nextgis.com](https://demo.nextgis.com) or your NGW (don't forget to register with CORS `http://localhost:8080` ) by ID, keyname or options.
+
+Try changing the adapter type for a vector resource with styles to show on the map GEOJSON, TILE or IMAGE layer.
 
 To run this example, you need to execute these commands in the terminal
 

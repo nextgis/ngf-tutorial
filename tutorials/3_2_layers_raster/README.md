@@ -22,7 +22,9 @@ ngwMap.addTileLayer(
 );
 ```
 
-All options are documented [here](https://code-api.nextgis.com/interfaces/ngw_map.RasterAdapterOptions.html)
+All options are documented [here](https://code-api.nextgis.com/interfaces/ngw_map.RasterAdapterOptions.html).
+
+The behavior of the layer and the ways of interacting with it are identical to the one in the example [3_1_layers_geojson](tutorials/3_1_layers_geojson/README.md).
 
 ## Practice
 

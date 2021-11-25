@@ -29,14 +29,14 @@ async function sync() {
         needUpdate = true;
       }
     });
-    // if (needUpdate) {
-    //   try {
-    //     await await connection.updateResource(resource);
-    //     console.log(chalk.green("  resource updated"));
-    //   } catch (er) {
-    //     console.log(chalk.red(`  failed to update resource - ${er}`));
-    //   }
-    // }
+    if (needUpdate) {
+      try {
+        await await connection.updateResource(resource);
+        console.log(chalk.green("  resource updated"));
+      } catch (er) {
+        console.log(chalk.red(`  failed to update resource - ${er}`));
+      }
+    }
   }
 }
 

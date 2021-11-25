@@ -15,7 +15,7 @@ NgwMap.create({
     // Vector from Order boundary-style
     {
       resource: 4111,
-      fit: true,
+      // fit: true,
       adapter: "GEOJSON",
       adapterOptions: { paint: { color: "red", fill: false, weight: 4 } },
     },
