@@ -2,10 +2,19 @@
 
 ## Theory
 
+To set the appearance of the selected objects, the `selectedPaint` parameter is used, which is configured like `paint` ([5_1_vector_painting](../5_1_vector_painting)).
+
+```javascript
+NgwMap.create({
+  paint: { color: "orange", opacity: 0.6 },
+  selectedPaint: { color: "red", opacity: 0.9 },
+});
+```
+
 ### More examples
 
 [vector-paint](https://code.nextgis.com/demo-examples-vector-selection)
-[vector-paint](https://code.nextgis.com/demo-examples-vector-hover-selection)
+[vector-hover-selection](https://code.nextgis.com/demo-examples-vector-hover-selection)
 
 ## Practice
 
