@@ -2,6 +2,56 @@
 
 ## Theory
 
+Very often, when selecting a feature, you need to show attribute information. A pop-up is very well for this purpose.
+
+The NgwMap is helps to simplify the process of opening a pop-up for the selected features.
+
+- popupOnSelect
+- popupOptions
+
+[PopupOptions](https://code-api.nextgis.com/interfaces/ngw_map.PopupOptions.html)
+
+- closeButton
+- fromProperties
+- minWidth
+- popupContent
+- unselectOnClose
+- createPopupContent
+
+[createPopupContent](https://code-api.nextgis.com/interfaces/ngw_map.PopupOptions.html#createPopupContent)
+
+```javascript
+ngwMap.addGeoJsonLayer({
+  selectable: true,
+  popupOnSelect: true,
+  popupOptions: {
+    createPopupContent: (e) => {
+      return Object.entries(e.feature.properties).reduce((e, [key, value]) => {
+        e.innerHTML += `<div><strong>${key}:</strong>${value}</div>`;
+        return e;
+      }, document.createElement("div"));
+    },
+  },
+});
+```
+
+[CreatePopupContentProps](https://code-api.nextgis.com/interfaces/ngw_map.CreatePopupContentProps.html)
+
+Properties
+
+- feature
+- layer
+- target
+- type
+- visible
+
+Methods
+
+- close
+- getBounds
+- getCenter
+- onClose
+
 ### More examples
 
 [ngw-layer-popup](https://code.nextgis.com/demo-examples-ngw-layer-popup)
