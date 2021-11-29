@@ -9,24 +9,33 @@ const adapterOptions = (resourceId, opt) => {
       popupOnSelect: true,
       popupOptions: {
         createPopupContent: (e) => {
-          const element = document.createElement("table");
-          return ngwMap.connector.getResource(resourceId).then((item) => {
-            element.innerHTML = "<tbody>";
-            // link properties field names with layer attributes names
-            item.feature_layer.fields.forEach((x) => {
-              if (x.grid_visibility) {
-                const value = e.feature.properties[x.keyname];
-                element.innerHTML +=
-                  "<tr><th>" +
-                  x.display_name +
-                  "</th><td>" +
-                  value +
-                  "</td></tr>";
-              }
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = "loading...";
+          const getContent = ngwMap.connector
+            .getResource(resourceId)
+            .then((item) => {
+              wrapper.innerHTML = "";
+              const element = document.createElement("table");
+              element.innerHTML = "<tbody>";
+              // link properties field names with layer attributes names
+              item.feature_layer.fields.forEach((x) => {
+                if (x.grid_visibility) {
+                  const value = e.feature.properties[x.keyname];
+                  element.innerHTML +=
+                    "<tr><th>" +
+                    x.display_name +
+                    "</th><td>" +
+                    value +
+                    "</td></tr>";
+                }
+              });
+              element.innerHTML += "</tbody>";
+              wrapper.appendChild(element);
             });
-            element.innerHTML += "</tbody>";
-            return element;
+          e.onClose(() => {
+            getContent.cancel();
           });
+          return wrapper;
         },
       },
     },

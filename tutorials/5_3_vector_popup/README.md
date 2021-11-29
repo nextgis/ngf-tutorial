@@ -6,8 +6,7 @@ Very often, when selecting a feature, you need to show attribute information. A 
 
 The NgwMap is helps to simplify the process of opening a pop-up for the selected features.
 
-- popupOnSelect
-- popupOptions
+In order to enable popups, you need to specify the `popupOnSelect` parameter when creating the layer and configure it in `popupOptions`:
 
 [PopupOptions](https://code-api.nextgis.com/interfaces/ngw_map.PopupOptions.html)
 
@@ -18,7 +17,7 @@ The NgwMap is helps to simplify the process of opening a pop-up for the selected
 - unselectOnClose
 - createPopupContent
 
-[createPopupContent](https://code-api.nextgis.com/interfaces/ngw_map.PopupOptions.html#createPopupContent)
+The content of the pop-up can be any string or HTMLElement.If the content is static, it can be set via the 'popupContent' parameter. The [createPopupContent](https://code-api.nextgis.com/interfaces/ngw_map.PopupOptions.html#createPopupContent) callback function is used for dynamic display:
 
 ```javascript
 ngwMap.addGeoJsonLayer({
@@ -35,22 +34,37 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-[CreatePopupContentProps](https://code-api.nextgis.com/interfaces/ngw_map.CreatePopupContentProps.html)
+Each time the popup is opened, the `createPopupContent` method will be called with the following event data
 
 Properties
 
-- feature
-- layer
-- target
-- type
-- visible
+- `feature` - A vector layer object in geojson format.
+- `layer` - Native layer for a specific adapter layers of a specific map adapter.
+- `target` - The adapter in which the layer is created.
+- `type` - The source of the event call. User `click`, `hover`, or programmatic `api` call.
+- `visible` - Is layer on the map
 
 Methods
 
-- close
-- getBounds
-- getCenter
-- onClose
+- `close` - Close the pop-up programmatically.
+- `getBounds` - Get the extent for the geometry on which the popup was opened.
+- `getCenter` - Get the center for the geometry on which the popup was opened.
+- `onClose` - the callback function that is called when the popup is closed.
+
+  ```javascript
+  createPopupContent: (e) => {
+      const onZoomEnd = () => e.close();
+      ngwMap.emitter.on('zoomend', onZoomEnd)
+      e.onClose(() => {
+        ngwMap.emitter.off('zoomend', onZoomEnd)
+      })
+      return createContentFunc(e);
+    },
+  ```
+
+Note that 'createPopupContent' can be an asynchronous function to be able to load additional information about the object. But try not to abuse this opportunity. Always add long request handlers, request cancellation, and caching
+
+Documentation of [CreatePopupContentProps](https://code-api.nextgis.com/interfaces/ngw_map.CreatePopupContentProps.html).
 
 ### More examples
 
@@ -60,6 +74,9 @@ Methods
 [vector-popup](https://code.nextgis.com/demo-examples-vector-popup)
 
 ## Practice
+
+- Figure out how the aliases of the fieldnames of the NGW resources are formed in the example.
+- Add a button to the popup that will cause: centering on the geometry; closing the popup.
 
 To run this example, you need to execute these commands in the terminal
 
