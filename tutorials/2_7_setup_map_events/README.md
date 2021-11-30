@@ -1,8 +1,8 @@
 # 2.7. Setup map. Events
 
-Every time something happens in NgwMap, e.g. user clicks or map zoom changes, the corresponding object sends an event which you can subscribe to with a function. It allows you to react to user interaction
-
 ## Theory
+
+Every time something happens in NgwMap, e.g. user clicks or map zoom changes, the corresponding object sends an event which you can subscribe to with a function. It allows you to react to user interaction.
 
 Subscribe to all events via a special property
 
@@ -37,6 +37,9 @@ ngwMap.emitter.on("layer-" + id + ":toggle", (ev) => {
 [events](https://code.nextgis.com/demo-examples-events)
 
 ## Practice
+
+- subscribe to different events using the `on` and `once` methods;
+- learn to unsubscribe from events with `off` (this is very important).
 
 To run this example, you need to execute these commands in the terminal
 

@@ -1,10 +1,26 @@
 # 2.4. Setup map. Map adapters
 
-From simple to complex. Design your web map for specific tasks from components
-
 ## Theory
 
+From simple to complex. Design your web map for specific tasks from components
+
 While NgwMap has ready-made builds and is ready to work with NextGIS services, you can choose only what you need yourself using the `@nextgis/webmap` library.
+
+```javascript
+import { createWebMap } from "@nextgis/webmap";
+
+import MapAdapter from "@nextgis/leaflet-map-adapter";
+import "leaflet/dist/leaflet.css";
+
+createWebMap({
+  target: "map",
+  mapAdapter: new MapAdapter(),
+  center: [104, 52],
+  zoom: 6,
+}).then((webmap) => {
+  webmap.addBaseLayer('OSM');
+});
+```
 
 ## Practice
 

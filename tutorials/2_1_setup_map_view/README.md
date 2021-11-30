@@ -1,8 +1,8 @@
 # 2.1. Setup map. View
 
-The most important part when working with frontend libraries (for interactive cartography) this is creating and configuring a web map instance.
-
 ## Theory
+
+The most important part when working with frontend libraries (for interactive cartography) this is creating and configuring a web map instance.
 
 One of the main missions of the frontend library is to simplify the execution of the most frequent operations.
 

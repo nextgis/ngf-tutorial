@@ -1,8 +1,8 @@
 # 2.3. Setup map. Frameworks
 
-The super power of the NGF is to provide a common interface for different map and layer adapters. This means that the same code will work with different frameworks (such as `openlayers`, `leaflet`, `mapbox-gl-js`). And it's really cool!
-
 ## Theory
+
+The super power of the NGF is to provide a common interface for different map and layer adapters. This means that the same code will work with different frameworks (such as `openlayers`, `leaflet`, `mapbox-gl-js`). And it's really cool!
 
 You probably won't have a real need to run the same code with multiple adapters in the one project at the same time. The very ability to do this is important. Although, from personal experience, there have been cases when in the middle of a project it was necessary to change the structure of the map due to rethinking tasks.
 

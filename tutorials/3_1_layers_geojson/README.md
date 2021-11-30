@@ -1,8 +1,8 @@
 # 3.1. Layers. GeoJSON
 
-The first thing anyone wants to do when working with an interactive map is to add their favorite GroJSON to it.
-
 ## Theory
+
+The first thing anyone wants to do when working with an interactive map is to add their favorite GroJSON to it.
 
 There are several ways to add geojson to the map in NgwMap
 

@@ -1,8 +1,8 @@
 # 3.4. Layers. Baselayer
 
-Base layers are an integral part of the map. We make working with this entity even easier.
-
 ## Theory
+
+Base layers are an integral part of the map. We make working with this entity even easier.
 
 To control the behavior of the base layers, we have added several rules:
 

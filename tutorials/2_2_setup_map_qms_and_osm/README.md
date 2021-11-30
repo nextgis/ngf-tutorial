@@ -1,8 +1,8 @@
 # 2.2. Setup map. QMS and OSM
 
-How often do you have to add a baselayer from third-party vendors when creating a map? Rarely? Often? Always? In any case, we have simplified this task to just a few configuration lines.
-
 ## Theory
+
+How often do you have to add a baselayer from third-party vendors when creating a map? Rarely? Often? Always? In any case, we have simplified this task to just a few configuration lines.
 
 When initializing the card, you can specify the option
 

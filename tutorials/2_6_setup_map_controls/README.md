@@ -1,8 +1,8 @@
 # 2.6. Setup map. Controls
 
-A quick way to design a card with functional elements
-
 ## Theory
+
+A quick way to design a map with functional elements
 
 There are two main methods for working with controls in NgwMap: [addControl](https://code-api.nextgis.com/classes/ngw_map.WebMapControls.html#addControl) and [createControl](https://code-api.nextgis.com/classes/ngw_map.WebMapControls.html#createControl).
 
