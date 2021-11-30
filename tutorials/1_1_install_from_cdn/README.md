@@ -1,11 +1,11 @@
 # 1.1. Install from CDN
 
+## Theory
+
 CDN services is used to embed a script into an HTML page.
 This makes life easier for developers when creating simple GIS applications.
 
 NextGIS Frontend libraries (NGF) are available in two CDN services: unpkg and jsdelivr
-
-## Theory
 
 ### unpkg
 

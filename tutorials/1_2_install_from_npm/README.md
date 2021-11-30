@@ -1,8 +1,8 @@
 # 1.2. Install from NPM
 
-Installing dependencies via npm is recommended when developing complex web applications using build systems such as webpack.
-
 ## Theory
+
+Installing dependencies via npm is recommended when developing complex web applications using build systems such as webpack.
 
 ### Instal packages
 
