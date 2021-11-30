@@ -12,8 +12,7 @@ const connector = new NgwConnector({
   },
 });
 
-// получаем или создаем ресурс с которым будем работать
-// и заполняем случайными точечными данными
+// we get or create a resource and fill it with random point data
 connector
   .getResource(vectorLayerKeyName)
   .then((res) => {
@@ -57,7 +56,7 @@ function createVectorResource() {
   });
 }
 
-// Заполняем только пустой слой. Добавляем не больше 5 точек
+// Fill in only an empty layer. We add no more than 5 points
 function fillFeatures(id) {
   return connector
     .get("feature_layer.feature.count", null, { id: id })
@@ -84,7 +83,7 @@ function addFeaturePromise(resourceId) {
     {
       id: resourceId,
       srs: 4326,
-      // Не используем geojson только из-за того что WKT проще записать для точки
+      // We don't use geojson just because WKT is easier to write for a point
       // geom_format:"geojson"
     }
   );

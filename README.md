@@ -51,6 +51,12 @@ Each lesson can be run in the Code cloud service [Codesandbox.io](https://codesa
 
 For example [https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/1_1_install_from_cdn](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/1_1_install_from_cdn)
 
+---
+
+Working with the repository, make a fork, complete tasks and upload back to github. If you have any questions, start an [issue](https://github.com/nextgis/ngf-tutorial/issues/new).
+
+---
+
 ## Links
 
 - [NGF Live examples and docs](https://code.nextgis.com)
