@@ -116,6 +116,22 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
+You can control the style of the created layers using the following methods
+
+```javascript
+ngwMap.setLayerPaint("layer-id", {
+  fillColor: "red",
+  strokeColor: "orange",
+  weight: 3,
+});
+
+ngwMap.updateLayerPaint("layer-id", {
+  fillColor: "green",
+});
+```
+
+Also methods for highlighting styles are `setSelectedLayerPaint` and `updateSelectedLayerPaint`
+
 ### More examples
 
 [vector-paint](https://code.nextgis.com/demo-examples-vector-paint)
@@ -136,7 +152,7 @@ To run this example, you need to execute these commands in the terminal
 ```bash
 npm i
 npm start
-````
+```
 
 And then open [http://localhost:8080](http://localhost:8080).
 
