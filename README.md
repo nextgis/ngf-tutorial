@@ -6,17 +6,17 @@ Learn NextGIS Frontend step by step with this tutorial.
 
 ## Introduction
 
-We present to your attention a set of tutorials through which you will be able to master both basic things and complex mechanics for working with frontend libraries.
+This is a set of tutorials through which you will be able to master both basic and advanced mechanics for working with frontend libraries.
 
-For convenience, the tutorials are divided into parts.
+For convenience, the tutorials are divided into parts (lessons).
 
-Each lesson is a node package that is located in the tutorials folder and has its own description in a file `README.md`.
+Each lesson is a node package that is located in the tutorials folder and has its own description in a `README.md` file.
 
 ## How to work
 
 ### Locally
 
-To run exercises on your computer, you need to clone a training repository for yourself, then, going to the directories with lessons, execute commands to install dependencies and run main script
+To run lessons on your computer, you need to (1) clone this repository, go to the lesson's folder, (3) execute commands to install dependencies and finally (4) run the main script
 
 ```bash
 git clone https://github.com/nextgis/ngf-tutorial
@@ -41,11 +41,11 @@ npm start
 
 Please note that you will need an installed [Node.js](https://nodejs.org/en/download/) to work locally.
 
-We recommend to use IDE [VSCode](https://code.visualstudio.com/) to work with the lesson code. Although a regular text editor and a terminal for running commands are also suitable.
+We recommend to use IDE [VSCode](https://code.visualstudio.com/) to work with the lesson code. However a regular text editor and a terminal for running commands are also suitable.
 
 ### In the cloud
 
-Each lesson can be run in the Code cloud service [Codesandbox.io](https://codesandbox.io/)
+Each lesson can be run in the Code cloud service [Codesandbox.io](https://codesandbox.io)
 
 `https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/` + `[tutorial_foldername]`
 
@@ -53,22 +53,23 @@ For example [https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/1_
 
 ---
 
-Working with the repository, make a fork, complete tasks and upload back to github. If you have any questions, start an [issue](https://github.com/nextgis/ngf-tutorial/issues/new).
+Working with the repository, make a fork, complete tasks and upload back to github. If you have any questions, fill an [issue](https://github.com/nextgis/ngf-tutorial/issues/new).
 
 ---
 
-## Links
+## Helpful links
 
 - [NGF Live examples and docs](https://code.nextgis.com)
 - [NGF API](https://code-api.nextgis.com)
-- [NGF Repository](https://github.com/nextgis/nextgis_frontend)
-- [NGF Article](https://nextgis.com/blog/nextgis-frontend)
-- [NGF Tutorials repo](https://github.com/nextgis/ngf-tutorial)
+- [NGF Source code](https://github.com/nextgis/nextgis_frontend)
+- [NGF Release announcement](https://nextgis.com/blog/nextgis-frontend)
+- [NGF Tutorials source code](https://github.com/nextgis/ngf-tutorial)
 - [NextGIS official](https://nextgis.com)
 - [NextGIS Web](https://nextgis.com/nextgis-web)
 - [Cloud plans](https://nextgis.com/pricing-base)
 - [On premise](https://nextgis.ru/pricing)
-- [Telegram chat](https://t.me/nextgis_chat)
+- [Telegram dicussions EN](https://t.me/nextgis_talks)
+- [Telegram dicussions RU](https://t.me/nextgis_chat)
 
 ## Content
 
