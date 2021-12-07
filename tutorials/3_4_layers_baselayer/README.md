@@ -17,7 +17,7 @@ The following methods help to keep track of these rules:
 - getBaseLayersIds
 - isBaseLayer
 
-In GNgwMap, any layer adapter can create a basemap layer. Even GeoJSON. But we've never done that:
+In NgwMap, any layer adapter can create a basemap layer. Even GeoJSON. But we've never done that:
 
 ```javascript
 ngwMap.addBaseLayer("OSM"),
