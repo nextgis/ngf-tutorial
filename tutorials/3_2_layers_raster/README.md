@@ -2,9 +2,9 @@
 
 ## Theory
 
-There are several ways to add geojson to the map in NgwMap
+There are several ways to add GeoJSON to the map in NgwMap
 
-Common
+Common:
 
 ```javascript
 ngwMap.addLayer("TILE", {
@@ -14,7 +14,7 @@ ngwMap.addLayer("TILE", {
 });
 ```
 
-Shortcutted
+Shortcut way:
 
 ```javascript
 ngwMap.addTileLayer(
@@ -28,14 +28,14 @@ The behavior of the layer and the ways of interacting with it are identical to t
 
 ## Practice
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_2_layers_raster) in the `codesandbox.io`.
 
