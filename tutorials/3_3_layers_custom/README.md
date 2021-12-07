@@ -28,14 +28,14 @@ Pay attention to this `ngwMap.mapAdapter.layerAdapters.GEOJSON`. We inherit from
 
 ## Practice
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_3_layers_custom) in the `codesandbox.io`.
 
