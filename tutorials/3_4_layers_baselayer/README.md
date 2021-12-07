@@ -2,12 +2,12 @@
 
 ## Theory
 
-Base layers are an integral part of the map. We make working with this entity even easier.
+Basemap layers are an integral part of the map. We make working with them easier.
 
-To control the behavior of the base layers, we have added several rules:
+To control the behavior of the basemap layers, we have added several rules:
 
-- the base layer is at the very bottom;
-- there can only be one base layer at a time;
+- the basemap layer is at the very bottom;
+- there can only be one basemap layer at a time;
 
 The following methods help to keep track of these rules:
 
@@ -17,7 +17,7 @@ The following methods help to keep track of these rules:
 - getBaseLayersIds
 - isBaseLayer
 
-In GNgwMap, any layer adapter can create a base layer. Even GeoJSON. But we've never done that
+In GNgwMap, any layer adapter can create a basemap layer. Even GeoJSON. But we've never done that:
 
 ```javascript
 ngwMap.addBaseLayer("OSM"),
@@ -30,14 +30,14 @@ ngwMap.addBaseLayer("QMS", { qmsId: 529 }),
 
 ## Practice
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_4_layers_baselayer) in the `codesandbox.io`.
 
