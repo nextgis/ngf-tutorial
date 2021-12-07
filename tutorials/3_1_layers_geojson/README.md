@@ -2,11 +2,11 @@
 
 ## Theory
 
-The first thing anyone wants to do when working with an interactive map is to add their favorite GroJSON to it.
+The first thing anyone wants to do when working with an interactive map is to add their favorite GeoJSON to it.
 
-There are several ways to add geojson to the map in NgwMap
+There are several ways to add geojson to the map in NgwMap.
 
-Common
+Common:
 
 ```javascript
 ngwMap.addLayer("GEOJSON", {
@@ -15,7 +15,7 @@ ngwMap.addLayer("GEOJSON", {
 });
 ```
 
-Shortcutted
+Shortcut way:
 
 ```javascript
 ngwMap.addGeoJsonLayer({
@@ -25,7 +25,7 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-Any layer added to the web map gets a unique identifier
+Any layer added to the web map gets a unique identifier:
 
 ```javascript
 ngwMap.addLayer("GEOJSON").then((layer) => {
@@ -33,7 +33,7 @@ ngwMap.addLayer("GEOJSON").then((layer) => {
 });
 ```
 
-But you can assign this ID manually. In this case, you will have to monitor the uniqueness of the layer identifier yourself
+You can also assign this ID manually. In this case, you will have to monitor the uniqueness of the layer identifier yourself:
 
 ```javascript
 ngwMap.addLayer("GEOJSON", { id: "my-geojson-layer" }).then((layer) => {
@@ -81,22 +81,22 @@ Find more information on working with vector layers in Part 6 of this tutorial.
 
 ## Practice
 
-The program code of the lesson uses the `fetchGeoJson` auxiliary function. It returns a pure geojson from which layers are then created and updated.
+The program code of the lesson uses the `fetchGeoJson` auxiliary function. It returns a pure GeoJSON from which layers are then created and updated.
 
 Since the function is asynchronous and the order of the layers must be strictly defined, the `order` option is used.
 
-By default, all layers are interactive, and events can be received from them. The `interactive` option controls this behavior
+By default, all layers are interactive, and events can be received from them. The `interactive` option controls this behavior.
 
-All other options in the [documentation](https://code-api.nextgis.com/interfaces/ngw_map.GeoJsonAdapterOptions.html)
+All other options are listed in the [documentation](https://code-api.nextgis.com/interfaces/ngw_map.GeoJsonAdapterOptions.html)
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_1_layers_geojson) in the `codesandbox.io`.
 
