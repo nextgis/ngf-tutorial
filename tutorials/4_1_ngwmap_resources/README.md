@@ -2,7 +2,7 @@
 
 ## Theory
 
-NgwMap assemblies like `@nextgis/ngw-leaflet`, `@nextgis/ngw-ol` and `@nextgis/ngw-mapbox` are so convenient that we use them even where communication with NGW was not required.
+NgwMap assemblies like `@nextgis/ngw-leaflet`, `@nextgis/ngw-ol` and `@nextgis/ngw-mapbox` are so convenient that we use them even where communication with NGW is not required.
 
 In fact, [NgwMap](https://code-api.nextgis.com/classes/ngw_map.NgwMap.html) is an extension of the [WebMap](https://code-api.nextgis.com/classes/ngw_map.WebMap.html) with methods and configuration options that simplify interaction with [NextGIS Web REST API](https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html#nextgis-web-rest-api).
 
@@ -38,11 +38,11 @@ The advantages of this approach are that the entire configuration is JSON serial
 
 The resources list may include:
 
-- number - resource id; // also for resource
-- string - resource keyname; // also for resource
-- object - configuration of the layer to be added with the one required parameter `resource` (the comment "also for resource" above refers to it)
+- number - resource id; // also for the resource
+- string - resource keyname; // also for the resource
+- object - configuration of the layer to be added with the one required parameter `resource` (the comment "also for the resource" above refers to it)
 
-Resources can be raster and vector layers and their styles, and even an entire web map. Even multiple web maps can be added at the same time. The information is 100% verified
+Resources can be raster and vector layers and their styles, and even an entire web map. Even multiple web maps can be added at the same time. For real.
 
 ### More examples
 
@@ -54,14 +54,14 @@ Run the example and try adding some other resources with [https://demo.nextgis.c
 
 Try changing the adapter type for a vector resource with styles to show on the map GEOJSON, TILE or IMAGE layer.
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/4_1_ngwmap_resources) in the `codesandbox.io`.
 
