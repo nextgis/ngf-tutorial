@@ -4,12 +4,12 @@
 
 The identification mechanism allows you to get data about items of NGW vector layers by intersection with geometry.
 
-Identification takes place in two stages
+Identification is performed in two stages:
 
-- Getting a list of objects that intersect in the transmitted geometry. The geometry is a circle centered at the point where the user clicks the mouse on the map. The radius of the circle depends on the current zoom level.
-- Uploading complete information about the object of interest.
+1. Getting a list of objects that intersect with the transmitted geometry. The geometry is a circle centered at the point where the user clicks the mouse on the map. The radius of the circle depends on the current zoom level.
+2. Fetch complete information about the object of interest.
 
-In order to indicate that identification needs to be performed for this resource, you need to specify `selectable` in the `adapterOptions` of this layer.
+In order to indicate that identification is allowed for this resource, you need to specify `selectable` in the `adapterOptions` of this layer.
 
 ```javascript
 ngwMap.addNgwLayer({
@@ -26,7 +26,7 @@ after that, everything is ready to subscribe to the event ["ngw:select"](https:/
 ngwMap.emitter.on("ngw:select", onNgwSelect);
 ```
 
-After the first stage of identification is completed and a list of objects is received, you can upload detailed information. There are several ways to do this. Using auxiliary methods: [fetchIdentifyGeoJson](https://code-api.nextgis.com/modules/ngw_kit.html#fetchIdentifyGeoJson), [fetchIdentifyItem](https://code-api.nextgis.com/modules/ngw_kit.html#fetchIdentifyItem). For convenience, these methods are integrated directly into the NgwMap class
+After the first stage of identification is completed and a list of objects is received, you can fetch detailed information. There are several ways to do this. Using auxiliary methods: [fetchIdentifyGeoJson](https://code-api.nextgis.com/modules/ngw_kit.html#fetchIdentifyGeoJson), [fetchIdentifyItem](https://code-api.nextgis.com/modules/ngw_kit.html#fetchIdentifyItem). For convenience, these methods are integrated directly into the NgwMap class:
 
 ```javascript
 function onNgwSelect(identify) {
@@ -67,9 +67,9 @@ ngwMap.emitter.on("ngw:select", (e) => {
 });
 ```
 
-When making a request to the server, it is very important to be able to cancel it. Since we do not directly call the identification request, we cannot call the cancellation method. How do we do this with other NGW API requests.
+When making a request to the server, it is very important to be able to cancel it. Since we do not directly call the identification request, we cannot call the cancellation method as  we with other NGW API requests.
 
-For these purposes, the [cancelPromises](https://code-api.nextgis.com/classes/ngw_map.NgwMap.html#cancelPromises)` method has been added to NgwMap
+For these purposes, the [cancelPromises](https://code-api.nextgis.com/classes/ngw_map.NgwMap.html#cancelPromises) method has been added to NgwMap:
 
 ```javascript
 // stop all current identification requests on each click before making new requests
@@ -89,15 +89,14 @@ ngwMap.emitter.on("click", (e) => {
 
 Try rewriting the example using the `getIdentifyItems` method, which is available in the identification object.
 
-
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/4_3_ngwmap_identify) in the `codesandbox.io`.
 
