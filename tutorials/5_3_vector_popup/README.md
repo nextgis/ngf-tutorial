@@ -2,9 +2,9 @@
 
 ## Theory
 
-Very often, when selecting a feature, you need to show attribute information. A pop-up is very well for this purpose.
+Very often, when selecting a feature, you need to show attributes. A pop-up fits very well for this purpose.
 
-The NgwMap is helps to simplify the process of opening a pop-up for the selected features.
+The NgwMap helps to simplify the process of opening a pop-up for the selected features.
 
 In order to enable popups, you need to specify the `popupOnSelect` parameter when creating the layer and configure it in `popupOptions`:
 
@@ -17,7 +17,7 @@ In order to enable popups, you need to specify the `popupOnSelect` parameter whe
 - unselectOnClose
 - createPopupContent
 
-The content of the pop-up can be any string or HTMLElement.If the content is static, it can be set via the 'popupContent' parameter. The [createPopupContent](https://code-api.nextgis.com/interfaces/ngw_map.PopupOptions.html#createPopupContent) callback function is used for dynamic display:
+The content of the pop-up can be any string or HTMLElement. If the content is static, it can be set via the 'popupContent' parameter. The [createPopupContent](https://code-api.nextgis.com/interfaces/ngw_map.PopupOptions.html#createPopupContent) callback function is used for dynamic display:
 
 ```javascript
 ngwMap.addGeoJsonLayer({
@@ -34,11 +34,11 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-Each time the popup is opened, the `createPopupContent` method will be called with the following event data
+Each time the popup is opened, the `createPopupContent` method will be called with the following event data:
 
 Properties
 
-- `feature` - A vector layer object in geojson format.
+- `feature` - A vector layer object in GeoJSON format.
 - `layer` - Native layer for a specific adapter layers of a specific map adapter.
 - `target` - The adapter in which the layer is created.
 - `type` - The source of the event call. User `click`, `hover`, or programmatic `api` call.
@@ -62,7 +62,7 @@ Methods
     },
   ```
 
-Note that 'createPopupContent' can be an asynchronous function to be able to load additional information about the object. But try not to abuse this opportunity. Always add long request handlers, request cancellation, and caching
+Note that 'createPopupContent' can be an asynchronous function able to load additional information about the object. User this carefully however. Always add long request handlers, request cancellation, and caching.
 
 Documentation of [CreatePopupContentProps](https://code-api.nextgis.com/interfaces/ngw_map.CreatePopupContentProps.html).
 
@@ -75,17 +75,17 @@ Documentation of [CreatePopupContentProps](https://code-api.nextgis.com/interfac
 
 ## Practice
 
-- Figure out how the aliases of the fieldnames of the NGW resources are formed in the example.
+- Figure out how the aliases of the fieldnames of the NGW resources are formed.
 - Add a button to the popup that will cause: centering on the geometry; closing the popup.
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/5_3_vector_popup) in the `codesandbox.io`.
 
