@@ -2,7 +2,7 @@
 
 ## Theory
 
-The [@nextgis/new-kit](https://github.com/nextgis/nextgis_frontend/tree/master/packages/ngw-kit) library provides a set of utilities to simplify interaction with the vector layers data of NGW. In addition, it provides a set of tools for implementing various complex mechanics that require a sequence of more than one query or translate data into a convenient format.
+The [@nextgis/new-kit](https://github.com/nextgis/nextgis_frontend/tree/master/packages/ngw-kit) library provides a set of utilities to simplify interaction with the vector layers data in NGW. It also provides a set of tools for implementing various complex mechanics that require a sequence of more than one query or translate data into a convenient format.
 
 [Documentation](https://code-api.nextgis.com/modules/ngw_kit.html)
 
@@ -32,12 +32,12 @@ fetchNgwLayerItems({
 
 ## Practice
 
-- take a good look at the functions available in this library. Most likely, if you need something when developing your application, it is already here;
+- take a good look at the functions available in this library. Most likely, if you need some of them when developing your application;
 - practice with the vector layer filter;
 - find a way to upload data immediately in GeoJSON format;
 - 🤓 rewrite the example so that data from resource 1733 is loaded in parallel with several requests at once.
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
