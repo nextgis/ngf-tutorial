@@ -57,10 +57,13 @@ Working with the repository, make a fork, complete tasks and upload back to gith
 
 ---
 
+## Very helpful links
+
+- __[NGF Live examples and docs](https://code.nextgis.com)__ - study NGF by the most common use cases;
+- __[NGF API](https://code-api.nextgis.com)__ - look for documentation of methods, properties, and components.
+
 ## Helpful links
 
-- [NGF Live examples and docs](https://code.nextgis.com)
-- [NGF API](https://code-api.nextgis.com)
 - [NGF Source code](https://github.com/nextgis/nextgis_frontend)
 - [NGF Release announcement](https://nextgis.com/blog/nextgis-frontend)
 - [NGF Tutorials source code](https://github.com/nextgis/ngf-tutorial)
