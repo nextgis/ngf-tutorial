@@ -4,9 +4,9 @@
 
 The [@nextgis/new-connector](https://github.com/nextgis/nextgis_frontend/tree/master/packages/new-connector) library is created to simplify interaction with the [NextGIS Web REST API](https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html).
 
-The library takes responsibility for generating the correct requests to the NGW API, performing authorization, caching, managing the queue of requests, making requests cancellable, handling errors and much more.
+The library is responsible for generating the correct requests to the NGW API, performing authorization, caching, managing the queue of requests, making requests cancellable, handling errors and much more.
 
-When creating connectors with the same baseUrl and user credentials (if present), the same instance will be used
+When creating connectors with the same baseUrl and user credentials (if present), the same instance will be used:
 
 ```javascript
 const connector1 = new NgwConnector({ baseUrl: "https://demo.nextgis.com" });
@@ -17,9 +17,9 @@ console.log(connector1.id === connector2.id); // true
 
 ### Make request
 
-The [apiRequest](https://code-api.nextgis.com/classes/ngw_connector.default.html#apiRequest) is general ngw api request call method.
+The [apiRequest](https://code-api.nextgis.com/classes/ngw_connector.default.html#apiRequest) is general NGW api request call method.
 
-The basic scheme of using the library for making requests.
+The basic scheme of using the library for making requests:
 
 ```txt
 connector.apiRequest([api-request-name], [Params], [RequestOptions])
@@ -72,7 +72,7 @@ connector.get("resource.item", null, { id }).then((resp) => {});
 
 Very often, when working on a project or when developing others libraries, you need to interact with NGW resources.
 
-The following methods have been added for this purpose:
+The following methods are used:
 
 - [getResource](https://code-api.nextgis.com/classes/ngw_connector.default.html#getResource)
 - [getResourceOrFail](https://code-api.nextgis.com/classes/ngw_connector.default.html#getResourceOrFail)
@@ -92,7 +92,7 @@ connector.getResource(2011).then(() => {
 });
 ```
 
-If you send multiple identical requests, only one request to the server will be executed, and the response will return to all requested functions
+If you send multiple identical requests, only one request to the server will be executed, and the response will be returned to all requested functions:
 
 ```javascript
 Promise.all([connector.getResource(2011), connector.getResource(2011)]).then(
@@ -106,12 +106,12 @@ Promise.all([connector.getResource(2011), connector.getResource(2011)]).then(
 
 If your web application is running on the same domain with NGW, authorization will be performed via cookies.
 
-But on another domain, you will need to set user credentials.
+If domain is different, you will need to set user credentials.
 
 - [login](https://code-api.nextgis.com/classes/ngw_connector.default.html#login) - connect to NGW with user `login` and `password`;
 - [logout](https://code-api.nextgis.com/classes/ngw_connector.default.html#logout) - clear credentials, disconnect connections, clear cache;
-- [getUserInfo](https://code-api.nextgis.com/classes/ngw_connector.default.html#getUserInfo) - to know who are you now;
-- [getAuthorizationHeaders](https://code-api.nextgis.com/classes/ngw_connector.default.html#getAuthorizationHeaders) - to help you make requests yourself.
+- [getUserInfo](https://code-api.nextgis.com/classes/ngw_connector.default.html#getUserInfo) - find out who you are;
+- [getAuthorizationHeaders](https://code-api.nextgis.com/classes/ngw_connector.default.html#getAuthorizationHeaders) - help you make requests yourself.
 
 ```javascript
 const connector = new NgwConnector({
@@ -128,7 +128,7 @@ connector.connect().then(() => {
 });
 ```
 
-You can subscribe to `login` and `logout` events
+You can subscribe to `login` and `logout` events:
 
 ```javascript
 connector.emitter.on("login", (user) => console.log(user));
@@ -139,14 +139,14 @@ connector.emitter.on("logout", () => console.log());
 
 The `NgwConnector` is part of other libraries.
 
-In `NgwMap` it can be passed as a parameter
+It can be passed as a parameter in `NgwMap`:
 
 ```javascript
 const connector = new NgwConnector({ baseUrl });
 NgwMap.create({ connector });
 ```
 
-Or you can extract the created `connector` from the `NgwMap`
+Or you can extract the created `connector` from the `NgwMap`:
 
 ```javascript
 const ngwMap = new NgwMap({ baseUrl });
@@ -302,8 +302,7 @@ Rewrite the example so that:
 - if the layer already exists, it needs to be cleared and filled with new data.
 - all points were created in one request;
 
-
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
