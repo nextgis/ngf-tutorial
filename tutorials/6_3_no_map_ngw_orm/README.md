@@ -4,7 +4,7 @@
 
 ## Theory
 
-The [@nextgis/ngw-orm](https://github.com/nextgis/nextgis_frontend/tree/master/packages/ngw-orm) is specially designed for the development of large client or server TypeScript solutions in the in which NGW data management takes place.
+The [@nextgis/ngw-orm](https://github.com/nextgis/nextgis_frontend/tree/master/packages/ngw-orm) is specially designed for the development of large client or server TypeScript solutions in which NGW data management takes place.
 
 This library allows you to synchronize typescript classes with NGW resources and convert resources to classes back.
 
@@ -68,7 +68,7 @@ try {
 - Dig into the library [code](https://github.com/nextgis/nextgis_frontend/blob/master/packages/ngw-orm/src/repository/VectorLayer.ts#L146) and look for any other checks, use them. 🤓 Make PR with new checks, why not.
 - 🤓 Generate Class and Interface *.ts files for the NGW resource.
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
