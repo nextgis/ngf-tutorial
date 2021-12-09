@@ -26,7 +26,7 @@ ngwMap.addBaseLayer("QMS", { qmsId: 529 }),
 
 ### More examples
 
-[ngw-basemap](https://code.nextgis.com/demo-examples-ngw-basemap)
+- [ngw-basemap](https://code.nextgis.com/demo-examples-ngw-basemap)
 
 ## Practice
 

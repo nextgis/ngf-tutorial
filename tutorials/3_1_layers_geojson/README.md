@@ -77,7 +77,7 @@ Find more information on working with vector layers in Part 6 of this tutorial.
 
 ### More examples
 
-[geojson-layer](https://code.nextgis.com/demo-examples-geojson-layer)
+- [geojson-layer](https://code.nextgis.com/demo-examples-geojson-layer)
 
 ## Practice
 

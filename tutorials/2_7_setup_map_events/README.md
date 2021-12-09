@@ -34,7 +34,7 @@ ngwMap.emitter.on("layer-" + id + ":toggle", (ev) => {
 
 ### More examples
 
-[events](https://code.nextgis.com/demo-examples-events)
+- [events](https://code.nextgis.com/demo-examples-events)
 
 ## Practice
 

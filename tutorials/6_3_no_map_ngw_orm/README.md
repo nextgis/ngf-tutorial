@@ -60,8 +60,6 @@ try {
 }
 ```
 
-### More examples
-
 ## Practice
 
 - Figure out the example.

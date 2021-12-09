@@ -79,7 +79,7 @@ bottom-left------------bottom-right
 
 ### More examples
 
-[custom-layer-controls](https://code.nextgis.com/demo-examples-custom-layer-controls)
+- [custom-layer-controls](https://code.nextgis.com/demo-examples-custom-layer-controls)
 
 ## Practice
 

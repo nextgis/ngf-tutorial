@@ -84,8 +84,8 @@ const layer = ngwMap.addLayer("GEOJSON", { data: geojson }).then((layer) => {
 
 ### More examples
 
-[vector-paint](https://code.nextgis.com/demo-examples-vector-selection)
-[vector-hover-selection](https://code.nextgis.com/demo-examples-vector-hover-selection)
+- [vector-paint](https://code.nextgis.com/demo-examples-vector-selection)
+- [vector-hover-selection](https://code.nextgis.com/demo-examples-vector-hover-selection)
 
 ## Practice
 

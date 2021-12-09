@@ -134,12 +134,12 @@ Also methods for highlighting styles are `setSelectedLayerPaint` and `updateSele
 
 ### More examples
 
-[vector-paint](https://code.nextgis.com/demo-examples-vector-paint)
-[properties-paint](https://code.nextgis.com/demo-examples-properties-paint)
-[expression-paint](https://code.nextgis.com/demo-examples-expression-paint)
-[expression-paint-match](https://code.nextgis.com/demo-examples-expression-paint-match)
-[demo-examples-icons](https://code.nextgis.com/demo-examples-icons)
-[vector-set-paint](https://code.nextgis.com/demo-examples-vector-set-paint)
+- [vector-paint](https://code.nextgis.com/demo-examples-vector-paint)
+- [properties-paint](https://code.nextgis.com/demo-examples-properties-paint)
+- [expression-paint](https://code.nextgis.com/demo-examples-expression-paint)
+- [expression-paint-match](https://code.nextgis.com/demo-examples-expression-paint-match)
+- [demo-examples-icons](https://code.nextgis.com/demo-examples-icons)
+- [vector-set-paint](https://code.nextgis.com/demo-examples-vector-set-paint)
 
 ## Practice
 

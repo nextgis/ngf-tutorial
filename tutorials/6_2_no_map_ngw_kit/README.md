@@ -28,7 +28,7 @@ fetchNgwLayerItems({
 
 ### More examples
 
-[featch-ngw-layer-items](https://code.nextgis.com/ngw-kit-examples-featch-ngw-layer-items)
+- [featch-ngw-layer-items](https://code.nextgis.com/ngw-kit-examples-featch-ngw-layer-items)
 
 ## Practice
 

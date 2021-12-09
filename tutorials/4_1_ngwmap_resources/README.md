@@ -46,7 +46,7 @@ Resources can be raster and vector layers and their styles, and even an entire w
 
 ### More examples
 
-[ngw-layers](https://code.nextgis.com/demo-examples-ngw-layers)
+- [ngw-layers](https://code.nextgis.com/demo-examples-ngw-layers)
 
 ## Practice
 

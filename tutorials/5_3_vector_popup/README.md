@@ -68,10 +68,10 @@ Documentation of [CreatePopupContentProps](https://code-api.nextgis.com/interfac
 
 ### More examples
 
-[ngw-layer-popup](https://code.nextgis.com/demo-examples-ngw-layer-popup)
-[vector-events-position-data](https://code.nextgis.com/demo-examples-vector-events-position-data)
-[vector-hover-selection](https://code.nextgis.com/demo-examples-vector-hover-selection)
-[vector-popup](https://code.nextgis.com/demo-examples-vector-popup)
+- [ngw-layer-popup](https://code.nextgis.com/demo-examples-ngw-layer-popup)
+- [vector-events-position-data](https://code.nextgis.com/demo-examples-vector-events-position-data)
+- [vector-hover-selection](https://code.nextgis.com/demo-examples-vector-hover-selection)
+- [vector-popup](https://code.nextgis.com/demo-examples-vector-popup)
 
 ## Practice
 

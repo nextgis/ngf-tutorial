@@ -78,10 +78,10 @@ A geometry can be passed as:
 
 ### More examples
 
-[vector-filtering](https://code.nextgis.com/demo-examples-vector-filtering)
-[ngw-layer-filtering](https://code.nextgis.com/demo-examples-ngw-layer-filtering)
-[ngw-layer-properties-filters](https://code.nextgis.com/demo-examples-ngw-layer-properties-filters)
-[vector-add-while-filtering](https://code.nextgis.com/demo-examples-vector-add-while-filtering)
+- [vector-filtering](https://code.nextgis.com/demo-examples-vector-filtering)
+- [ngw-layer-filtering](https://code.nextgis.com/demo-examples-ngw-layer-filtering)
+- [ngw-layer-properties-filters](https://code.nextgis.com/demo-examples-ngw-layer-properties-filters)
+- [vector-add-while-filtering](https://code.nextgis.com/demo-examples-vector-add-while-filtering)
 
 ## Practice
 

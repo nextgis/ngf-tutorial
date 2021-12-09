@@ -287,11 +287,11 @@ The library can be used both in the browser and in the Node.js environment.
 
 ### More examples
 
-[ngw-connector_create](https://codepen.io/rendrom/pen/wvdmapq)
-[auth](https://code.nextgis.com/ngw-connector-examples-auth)
-[edit-vector-layer-fields](https://code.nextgis.com/ngw-connector-examples-edit-vector-layer-fields)
-[resource-table](https://code.nextgis.com/ngw-connector-examples-resource-table)
-[search-resources](https://code.nextgis.com/ngw-connector-examples-search-resources)
+- [ngw-connector_create](https://codepen.io/rendrom/pen/wvdmapq)
+- [auth](https://code.nextgis.com/ngw-connector-examples-auth)
+- [edit-vector-layer-fields](https://code.nextgis.com/ngw-connector-examples-edit-vector-layer-fields)
+- [resource-table](https://code.nextgis.com/ngw-connector-examples-resource-table)
+- [search-resources](https://code.nextgis.com/ngw-connector-examples-search-resources)
 
 ## Practice
 

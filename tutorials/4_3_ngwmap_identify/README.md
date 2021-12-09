@@ -80,10 +80,10 @@ ngwMap.emitter.on("click", (e) => {
 
 ### More examples
 
-[layer-select](https://code.nextgis.com/demo-examples-ngw-layer-select)
-[layer-popup](https://code.nextgis.com/demo-examples-ngw-layer-popup)
-[webmap-identification](https://code.nextgis.com/demo-examples-webmap-identification)
-[webmap-identification-multiply](https://code.nextgis.com/demo-examples-webmap-identification-multiply)
+- [layer-select](https://code.nextgis.com/demo-examples-ngw-layer-select)
+- [layer-popup](https://code.nextgis.com/demo-examples-ngw-layer-popup)
+- [webmap-identification](https://code.nextgis.com/demo-examples-webmap-identification)
+- [webmap-identification-multiply](https://code.nextgis.com/demo-examples-webmap-identification-multiply)
 
 ## Practice
 
