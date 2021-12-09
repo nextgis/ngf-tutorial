@@ -2,9 +2,9 @@
 
 ## Theory
 
-There are several ways to set the appears of vector layers in NgwMap: static, dynamic, by feature properties:
+There are several ways to set the appearence of vector layers in NgwMap: static and dynamic, by feature properties:
 
-- Static vector layer style can be different for types of geometry: for polygon and line it is [PathPaint](https://code-api.nextgis.com/interfaces/paint.PathPaint.html) and for points it is [CirclePaint](https://code-api.nextgis.com/interfaces/paint.CirclePaint.html) or [PinPaint](https://code-api.nextgis.com/interfaces/paint.PinPaint.html). They are united by the type [GeometryPaint](https://code-api.nextgis.com/modules/paint.html#GeometryPaint) and based on a [BasePaint](https://code-api.nextgis.com/interfaces/paint.BasePaint.html) which consists of the following parameters
+- Static vector layer style can vary for different types of geometry: for polygon and line it is [PathPaint](https://code-api.nextgis.com/interfaces/paint.PathPaint.html) and for points it is [CirclePaint](https://code-api.nextgis.com/interfaces/paint.CirclePaint.html) or [PinPaint](https://code-api.nextgis.com/interfaces/paint.PinPaint.html). They are united by the type [GeometryPaint](https://code-api.nextgis.com/modules/paint.html#GeometryPaint) and are based on a [BasePaint](https://code-api.nextgis.com/interfaces/paint.BasePaint.html) which consists of the following parameters:
 
   - color
   - opacity
@@ -29,9 +29,9 @@ There are several ways to set the appears of vector layers in NgwMap: static, dy
 
   For simplification, `color` and `opacity` parameters have been added. They are needed when fill and stroke have the same color and transparency values, otherwise you need to set them separately: `fillColor` and `strokeColor`; `fillOpacity` and `strokeOpacity`.
 
-  Use the type parameter to specify which geometry this style is for. This is necessary for those cases when the layer is created empty. It also helps with auto-completion when working in the IDE.
+  Use the type parameter to specify which geometry type this style is for. This is necessary for those cases when the layer is created empty. It also helps with auto-completion when working in the IDE.
 
-- Dynamic styling method via callback function
+- Dynamic styling method via callback function:
 
   ```javascript
   ngwMap.addGeoJsonLayer({
@@ -56,7 +56,7 @@ There are several ways to set the appears of vector layers in NgwMap: static, dy
 
 - There are also several ways to styling through the feature properties
 
-  - Paint classification by filter. If the first object in the list is an Paint style, then its values will be merged with the values for each filter. And will be used to style objects outside the filter. You can see how the property filter works [here (repo)](https://github.com/nextgis/nextgis_frontend/tree/master/packages/properties-filter) and [here (tutorial)](../5_4_vector_filtering).
+  - Paint classification by filter. If the first object in the list is a Paint style, then its values will be merged with the values for each filter. And will be used to style objects outside the filter. You can see how the property filter works [here (repo)](https://github.com/nextgis/nextgis_frontend/tree/master/packages/properties-filter) and [here (tutorial)](../5_4_vector_filtering).
 
     ```javascript
     ngwMap.addGeoJsonLayer({
@@ -68,7 +68,7 @@ There are several ways to set the appears of vector layers in NgwMap: static, dy
     });
     ```
 
-  - Map feature properties to paint properties. Only the `match` condition is being processed now. To expand the functionality for your tasks, create a [issues](https://github.com/nextgis/nextgis_frontend/issues) or write to support support@nextgis.com.
+  - Map feature properties to paint properties. Currently only the `match` condition is being processed. To expand the functionality for your tasks, create an [issues](https://github.com/nextgis/nextgis_frontend/issues) or contact support at support@nextgis.com.
 
     ```javascript
     ngwMap.addGeoJsonLayer({
@@ -100,7 +100,7 @@ NgwMap.create({
 });
 ```
 
-To style a point layer with icons, the [IconPaint](https://code-api.nextgis.com/interfaces/paint.IconPaint.html) style is suitable . For convenience, you can use the [@nextgis/icons](https://github.com/nextgis/nextgis_frontend/tree/master/packages/icons) library
+To style a point layer with icons, the [IconPaint](https://code-api.nextgis.com/interfaces/paint.IconPaint.html) style is used. For convenience, you can use the [@nextgis/icons](https://github.com/nextgis/nextgis_frontend/tree/master/packages/icons) library:
 
 ```javascript
 import { getIcon } from '@nextgis/icons';
@@ -116,7 +116,7 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-You can control the style of the created layers using the following methods
+You can control the style of the created layers using the following methods:
 
 ```javascript
 ngwMap.setLayerPaint("layer-id", {
@@ -143,18 +143,18 @@ Also methods for highlighting styles are `setSelectedLayerPaint` and `updateSele
 
 ## Practice
 
-- Run the example and try different ways to design vector layers.
+- Run the example and try different ways to style vector layers.
 
-- Change the point layer style from circles to icons
+- Change the point layer style from circles to icons.
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/5_1_vector_painting) in the `codesandbox.io`.
 
