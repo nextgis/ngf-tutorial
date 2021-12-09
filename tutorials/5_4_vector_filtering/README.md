@@ -2,7 +2,7 @@
 
 ## Theory
 
-Filtering is needed to control the display of vector layer data on the map. Also, the filter allows you to reduce the load on the map by reducing the simultaneously displayed data.
+Filtering is needed to control the display of vector layer data on the map. Filters also allow to reduce the load on the map by reducing amounts of simultaneously displayed data.
 
 ```javascript
 ngwMap.addGeoJsonLayer({
@@ -14,7 +14,7 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-Very often, filtering occurs by the vector layer properties. For these purposes, a special syntax has been added that allows you to form complex queries without functions. This approach allows you to store the settings of the entire scene in a format that can be transmitted in JSON format.
+Very often, filtering occurs using vector layer properties. For these purposes, a special syntax has been added that allows you to form complex queries without functions. This approach allows you to store the settings of the entire scene in a format that can be transmitted in JSON format.
 
 ```javascript
 ngwMap.addGeoJsonLayer({
@@ -22,7 +22,7 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-Using the properties filter allows you not only to filter the data that already exists, but also to form requests to the server. If you apply a `propertiesFilter` when adding a vector resource from NGW using the `addNgwLayer` method, only the necessary objects will be loaded.
+Using the properties filter allows you not only filter the data that already exists, but also form requests to the server. If you apply a `propertiesFilter` when adding a vector resource from NGW using the `addNgwLayer` method, only the necessary objects will be loaded.
 
 ```javascript
 const ngwMap = new NgwMap({
@@ -42,7 +42,7 @@ ngwMap.addNgwLayer({
 });
 ```
 
-A special library [@nextgis/properties-filter](https://github.com/nextgis/nextgis_frontend/tree/master/packages/properties-filter) has been developed to filter objects by its properties
+A special library [@nextgis/properties-filter](https://github.com/nextgis/nextgis_frontend/tree/master/packages/properties-filter) has been developed to filter objects by its properties.
 
 The filter can be applied to an already created vector layer:
 
@@ -70,11 +70,11 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-The geometry can be passed:
+A geometry can be passed as:
 
-- String in wkt format and measured in EPSG:3857 coordinate system.
-- Array of lon/lat tuple, measured in EPSG:4326.
-- Array of coordinates, in [west, south, east, north] order, measured in EPSG:4326.
+- String in wkt format and EPSG:3857 coordinate system.
+- Array of lon/lat tuples in EPSG:4326.
+- Array of coordinates, in [west, south, east, north] order in EPSG:4326.
 
 ### More examples
 
@@ -85,14 +85,14 @@ The geometry can be passed:
 
 ## Practice
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/5_4_vector_filtering) in the `codesandbox.io`.
 
