@@ -2,7 +2,7 @@
 
 ## Theory
 
-Highlight the geometry when mouse clicking - a very common task when developing web gis applications. It's very easy to do this in NgwMap.
+Highlight the geometry on mouse click is a very common task when developing web gis applications. It's very easy to do this in NgwMap.
 You just need to specify the `selectable` option when creating a vector layer.
 You should also specify the `selectedPaint` option - style to which the geometry will change when it becomes selected (configured like `paint`, see [5_1_vector_painting](../5_1_vector_painting)).
 
@@ -14,7 +14,7 @@ ngwMap.addGeoJsonLayer({
 });
 ```
 
-You can set default style settings for `paint` and `selectedPaint` via NgwMap initialization options
+You can set default style settings for `paint` and `selectedPaint` via NgwMap initialization options:
 
 ```javascript
 NgwMap.create({
@@ -23,7 +23,7 @@ NgwMap.create({
 });
 ```
 
-To configure the behavior of selections, use the following options
+To configure the behavior of selections, use the following options:
 
 - unselectOnClick - deselect if you click anywhere on the map;
 - unselectOnSecondClick - deselect if you click on the same object a second time;
@@ -31,7 +31,7 @@ To configure the behavior of selections, use the following options
 
 To track the selection process, you can subscribe to events or use the [onSelect](https://code-api.nextgis.com/interfaces/ngw_map.VectorAdapterOptions.html#onSelect) callback function when creating a layer.
 
-You can subscribe to the event such a way
+You can subscribe to the event like this:
 
 ```javascript
 const layerId = 'my-layer';
@@ -52,7 +52,7 @@ ngwMap.emitter.on("layer-" + layerId + ":select", (e) => {
 });
 ```
 
-Example of using the [onSelect](https://code-api.nextgis.com/interfaces/ngw_map.VectorAdapterOptions.html#onSelect) method
+Example of using the [onSelect](https://code-api.nextgis.com/interfaces/ngw_map.VectorAdapterOptions.html#onSelect) method:
 
 ```javascript
 ngwMap.addGeoJsonLayer({
@@ -92,17 +92,17 @@ const layer = ngwMap.addLayer("GEOJSON", { data: geojson }).then((layer) => {
 Look at the example:
 
 - try changing the style for the selected geometries;
-- see how changes in the selection behavior parameters affect to the work with the map ;
-- catch events of select in different ways.
+- see how changes in the selection behavior parameters affect the map behavior;
+- catch selection events in different ways.
 
-To run this example, you need to execute these commands in the terminal
+To run this example, you need to execute these commands in the terminal:
 
 ```bash
 npm i
 npm start
 ```
 
-And then open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080](http://localhost:8080).
 
 [LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/5_2_vector_selection) in the `codesandbox.io`.
 
