@@ -1,0 +1,30 @@
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+// import NgwMap from "@nextgis/ngw-leaflet";
+import "@geoman-io/leaflet-geoman-free";
+import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
+
+const map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+map.pm.addControls({
+  position: "topleft",
+  drawCircle: false,
+});
+
+
+// const bounds = [37.65972, 55.7299, 37.66735, 55.73278];
+// NgwMap.create({
+//   baseUrl: "https://demo.nextgis.com",
+//   target: "map",
+//   osm: true,
+//   bounds,
+// }).then((ngwMap) => {
+//   ngwMap.mapAdapter.map.pm.addControls({
+//     position: "topleft",
+//     drawCircle: false,
+//   });
+// });

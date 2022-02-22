@@ -921,6 +921,18 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
+"@geoman-io/leaflet-geoman-free@^2.11.4":
+  version "2.11.4"
+  resolved "https://registry.yarnpkg.com/@geoman-io/leaflet-geoman-free/-/leaflet-geoman-free-2.11.4.tgz#4a43fa8d3d5d2bca751135b775c19c6cc0063699"
+  integrity sha512-uWfgaGDhrtoCMHdHi2oNVKb8WXFMQvyNnan1sS/+Yn5jMPuhijWFyAjy0G5kTCamXhGXg4vUvlEpiRSrBwewKg==
+  dependencies:
+    "@turf/boolean-contains" "^6.5.0"
+    "@turf/kinks" "^6.5.0"
+    "@turf/line-intersect" "^6.5.0"
+    "@turf/line-split" "^6.5.0"
+    lodash "4.17.21"
+    polygon-clipping "0.15.3"
+
 "@iarna/toml@^2.2.0":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
@@ -998,12 +1010,24 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@nextgis/cache@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/cache/-/cache-1.11.10.tgz#e37a96ddd8270bf856186d0bd6ce0faef05651d2"
+  integrity sha512-kPYGzh61aCzyM55JPXElo64yUPT5pSPcD+MdAxr3OOP0C3NitZ9HaAjU0UufrE933CUjFeBdZOFGSC9jYEd0og==
+  dependencies:
+    "@nextgis/utils" "^1.11.10"
+
 "@nextgis/cache@^1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@nextgis/cache/-/cache-1.9.4.tgz#2634d9f4109378413926e384e0f5c55866677743"
   integrity sha512-2o/LsU2uOtavBjk/h+mbQ5mvU0R0G9gYl8LgFeHHk2PVAGAUxjgeRitbiHfRQ8idaqvBAaftACzOu3uMymF3Rw==
   dependencies:
     "@nextgis/utils" "^1.9.4"
+
+"@nextgis/cancelable-promise@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/cancelable-promise/-/cancelable-promise-1.11.10.tgz#615abca8afe42c9d3260f9d5c869522b32503356"
+  integrity sha512-aSnVU9kiG+IFFsBVfejzvKIaH1OnpP8yF0Dx44y3z69slmBglzbMV5jjm0Qwd18Mwzk0R7fd068oVJzVtNSrUw==
 
 "@nextgis/cancelable-promise@^1.8.4":
   version "1.8.4"
@@ -1026,12 +1050,28 @@
   resolved "https://registry.yarnpkg.com/@nextgis/dom/-/dom-1.8.4.tgz#495c314f1f5d64d4816856d4de094fd70a59891a"
   integrity sha512-n+7zm9jl7hGoqBU9+Nof9pWvFanCuCVcdwqar3CO2UssmW8GrRVhaN317CGhin90rqNGebQ+hiN+rJF4K30Xtw==
 
+"@nextgis/icons@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/icons/-/icons-1.11.10.tgz#9497c245e022e12955c942df64ca37750c97f1c7"
+  integrity sha512-bPU59NI43sx3QfwvN6W2EW/tizHQMqCm5Pve2F9o9U6HFkU6BTvlOW8/jW80Zabpz1RzZ9q+8d50Zn8rM6Xp0w==
+  dependencies:
+    "@nextgis/paint" "^1.11.10"
+
 "@nextgis/icons@^1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@nextgis/icons/-/icons-1.9.4.tgz#881038d073fea644ed879cf3c9deae193c4d2615"
   integrity sha512-QURbyPCiJvTQgcRZC4rSolwY+izSdEugVT+AuMVIGbvxJh7MHZ5z3ux3EDIZb8d7UHLBVtayirBHtiEz/AD1RQ==
   dependencies:
     "@nextgis/paint" "^1.9.4"
+
+"@nextgis/item@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/item/-/item-1.11.10.tgz#a23c8ba5029aadd19ac02f648148fa3e460ee154"
+  integrity sha512-Tlp+9W8ZQP8nvAdNT+F3f2QP0W1dx3MXuw0GZMU7UU2Jhy9LuP4ZZUDkMRpx0V7m7M6BlVjbuDcKmWl9loE6bg==
+  dependencies:
+    "@nextgis/tree" "^1.11.10"
+    "@types/events" "^3.0.0"
+    events "^3.3.0"
 
 "@nextgis/item@^1.9.4":
   version "1.9.4"
@@ -1041,6 +1081,21 @@
     "@nextgis/tree" "^1.9.4"
     "@types/events" "^3.0.0"
     events "^3.3.0"
+
+"@nextgis/leaflet-map-adapter@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/leaflet-map-adapter/-/leaflet-map-adapter-1.11.10.tgz#268644755306a4bade24452b4ea2f4940386a977"
+  integrity sha512-p+MyCv7C1S7b9KfHcU0tu7qCQPo7KzzhGm1wZZ2vhpSauGXAjzcLNJ7rejqiXrVS96fyeEpIuDbgXo2Pwd2gLA==
+  dependencies:
+    "@nextgis/paint" "^1.11.10"
+    "@nextgis/utils" "^1.11.10"
+    "@nextgis/webmap" "^1.11.10"
+    "@types/events" "^3.0.0"
+    "@types/leaflet" "^1.7.5"
+    events "^3.3.0"
+    geojson "^0.5.0"
+    leaflet "1.7.1"
+    leaflet.wms "^0.2.0"
 
 "@nextgis/leaflet-map-adapter@^1.9.4":
   version "1.9.4"
@@ -1073,6 +1128,18 @@
   optionalDependencies:
     canvg "^3.0.9"
 
+"@nextgis/ngw-connector@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-connector/-/ngw-connector-1.11.10.tgz#9c669d5340e3097c7952abda201811ddd930d140"
+  integrity sha512-IgEZm5dyP8/O/BSkUSy0P9YlJRMUSWOdQLv95XG1D9L3Afi99kyAEMOyRktxI3pOz+CRybwGJANU0uAAYKnzOg==
+  dependencies:
+    "@nextgis/cache" "^1.11.10"
+    "@nextgis/cancelable-promise" "^1.11.10"
+    "@nextgis/utils" "^1.11.10"
+    "@types/events" "^3.0.0"
+    events "^3.3.0"
+    form-data "^4.0.0"
+
 "@nextgis/ngw-connector@^1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@nextgis/ngw-connector/-/ngw-connector-1.9.4.tgz#b444bf01cddae6ea379ba7a38649dfc185c14d35"
@@ -1083,6 +1150,22 @@
     "@nextgis/utils" "^1.9.4"
     "@types/events" "^3.0.0"
     events "^3.3.0"
+
+"@nextgis/ngw-kit@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-kit/-/ngw-kit-1.11.10.tgz#c0d322997951e51f3e68a26312b3bd916e54096f"
+  integrity sha512-YukSPaOlTe6QHoC04EgPYJDfC2doME0x7iEsOleqEt06sp+IGRnZc/SZiLzUVOUmJ9eyDAXKgO7ltBcmCnFlUg==
+  dependencies:
+    "@nextgis/cancelable-promise" "^1.11.10"
+    "@nextgis/item" "^1.11.10"
+    "@nextgis/ngw-connector" "^1.11.10"
+    "@nextgis/properties-filter" "^1.11.10"
+    "@nextgis/qms-kit" "^1.11.10"
+    "@nextgis/utils" "^1.11.10"
+    "@nextgis/webmap" "^1.11.10"
+    "@types/events" "^3.0.0"
+    events "^3.3.0"
+    strict-event-emitter-types "^2.0.0"
 
 "@nextgis/ngw-kit@^1.9.6", "@nextgis/ngw-kit@^1.9.7":
   version "1.9.7"
@@ -1100,6 +1183,15 @@
     events "^3.3.0"
     strict-event-emitter-types "^2.0.0"
 
+"@nextgis/ngw-leaflet@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-leaflet/-/ngw-leaflet-1.11.10.tgz#cc6b4cf918b1726c281027c21b66bc34694ff0d5"
+  integrity sha512-BEbZpwcTAYFbLlwDgdzhYlhi2ghA2WHXCCglzco13vxwoClTubGKd7lbxCV94HsikVZWF3OObfcyMTdG66FeUQ==
+  dependencies:
+    "@nextgis/leaflet-map-adapter" "^1.11.10"
+    "@nextgis/ngw-map" "^1.11.10"
+    leaflet.wms "^0.2.0"
+
 "@nextgis/ngw-leaflet@^1.9.6":
   version "1.9.7"
   resolved "https://registry.yarnpkg.com/@nextgis/ngw-leaflet/-/ngw-leaflet-1.9.7.tgz#1d5bc1c27ef6980d8f8b363dc2d084e4b335369e"
@@ -1108,6 +1200,21 @@
     "@nextgis/leaflet-map-adapter" "^1.9.4"
     "@nextgis/ngw-map" "^1.9.7"
     leaflet.wms "^0.2.0"
+
+"@nextgis/ngw-map@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/ngw-map/-/ngw-map-1.11.10.tgz#60d8bf4211dae1067a8bbf95c2a9399a03a8c6f3"
+  integrity sha512-+CeIoROn/uXx+ounTZ76NxI/JllQ8jLq6s9ek0Gsn8G8YdhPCL+x0JX656msNHyrt3QsxlOH2zkS8M8z1xT9jQ==
+  dependencies:
+    "@nextgis/icons" "^1.11.10"
+    "@nextgis/ngw-connector" "^1.11.10"
+    "@nextgis/ngw-kit" "^1.11.10"
+    "@nextgis/qms-kit" "^1.11.10"
+    "@nextgis/utils" "^1.11.10"
+    "@nextgis/webmap" "^1.11.10"
+    "@types/events" "^3.0.0"
+    events "^3.3.0"
+    strict-event-emitter-types "^2.0.0"
 
 "@nextgis/ngw-map@^1.9.7":
   version "1.9.7"
@@ -1170,12 +1277,28 @@
     ol "^6.9.0"
     polylabel "^1.1.0"
 
+"@nextgis/paint@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/paint/-/paint-1.11.10.tgz#123a5f98e281d46894d89cb52c8497209d5574be"
+  integrity sha512-2qNG4eJK3fm9VgIQ9meThCeIZ3xHifFTMwo/aDuzvOHVgCkAZQ2hhiPKukv2SzVaGtRa9+KWltprp5MGjs7AmA==
+  dependencies:
+    "@nextgis/properties-filter" "^1.11.10"
+    geojson "^0.5.0"
+
 "@nextgis/paint@^1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@nextgis/paint/-/paint-1.9.4.tgz#eb63c598bd42affe6b2dcca871c76a43356f0046"
   integrity sha512-8X8s0NR4YcsDh2+LS3FcUyiOOdp5wwLNOCvZ4X5AbbM7jTZNwGC2KTy6ANTkQtjaKINB+WfYZSHH9JGVbz+FJA==
   dependencies:
     "@nextgis/properties-filter" "^1.9.4"
+    geojson "^0.5.0"
+
+"@nextgis/properties-filter@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/properties-filter/-/properties-filter-1.11.10.tgz#74d0a2bc9f83c116712baeb97675fddeb8200fb5"
+  integrity sha512-gIh8d4i/YyJ4vs+03yLihRT4D35ChnX7oYsf3h0uxaGf/qb3X+OYlenu1nBoJVwrzxANl4saLRfuwx26G80rVQ==
+  dependencies:
+    "@nextgis/utils" "^1.11.10"
     geojson "^0.5.0"
 
 "@nextgis/properties-filter@^1.9.4":
@@ -1186,6 +1309,14 @@
     "@nextgis/utils" "^1.9.4"
     geojson "^0.5.0"
 
+"@nextgis/qms-kit@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/qms-kit/-/qms-kit-1.11.10.tgz#98cdd44dab98ff8974f4f6ca7ed300ef309858b3"
+  integrity sha512-uDSj7eb9m0loo6H7JJMNIYolnlNlDO5RbrZvNieGzyZeggUWPPqcNgN3VNIAiaD4DnC33J2YfFryu0tTjde3GA==
+  dependencies:
+    "@nextgis/utils" "^1.11.10"
+    "@nextgis/webmap" "^1.11.10"
+
 "@nextgis/qms-kit@^1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@nextgis/qms-kit/-/qms-kit-1.9.4.tgz#2eeb1e6e59298383e6fd36f4e5292db312e36b25"
@@ -1193,6 +1324,14 @@
   dependencies:
     "@nextgis/utils" "^1.9.4"
     "@nextgis/webmap" "^1.9.4"
+
+"@nextgis/tree@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/tree/-/tree-1.11.10.tgz#a385c4bf6e2b5f36274aa5f72daca79d357de627"
+  integrity sha512-y976lN/EfG2GMkh7B1+OkYjJ+PnEPwHX4eieE/49SreJfSAM9R6N5vvycTXGaqbMYaTfnjFc8d958i5JlR6neQ==
+  dependencies:
+    "@nextgis/properties-filter" "^1.11.10"
+    "@nextgis/utils" "^1.11.10"
 
 "@nextgis/tree@^1.9.4":
   version "1.9.4"
@@ -1202,10 +1341,29 @@
     "@nextgis/properties-filter" "^1.9.4"
     "@nextgis/utils" "^1.9.4"
 
+"@nextgis/utils@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/utils/-/utils-1.11.10.tgz#0748e4dc1e9451645ada363c0b47ef838e85462c"
+  integrity sha512-EgcrYyoJGwumzPcxwvbcA7kV4Q2khFrkKFwGLXrfs6qZ4eVmRO+vKLmZnqBUQ+b2AWXWZojp/Q+eSQS+JuNNrA==
+
 "@nextgis/utils@^1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@nextgis/utils/-/utils-1.9.4.tgz#2da65309c2bcbe80f0b8f4711d09072324b71575"
   integrity sha512-1IzDePItY2+pww98tJjmxRVJnIykWCeWCZsRJM5A0Y+Ixd3XZcYHLgkqsmWTrveKyefR3wR1rbBSN5XJH4UI9g==
+
+"@nextgis/webmap@^1.11.10":
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/@nextgis/webmap/-/webmap-1.11.10.tgz#4a684a8b4af20030d8c9ccd15c41e484af25fd08"
+  integrity sha512-6i/mTde/nudLHfaAU6rcIrA2K7Qw62+Mzogo00YooV0xB2rgG1Q/lHPIIL1S2fjVvzQlM9JC3qHv8WSoZg0hlg==
+  dependencies:
+    "@nextgis/cancelable-promise" "^1.11.10"
+    "@nextgis/paint" "^1.11.10"
+    "@nextgis/properties-filter" "^1.11.10"
+    "@nextgis/utils" "^1.11.10"
+    "@types/events" "^3.0.0"
+    "@types/geojson" "^7946.0.8"
+    events "^3.3.0"
+    strict-event-emitter-types "^2.0.0"
 
 "@nextgis/webmap@^1.9.4":
   version "1.9.4"
@@ -1290,12 +1448,162 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.2.tgz#423c77877d0569db20e1fc80885ac4118314010e"
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
 
+"@turf/bbox@*", "@turf/bbox@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/bbox/-/bbox-6.5.0.tgz#bec30a744019eae420dac9ea46fb75caa44d8dc5"
+  integrity sha512-RBbLaao5hXTYyyg577iuMtDB8ehxMlUqHEJiMs8jT1GHkFhr6sYre3lmLsPeYEi/ZKj5TP5tt7fkzNdJ4GIVyw==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
+"@turf/bearing@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/bearing/-/bearing-6.5.0.tgz#462a053c6c644434bdb636b39f8f43fb0cd857b0"
+  integrity sha512-dxINYhIEMzgDOztyMZc20I7ssYVNEpSv04VbMo5YPQsqa80KO3TFvbuCahMsCAW5z8Tncc8dwBlEFrmRjJG33A==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/boolean-contains@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/boolean-contains/-/boolean-contains-6.5.0.tgz#f802e7432fb53109242d5bf57393ef2f53849bbf"
+  integrity sha512-4m8cJpbw+YQcKVGi8y0cHhBUnYT+QRfx6wzM4GI1IdtYH3p4oh/DOBJKrepQyiDzFDaNIjxuWXBh0ai1zVwOQQ==
+  dependencies:
+    "@turf/bbox" "^6.5.0"
+    "@turf/boolean-point-in-polygon" "^6.5.0"
+    "@turf/boolean-point-on-line" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/boolean-point-in-polygon@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/boolean-point-in-polygon/-/boolean-point-in-polygon-6.5.0.tgz#6d2e9c89de4cd2e4365004c1e51490b7795a63cf"
+  integrity sha512-DtSuVFB26SI+hj0SjrvXowGTUCHlgevPAIsukssW6BG5MlNSBQAo70wpICBNJL6RjukXg8d2eXaAWuD/CqL00A==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/boolean-point-on-line@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/boolean-point-on-line/-/boolean-point-on-line-6.5.0.tgz#a8efa7bad88760676f395afb9980746bc5b376e9"
+  integrity sha512-A1BbuQ0LceLHvq7F/P7w3QvfpmZqbmViIUPHdNLvZimFNLo4e6IQunmzbe+8aSStH9QRZm3VOflyvNeXvvpZEQ==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/destination@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/destination/-/destination-6.5.0.tgz#30a84702f9677d076130e0440d3223ae503fdae1"
+  integrity sha512-4cnWQlNC8d1tItOz9B4pmJdWpXqS0vEvv65bI/Pj/genJnsL7evI0/Xw42RvEGROS481MPiU80xzvwxEvhQiMQ==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/distance@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/distance/-/distance-6.5.0.tgz#21f04d5f86e864d54e2abde16f35c15b4f36149a"
+  integrity sha512-xzykSLfoURec5qvQJcfifw/1mJa+5UwByZZ5TZ8iaqjGYN0vomhV9aiSLeYdUGtYRESZ+DYC/OzY+4RclZYgMg==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/helpers@6.x", "@turf/helpers@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/helpers/-/helpers-6.5.0.tgz#f79af094bd6b8ce7ed2bd3e089a8493ee6cae82e"
+  integrity sha512-VbI1dV5bLFzohYYdgqwikdMVpe7pJ9X3E+dlr425wa2/sMJqYDhTO++ec38/pcPvPE6oD9WEEeU3Xu3gza+VPw==
+
+"@turf/invariant@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/invariant/-/invariant-6.5.0.tgz#970afc988023e39c7ccab2341bd06979ddc7463f"
+  integrity sha512-Wv8PRNCtPD31UVbdJE/KVAWKe7l6US+lJItRR/HOEW3eh+U/JwRCSUl/KZ7bmjM/C+zLNoreM2TU6OoLACs4eg==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
+"@turf/kinks@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/kinks/-/kinks-6.5.0.tgz#80e7456367535365012f658cf1a988b39a2c920b"
+  integrity sha512-ViCngdPt1eEL7hYUHR2eHR662GvCgTc35ZJFaNR6kRtr6D8plLaDju0FILeFFWSc+o8e3fwxZEJKmFj9IzPiIQ==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
+"@turf/line-intersect@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/line-intersect/-/line-intersect-6.5.0.tgz#dea48348b30c093715d2195d2dd7524aee4cf020"
+  integrity sha512-CS6R1tZvVQD390G9Ea4pmpM6mJGPWoL82jD46y0q1KSor9s6HupMIo1kY4Ny+AEYQl9jd21V3Scz20eldpbTVA==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/line-segment" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+    geojson-rbush "3.x"
+
+"@turf/line-segment@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/line-segment/-/line-segment-6.5.0.tgz#ee73f3ffcb7c956203b64ed966d96af380a4dd65"
+  integrity sha512-jI625Ho4jSuJESNq66Mmi290ZJ5pPZiQZruPVpmHkUw257Pew0alMmb6YrqYNnLUuiVVONxAAKXUVeeUGtycfw==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
+"@turf/line-split@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/line-split/-/line-split-6.5.0.tgz#116d7fbf714457878225187f5820ef98db7b02c2"
+  integrity sha512-/rwUMVr9OI2ccJjw7/6eTN53URtGThNSD5I0GgxyFXMtxWiloRJ9MTff8jBbtPWrRka/Sh2GkwucVRAEakx9Sw==
+  dependencies:
+    "@turf/bbox" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/line-intersect" "^6.5.0"
+    "@turf/line-segment" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+    "@turf/nearest-point-on-line" "^6.5.0"
+    "@turf/square" "^6.5.0"
+    "@turf/truncate" "^6.5.0"
+    geojson-rbush "3.x"
+
+"@turf/meta@6.x", "@turf/meta@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/meta/-/meta-6.5.0.tgz#b725c3653c9f432133eaa04d3421f7e51e0418ca"
+  integrity sha512-RrArvtsV0vdsCBegoBtOalgdSOfkBrTJ07VkpiCnq/491W67hnMWmDu7e6Ztw0C3WldRYTXkg3SumfdzZxLBHA==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
+"@turf/nearest-point-on-line@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/nearest-point-on-line/-/nearest-point-on-line-6.5.0.tgz#8e1cd2cdc0b5acaf4c8d8b3b33bb008d3cb99e7b"
+  integrity sha512-WthrvddddvmymnC+Vf7BrkHGbDOUu6Z3/6bFYUGv1kxw8tiZ6n83/VG6kHz4poHOfS0RaNflzXSkmCi64fLBlg==
+  dependencies:
+    "@turf/bearing" "^6.5.0"
+    "@turf/destination" "^6.5.0"
+    "@turf/distance" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/line-intersect" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
+"@turf/square@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/square/-/square-6.5.0.tgz#ab43eef99d39c36157ab5b80416bbeba1f6b2122"
+  integrity sha512-BM2UyWDmiuHCadVhHXKIx5CQQbNCpOxB6S/aCNOCLbhCeypKX5Q0Aosc5YcmCJgkwO5BERCC6Ee7NMbNB2vHmQ==
+  dependencies:
+    "@turf/distance" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+
+"@turf/truncate@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@turf/truncate/-/truncate-6.5.0.tgz#c3a16cad959f1be1c5156157d5555c64b19185d8"
+  integrity sha512-pFxg71pLk+eJj134Z9yUoRhIi8vqnnKvCYwdT4x/DQl/19RVdq1tV3yqOT3gcTQNfniteylL5qV1uTBDV5sgrg==
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
 "@types/events@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
-"@types/geojson@*":
+"@types/geojson@*", "@types/geojson@7946.0.8", "@types/geojson@^7946.0.8":
   version "7946.0.8"
   resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.8.tgz#30744afdb385e2945e22f3b033f897f76b1f12ca"
   integrity sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA==
@@ -2061,7 +2369,7 @@ colors@^1.4.0:
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
 
-combined-stream@^1.0.6, combined-stream@~1.0.6:
+combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
   integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
@@ -2949,6 +3257,15 @@ forever-agent@~0.6.1:
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
 
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
 form-data@~2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"
@@ -2992,6 +3309,17 @@ gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
   integrity sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==
+
+geojson-rbush@3.x:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/geojson-rbush/-/geojson-rbush-3.2.0.tgz#8b543cf0d56f99b78faf1da52bb66acad6dfc290"
+  integrity sha512-oVltQTXolxvsz1sZnutlSuLDEcQAKYC/uXt9zDzJJ6bu0W+baTI8LZBaTup5afzibEH4N3jlq2p+a152wlBJ7w==
+  dependencies:
+    "@turf/bbox" "*"
+    "@turf/helpers" "6.x"
+    "@turf/meta" "6.x"
+    "@types/geojson" "7946.0.8"
+    rbush "^3.0.1"
 
 geojson-vt@^3.2.1:
   version "3.2.1"
@@ -3909,7 +4237,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.4:
+lodash@4.17.21, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -4582,6 +4910,13 @@ pn@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
+
+polygon-clipping@0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/polygon-clipping/-/polygon-clipping-0.15.3.tgz#0215840438470ba2e9e6593625e4ea5c1087b4b7"
+  integrity sha512-ho0Xx5DLkgxRx/+n4O74XyJ67DcyN3Tu9bGYKsnTukGAW6ssnuak6Mwcyb1wHy9MZc9xsUWqIoiazkZB5weECg==
+  dependencies:
+    splaytree "^3.1.0"
 
 polylabel@^1.1.0:
   version "1.1.0"
@@ -5613,6 +5948,11 @@ source-map@~0.7.2:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
+
+splaytree@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/splaytree/-/splaytree-3.1.0.tgz#17d4a0108a6da3627579690b7b847241e18ddec8"
+  integrity sha512-gvUGR7xnOy0fLKTCxDeUZYgU/I1Tdf8M/lM1Qrf8L2TIOR5ipZjGk02uYcdv0o2x7WjVRgpm3iS2clLyuVAt0Q==
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
