@@ -11,6 +11,6 @@ npm start
 
 Look for the script output in the terminal.
 
-[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/6_3_no_map_ngw_orm) in the `codesandbox.io`.
+[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/E_leaflet_geoman) in the `codesandbox.io`.
 
 [BACK TO CONTENT](../../README.md)
