@@ -1,4 +1,4 @@
-# 6.3. Leaflet geoman
+# E.1 Leaflet geoman
 
 ## Practice
 
