@@ -15,8 +15,6 @@ const map = new Map({
 
 const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
-  target: "map",
-  osm: true,
   map,
 });
 
