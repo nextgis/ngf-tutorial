@@ -114,8 +114,12 @@ Working with the repository, make a fork, complete tasks and upload back to gith
 
 ### 6. No map
 
-1. [NgwConnector](tutorials/6_1_vno_map_ngw_connector/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/6_1_vno_map_ngw_connector)
+1. [NgwConnector](tutorials/6_1_no_map_ngw_connector/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/6_1_no_map_ngw_connector)
 2. [NgwKit](tutorials/6_2_no_map_ngw_kit/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/6_2_no_map_ngw_kit)
 3. Bonus [NgwOrm](tutorials/6_3_no_map_ngw_orm/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/6_3_no_map_ngw_orm)
+
+### 7. Extended
+
+1. [Initialize with ready map instance](tutorials/7_1_extended_initialize_with_ready_map_instance/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/7_1_extended_initialize_with_ready_map_instance)
 
 [![http://nextgis.com](https://nextgis.ru/img/nextgis.png)](http://nextgis.com)

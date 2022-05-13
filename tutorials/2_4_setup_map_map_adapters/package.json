@@ -7,15 +7,15 @@
     "start": "parcel src/index.html -p 8080 --open"
   },
   "dependencies": {
-    "@nextgis/ngw-kit": "^1.9.6",
-    "@nextgis/leaflet-map-adapter": "^1.9.4",
-    "@nextgis/ol-map-adapter": "^1.9.4",
-    "@nextgis/qms-kit": "^1.9.4",
-    "@nextgis/webmap": "^1.9.4"
+    "@nextgis/leaflet-map-adapter": "^1.12.1",
+    "@nextgis/ngw-kit": "^1.12.1",
+    "@nextgis/ol-map-adapter": "^1.12.1",
+    "@nextgis/qms-kit": "^1.12.1",
+    "@nextgis/webmap": "^1.12.1"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0",
-    "@babel/preset-env": "7.16.4",
+    "@babel/core": "7.17.10",
+    "@babel/preset-env": "7.17.10",
     "parcel-bundler": "^1.12.5"
   },
   "keywords": [

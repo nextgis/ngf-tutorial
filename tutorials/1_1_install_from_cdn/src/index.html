@@ -20,20 +20,21 @@
     </style>
 
     <!-- <script src="https://unpkg.com/@nextgis/ngw-leaflet"></script> -->
-    <!-- <script src="https://unpkg.com/@nextgis/ngw-leaflet@1.9.6/lib/ngw-leaflet.global.js"></script> -->
     <script src="https://unpkg.com/@nextgis/ngw-leaflet@1.9.6/lib/ngw-leaflet.global.prod.js"></script>
 
     <!-- OR -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@nextgis/ngw-leaflet"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@nextgis/ngw-leaflet@1.9.6/lib/ngw-leaflet.global.prod.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/@nextgis/ngw-leaflet@1.9.6/lib/ngw-leaflet.global.prod.js"></script> -->
   </head>
 
   <body>
     <div id="map"></div>
+    <script src="https://unpkg.com/@nextgis/ngw-ol"></script>
     <script>
       const ngwMap = new NgwMap({
         baseUrl: "https://demo.nextgis.com",
         target: "map",
+        qmsId: 510,
         webmapId: 4119,
       });
     </script>

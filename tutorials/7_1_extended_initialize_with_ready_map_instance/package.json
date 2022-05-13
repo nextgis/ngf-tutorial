@@ -1,0 +1,28 @@
+{
+  "name": "ngf-tutorial-no-map-initialize-with-ready-map-instance",
+  "version": "1.0.0",
+  "description": "",
+  "module": "src/main.ts",
+  "scripts": {
+    "start": "parcel src/index.html -p 8080 --open"
+  },
+  "dependencies": {
+    "@nextgis/ngw-ol": "^1.13.0"
+  },
+  "keywords": [
+    "NGF",
+    "NGW",
+    "NextGIS",
+    "Frontend",
+    "tutorial"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.17.10",
+    "@babel/preset-env": "7.17.10",
+    "parcel-bundler": "^1.12.5"
+  },
+  "license": "MIT",
+  "browserslist": [
+    "last 1 version"
+  ]
+}
