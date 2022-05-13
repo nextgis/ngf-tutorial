@@ -1,7 +1,5 @@
 # 6.3. Extended. Initialize with ready map instance
 
-**Attention this tutorial is dedicated to a library that is at an early stage of development!**
-
 ## Theory
 
 ## Practice
