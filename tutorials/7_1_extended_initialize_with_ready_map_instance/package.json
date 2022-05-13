@@ -1,5 +1,5 @@
 {
-  "name": "ngf-tutorial-no-map-initialize-with-ready-map-instance",
+  "name": "ngf-tutorial-extended-initialize-with-ready-map-instance",
   "version": "1.0.0",
   "description": "",
   "module": "src/main.ts",
