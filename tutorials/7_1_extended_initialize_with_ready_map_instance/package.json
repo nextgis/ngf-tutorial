@@ -7,7 +7,7 @@
     "start": "parcel src/index.html -p 8080 --open"
   },
   "dependencies": {
-    "@nextgis/ngw-ol": "^1.13.0"
+    "@nextgis/ngw-ol": "^1.13.6"
   },
   "keywords": [
     "NGF",
@@ -17,8 +17,8 @@
     "tutorial"
   ],
   "devDependencies": {
-    "@babel/core": "7.17.10",
-    "@babel/preset-env": "7.17.10",
+    "@babel/core": "7.18.2",
+    "@babel/preset-env": "7.18.2",
     "parcel-bundler": "^1.12.5"
   },
   "license": "MIT",
