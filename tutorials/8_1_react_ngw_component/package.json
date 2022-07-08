@@ -1,13 +1,20 @@
 {
-  "name": "ngf-tutorial-extended-initialize-with-ready-map-instance",
+  "name": "ngf-tutorial-react-ngw-component",
   "version": "1.0.0",
   "description": "",
-  "module": "src/main.ts",
+  "main": "src/index.js",
   "scripts": {
     "start": "parcel src/index.html -p 8080 --open"
   },
   "dependencies": {
-    "@nextgis/ngw-ol": "^1.14.0"
+
+    "@nextgis/react-ngw-leaflet": "^1.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.18.6",
+    "@babel/preset-env": "7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "parcel-bundler": "^1.12.5"
   },
   "keywords": [
     "NGF",
@@ -16,11 +23,6 @@
     "Frontend",
     "tutorial"
   ],
-  "devDependencies": {
-    "@babel/core": "7.18.6",
-    "@babel/preset-env": "7.18.6",
-    "parcel-bundler": "^1.12.5"
-  },
   "license": "MIT",
   "browserslist": [
     "last 1 version"
