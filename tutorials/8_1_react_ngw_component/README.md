@@ -1,4 +1,4 @@
-# 6.3. React. NgwMap
+# 6.3. React. NgwMap component
 
 ## Theory
 
@@ -13,6 +13,6 @@ npm start
 
 Look for the script output in the terminal.
 
-[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/7_1_extended_initialize_with_ready_map_instance) in the `codesandbox.io`.
+[LAUNCH](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/8_1_react_ngw_component) in the `codesandbox.io`.
 
 [BACK TO CONTENT](../../README.md)

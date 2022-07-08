@@ -7,7 +7,6 @@
     "start": "parcel src/index.html -p 8080 --open"
   },
   "dependencies": {
-
     "@nextgis/react-ngw-leaflet": "^1.14.0"
   },
   "devDependencies": {

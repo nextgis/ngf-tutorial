@@ -122,4 +122,8 @@ Working with the repository, make a fork, complete tasks and upload back to gith
 
 1. [Initialize with ready map instance](tutorials/7_1_extended_initialize_with_ready_map_instance/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/7_1_extended_initialize_with_ready_map_instance)
 
+### 8. React
+
+1. [NgwMap react component](tutorials/8_1_react_ngw_component/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/8_1_react_ngw_component)
+
 [![http://nextgis.com](https://nextgis.ru/img/nextgis.png)](http://nextgis.com)
