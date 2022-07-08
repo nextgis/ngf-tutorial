@@ -1,4 +1,4 @@
-# 6.3. React. NgwMap component
+# 8.1. React. NgwMap component
 
 ## Theory
 
