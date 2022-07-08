@@ -2591,13 +2591,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdi/js@npm:^6.9.96":
-  version: 6.9.96
-  resolution: "@mdi/js@npm:6.9.96"
-  checksum: 94c43271585981e7ebf8cc5e3ead11915eea1339b79e849b351fbaae58e9626aaca0a8b031f0e80754d880ea6b08fd715906588f3cf980603bb5f6871bff12cc
-  languageName: node
-  linkType: hard
-
 "@mrmlnc/readdir-enhanced@npm:^2.2.1":
   version: 2.2.1
   resolution: "@mrmlnc/readdir-enhanced@npm:2.2.1"
@@ -7641,9 +7634,9 @@ __metadata:
   resolution: "ngf-tutorial-react-ngw-component@workspace:tutorials/8_1_react_ngw_component"
   dependencies:
     "@babel/core": 7.18.6
+    "@babel/plugin-syntax-jsx": ^7.18.6
     "@babel/preset-env": 7.18.6
     "@babel/preset-react": ^7.18.6
-    "@mdi/js": ^6.9.96
     "@nextgis/react-ngw-leaflet": ^1.14.0
     parcel-bundler: ^1.12.5
   languageName: unknown
