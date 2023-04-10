@@ -7,13 +7,13 @@
     "start": "parcel src/index.html -p 8080 --open"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "^1.16.4",
-    "@nextgis/ngw-mapbox": "^1.16.4",
-    "@nextgis/ngw-ol": "^1.16.4"
+    "@nextgis/ngw-leaflet": "^1.16.6",
+    "@nextgis/ngw-mapbox": "^1.16.6",
+    "@nextgis/ngw-ol": "^1.16.6"
   },
   "devDependencies": {
-    "@babel/core": "7.19.1",
-    "@babel/preset-env": "7.19.1",
+    "@babel/core": "7.21.4",
+    "@babel/preset-env": "7.21.4",
     "parcel-bundler": "^1.12.5"
   },
   "keywords": [
