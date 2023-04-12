@@ -2,9 +2,9 @@
 
 ## Theory
 
-The current version of the `@nextgis/react-` frontend libraries supports only React version 17.
-
 The example below shows how you can create a map component and add controls.
+
+You can install specific version of `Leaflet` and `React` in `package.json`
 
 ```jsx
 import React, {useRef} from 'react';

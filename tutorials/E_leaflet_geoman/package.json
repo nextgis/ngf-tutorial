@@ -4,7 +4,7 @@
   "description": "",
   "module": "src/main.ts",
   "scripts": {
-    "start": "parcel src/index.html -p 8080 --open"
+    "start": "parcel src/index.html -p 8080"
   },
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "^2.14.2",
