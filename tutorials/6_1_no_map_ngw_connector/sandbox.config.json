@@ -1,8 +1,6 @@
 {
   "template": "node",
   "container": {
-    "node": "16",
-    "port": 8080
-  },
-  "hardReloadOnChange": true
+    "node": "16"
+  }
 }
