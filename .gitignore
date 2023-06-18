@@ -234,3 +234,5 @@ bower_components
 dist
 
 .yarn
+.yarnrc.yml
+.pnp*
