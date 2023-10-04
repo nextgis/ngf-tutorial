@@ -1635,7 +1635,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/tiny-sdf@npm:^2.0.5":
+"@mapbox/tiny-sdf@npm:^2.0.5, @mapbox/tiny-sdf@npm:^2.0.6":
   version: 2.0.6
   resolution: "@mapbox/tiny-sdf@npm:2.0.6"
   checksum: efff5b5a7599aaa995e3c2fd8f2acd071226096458eebb694ffd7258043c46c52b1d09bb3c7343d2126eb257b3cd7d34e6dc7ccaaad7619e6f3e7dd76229a3cd
@@ -1672,6 +1672,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@maplibre/maplibre-gl-style-spec@npm:^19.3.0":
+  version: 19.3.2
+  resolution: "@maplibre/maplibre-gl-style-spec@npm:19.3.2"
+  dependencies:
+    "@mapbox/jsonlint-lines-primitives": ~2.0.2
+    "@mapbox/unitbezier": ^0.0.1
+    json-stringify-pretty-compact: ^3.0.0
+    minimist: ^1.2.8
+    rw: ^1.3.3
+    sort-object: ^3.0.3
+  bin:
+    gl-style-format: dist/gl-style-format.mjs
+    gl-style-migrate: dist/gl-style-migrate.mjs
+    gl-style-validate: dist/gl-style-validate.mjs
+  checksum: 9bb5bf4b2319a4f13bfc1519584c95dc4a91a019bc2ea1fe6de514fd6f7ce9a7ab4d61df9d303cc3fee9a13a72816f1d9c7f76f7467d81a8a323278e42a97d88
+  languageName: node
+  linkType: hard
+
 "@mdi/js@npm:^7.2.96":
   version: 7.2.96
   resolution: "@mdi/js@npm:7.2.96"
@@ -1689,114 +1707,94 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextgis/cache@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/cache@npm:1.16.6"
+"@nextgis/cache@npm:^1.17.0":
+  version: 1.17.0
+  resolution: "@nextgis/cache@npm:1.17.0"
   dependencies:
-    "@nextgis/utils": ^1.16.6
-  checksum: 010eb4d872189ed892c056f904da4089568ef49477ef73ddcc5d20410426a4bf693f3d8f2bafdf2644acc73b8eb9a2b13ed1a9a93013c49e600e41cc7dfbc2e8
+    "@nextgis/utils": ^1.17.0
+  checksum: b40e7d69ad499a880f1bb9495ed0adf6b23cee22d8fbb965cb255cc419cda1bac3699b2ca6b21058291dd4051d82e3bfc36b97b9b44252e72ebd920c2d594f6c
   languageName: node
   linkType: hard
 
-"@nextgis/cache@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/cache@npm:1.16.8"
+"@nextgis/cancelable-promise@npm:^1.17.0":
+  version: 1.17.0
+  resolution: "@nextgis/cancelable-promise@npm:1.17.0"
+  checksum: 4a648c58298beb7585f76d3b1d046d5911dc0f42c01ac76ed0051a92388643960b61130cef9deaf4468cf5313b045b0ada1a2020d767160423fc98e0b1599b77
+  languageName: node
+  linkType: hard
+
+"@nextgis/control-container@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/control-container@npm:1.18.1"
   dependencies:
-    "@nextgis/utils": ^1.16.8
-  checksum: e9178fa5e9ca56a94c3bc26e05ecdbebbcf4a4f77e3c6ca0061f091c26ffff6d4e264b0b6ddcb085dec2e2b76053e906630b90f6f89b3615484fb9bed534d9c3
-  languageName: node
-  linkType: hard
-
-"@nextgis/cancelable-promise@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/cancelable-promise@npm:1.16.6"
-  checksum: a4814509e75f7352c7883c5ec1c49d45e7fa943b5468aa5f337405480770deaad4e710ccc3233ec148f2997da1bedcf32c3af916b78c3cc15ea147d7ebb193c4
-  languageName: node
-  linkType: hard
-
-"@nextgis/cancelable-promise@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/cancelable-promise@npm:1.16.8"
-  checksum: a7423a0b63f95de22ac9a5ab996c4bbec573ecbbf8c08e3c45c5f595a74b698c1da92f9a2b65cfdfc155d265b1886558611103a45b2548e3889943d232fbfc41
-  languageName: node
-  linkType: hard
-
-"@nextgis/control-container@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/control-container@npm:1.16.6"
-  dependencies:
-    "@nextgis/dom": ^1.16.6
-    "@nextgis/utils": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
+    "@nextgis/dom": ^1.17.0
+    "@nextgis/utils": ^1.17.0
+    "@nextgis/webmap": ^1.18.1
     "@types/events": ^3.0.0
     events: ^3.3.0
-  checksum: 0c50a4b4de82f4c761da8580a9dd8e19e8ff811c336d785eaa19a1b3fcc13682ce024d5586bd815b655c0d972c08bb552150407c6bf796a863b40f0a5b7a9564
+  checksum: 46e2c52d0bb0fdea100fffc64a650c6b728b797544b7775dc3e79eaebb4b2654552b3bb4826e6dd504ffeb6c1d14c4da33677b0522c29a953b4e89a6d4d3f748
   languageName: node
   linkType: hard
 
-"@nextgis/dom@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/dom@npm:1.16.6"
-  checksum: 67e3bb76ac9aef3da4b47c97b5ee3d28b4fa1b83f785d300955f61f4fa168c1685595d156fe31d1afa47d43a021e108bf84dc7e03b0646733da4ad746e6a742f
+"@nextgis/dom@npm:^1.17.0":
+  version: 1.17.0
+  resolution: "@nextgis/dom@npm:1.17.0"
+  checksum: 82c2594178b84785c5386c06ed71fc84926a0d28b86d01da4e4b7e04a114ee89533857b92443da86d3e946312e813e0111e7a4c9f786bd1525accdc8f1c14c0e
   languageName: node
   linkType: hard
 
-"@nextgis/icons@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/icons@npm:1.16.6"
+"@nextgis/expression@npm:^1.18.0":
+  version: 1.18.0
+  resolution: "@nextgis/expression@npm:1.18.0"
+  checksum: 402a3f642f7dd39a4830ee3a88325297aae3dcf14432fad56267c28a22db07cca9d1a2c509c777cb023f22e6f82102e42e9c8b4296fccb1cde647e98317b96d2
+  languageName: node
+  linkType: hard
+
+"@nextgis/icons@npm:^1.18.2":
+  version: 1.18.2
+  resolution: "@nextgis/icons@npm:1.18.2"
   dependencies:
-    "@nextgis/paint": ^1.16.6
-  checksum: 1572235a2fedcaaefda63b8cd993851228883c341e15389d4eb351116e6b3a15faae992a092a34c4ddd187c153ffd8ea123cf6bca25be6342412119d25fc6d13
+    "@nextgis/paint": ^1.18.1
+  checksum: 370b202e4bde7a74605b61fb24fcd7afec2c86161518282deb5ec99bada0659b985092af77caf945e76c2aeeccefe1c3259835691ed61067bb682b573f59f390
   languageName: node
   linkType: hard
 
-"@nextgis/item@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/item@npm:1.16.6"
+"@nextgis/item@npm:^1.18.0":
+  version: 1.18.0
+  resolution: "@nextgis/item@npm:1.18.0"
   dependencies:
-    "@nextgis/tree": ^1.16.6
+    "@nextgis/tree": ^1.18.0
     "@types/events": ^3.0.0
     events: ^3.3.0
-  checksum: a71c7aee61e7c33038d4ad596cf3ed93b31a506033cc8fddd6e96ea4c782431fb2a7dd6aa598ded906777b517cb4261ac67de42149354a7da2f647d9a832328d
+  checksum: 83fcbfe4d4a41bf76f0af9a13ad2e2ae82243df68ef380b961508aa7ad4868ee52e5384f486e5b013c7fbeac800fab057976439dc1590c090da44356738f488d
   languageName: node
   linkType: hard
 
-"@nextgis/item@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/item@npm:1.16.8"
+"@nextgis/leaflet-map-adapter@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/leaflet-map-adapter@npm:1.18.1"
   dependencies:
-    "@nextgis/tree": ^1.16.8
+    "@nextgis/paint": ^1.18.1
+    "@nextgis/utils": ^1.17.0
+    "@nextgis/webmap": ^1.18.1
     "@types/events": ^3.0.0
-    events: ^3.3.0
-  checksum: 3cffdbcd88cbd9884b233e14430a829564ece308c9a16be019b3e66c25e749490a96795e53e78e8564d9556d33b2671aa3e9c285ca2ad6c8966ba1e2ed520e06
-  languageName: node
-  linkType: hard
-
-"@nextgis/leaflet-map-adapter@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/leaflet-map-adapter@npm:1.16.6"
-  dependencies:
-    "@nextgis/paint": ^1.16.6
-    "@nextgis/utils": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
-    "@types/events": ^3.0.0
+    "@types/geojson": ^7946.0.8
     "@types/leaflet": ^1.7.5
     events: ^3.3.0
-    geojson: ^0.5.0
     leaflet.wms: ^0.2.0
   peerDependencies:
     leaflet: ">=1.7.0"
-  checksum: 3e897fb42d839ad5fdee8ca753ee7db633930e8d2718d30800c474b0750a2fe012985f5d61bd26ba08d85613480772b26d01bfbb140fa56b8b0b949f2e7c644b
+  checksum: 5d5dbee652ab33ab09cf8bf94c5c54227de90a338f806617e8819ccc24caaa6c3fd5f049cb6008ded0484c0113d1926be70092c0df5808b89d854fec6b955f8f
   languageName: node
   linkType: hard
 
-"@nextgis/mapboxgl-map-adapter@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/mapboxgl-map-adapter@npm:1.16.6"
+"@nextgis/mapboxgl-map-adapter@npm:^1.18.2":
+  version: 1.18.2
+  resolution: "@nextgis/mapboxgl-map-adapter@npm:1.18.2"
   dependencies:
-    "@nextgis/paint": ^1.16.6
-    "@nextgis/properties-filter": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
+    "@nextgis/paint": ^1.18.1
+    "@nextgis/properties-filter": ^1.18.0
+    "@nextgis/webmap": ^1.18.1
     "@types/events": ^3.0.0
     "@types/polylabel": ^1.0.5
     canvg: ^3.0.9
@@ -1807,316 +1805,222 @@ __metadata:
   dependenciesMeta:
     canvg:
       optional: true
-  checksum: ae196fac47f90705fce36db2d7ccc1f8ec5a46a280a1d6e7f0605846c883a6e226d8def99a6e1224997e09085e6cec8f423be0866f8b0600c6adbfefb3a541f2
+  checksum: d4b4bf656df4fee705f3ad4ebaa4502dfa0f4f6d9384a9fa0251f9e40f4aaac63ede05e6f56b3a199beeb1f9b269bf8e93a2886d7adbaf4e3f77a79419e7fdef
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-connector@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ngw-connector@npm:1.16.6"
+"@nextgis/ngw-connector@npm:^1.17.0":
+  version: 1.17.0
+  resolution: "@nextgis/ngw-connector@npm:1.17.0"
   dependencies:
-    "@nextgis/cache": ^1.16.6
-    "@nextgis/cancelable-promise": ^1.16.6
-    "@nextgis/utils": ^1.16.6
+    "@nextgis/cache": ^1.17.0
+    "@nextgis/cancelable-promise": ^1.17.0
+    "@nextgis/utils": ^1.17.0
     "@types/events": ^3.0.0
     events: ^3.3.0
     form-data: ^4.0.0
-  checksum: 0738b5a7b4e07520bc40c464c654ac91946ed5224d0529c0b886a01751df8641a26a04b64e134ef7fedb34b582e5bfa97511d2e404cb1118854a07c1998cd919
+  checksum: 33ea8dff448c86a4d53643728ab262408ef666c7dd11147be6dcc217bf094b1a8a7435830a12f20f6e7b6b83495559e88a6313cc105565941c1f39db1514768a
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-connector@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/ngw-connector@npm:1.16.8"
+"@nextgis/ngw-kit@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/ngw-kit@npm:1.18.1"
   dependencies:
-    "@nextgis/cache": ^1.16.8
-    "@nextgis/cancelable-promise": ^1.16.8
-    "@nextgis/utils": ^1.16.8
-    "@types/events": ^3.0.0
-    events: ^3.3.0
-    form-data: ^4.0.0
-  checksum: c58366083a65b426273f00228e2402738af1d740f0d8d1ae1a1ba18c2055242ea71c92ee978250c8a4b9f841e53c3c67e579983394080567204e9a52f3ad84fa
-  languageName: node
-  linkType: hard
-
-"@nextgis/ngw-kit@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ngw-kit@npm:1.16.6"
-  dependencies:
-    "@nextgis/cancelable-promise": ^1.16.6
-    "@nextgis/item": ^1.16.6
-    "@nextgis/ngw-connector": ^1.16.6
-    "@nextgis/properties-filter": ^1.16.6
-    "@nextgis/qms-kit": ^1.16.6
-    "@nextgis/utils": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
+    "@nextgis/cancelable-promise": ^1.17.0
+    "@nextgis/item": ^1.18.0
+    "@nextgis/ngw-connector": ^1.17.0
+    "@nextgis/properties-filter": ^1.18.0
+    "@nextgis/qms-kit": ^1.18.1
+    "@nextgis/utils": ^1.17.0
+    "@nextgis/webmap": ^1.18.1
     "@types/events": ^3.0.0
     events: ^3.3.0
     strict-event-emitter-types: ^2.0.0
-  checksum: dd3a7b781eb237b073378758a324168e03c63c558b9cac152542b136eea6890e95cd030443343b88dde4b3edc52161bebba02dfdc1fdc549ee8a4355508bbc0a
+  checksum: 33e64428831cdd7cf0ba7765fcf3b3520053947473a88940d156052583a76dfc8afe70293dfedd62184975e6edb06dbf6138df83a5a4206bf4af8b866a297571
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-kit@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/ngw-kit@npm:1.16.8"
+"@nextgis/ngw-leaflet@npm:^1.18.1":
+  version: 1.18.2
+  resolution: "@nextgis/ngw-leaflet@npm:1.18.2"
   dependencies:
-    "@nextgis/cancelable-promise": ^1.16.8
-    "@nextgis/item": ^1.16.8
-    "@nextgis/ngw-connector": ^1.16.8
-    "@nextgis/properties-filter": ^1.16.8
-    "@nextgis/qms-kit": ^1.16.8
-    "@nextgis/utils": ^1.16.8
-    "@nextgis/webmap": ^1.16.8
-    "@types/events": ^3.0.0
-    events: ^3.3.0
-    strict-event-emitter-types: ^2.0.0
-  checksum: 317968c20ce25bb065049d6c7c99cff078126ee9f8cabd549c10ed6a98f3bee387a7fbc7954ba6e8d53122891a64fe54841547e3908fe7f112078d717d48a4e4
-  languageName: node
-  linkType: hard
-
-"@nextgis/ngw-leaflet@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ngw-leaflet@npm:1.16.6"
-  dependencies:
-    "@nextgis/leaflet-map-adapter": ^1.16.6
-    "@nextgis/ngw-map": ^1.16.6
+    "@nextgis/leaflet-map-adapter": ^1.18.1
+    "@nextgis/ngw-map": ^1.18.2
     leaflet: 1.7.1
     leaflet.wms: ^0.2.0
-  checksum: 3522c4dcaa7e2f6e56aa82fe2609bd61ab198d3d63dc0c80f1de434becee5a5214fa9935290602c62db9a4edcd4a0657c39fff7dab529e695eda3faef1da6397
+  checksum: 907c92853e0d26d11fba7da9b2be7f14dee6c9b3f560b0e69064173fc75508fb92fb07fbe03df3c161208b67e324b374925c482c4efd0539b97a276d803f4b50
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-map@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ngw-map@npm:1.16.6"
+"@nextgis/ngw-map@npm:^1.18.2":
+  version: 1.18.2
+  resolution: "@nextgis/ngw-map@npm:1.18.2"
   dependencies:
-    "@nextgis/icons": ^1.16.6
-    "@nextgis/ngw-connector": ^1.16.6
-    "@nextgis/ngw-kit": ^1.16.6
-    "@nextgis/qms-kit": ^1.16.6
-    "@nextgis/utils": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
+    "@nextgis/icons": ^1.18.2
+    "@nextgis/ngw-connector": ^1.17.0
+    "@nextgis/ngw-kit": ^1.18.1
+    "@nextgis/qms-kit": ^1.18.1
+    "@nextgis/utils": ^1.17.0
+    "@nextgis/webmap": ^1.18.1
     "@types/events": ^3.0.0
     events: ^3.3.0
     strict-event-emitter-types: ^2.0.0
-  checksum: c78eb030ee34118e67e74d6411cb4c4f2c49b610a6abda52e2c51c858cc8025c5e876bf326e87552567d0fcd633f0802e12bd9e062c084f4f2f56ba3a82153d7
+  checksum: 4f518b205188ae9ce6683ac9ed6d5e417f489d07d6c66a94ca8cb5f513219b1c02c1a3c551fcc8cef8f941b0ef75ccd141a85365ab8fe036b56e97e207b0bc3a
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-mapbox@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ngw-mapbox@npm:1.16.6"
+"@nextgis/ngw-mapbox@npm:^1.18.1":
+  version: 1.18.2
+  resolution: "@nextgis/ngw-mapbox@npm:1.18.2"
   dependencies:
-    "@nextgis/mapboxgl-map-adapter": ^1.16.6
-    "@nextgis/ngw-map": ^1.16.6
+    "@nextgis/mapboxgl-map-adapter": ^1.18.2
+    "@nextgis/ngw-map": ^1.18.2
     canvg: ^3.0.9
-    maplibre-gl: ^2.4.0
-  checksum: 68a5abbb234b20ccdad4b01efbcf05d4495ed4a6df2edf619ca03fd348c77bb4710699200a36e8a8de441b264557143eae4fc33d72463d7c6186208d7df5ecd0
+    maplibre-gl: ^3.3.1
+  checksum: 84561dc8dbf41fd874569bfda7cf1a64c9e97b33e1e7dd3311772ffe17eb3dd97761d6136e6cb5f0e83dad9e054118d59463823c07e5180b955e9b88f825e4bb
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-ol@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ngw-ol@npm:1.16.6"
+"@nextgis/ngw-ol@npm:^1.18.1":
+  version: 1.18.2
+  resolution: "@nextgis/ngw-ol@npm:1.18.2"
   dependencies:
-    "@nextgis/ngw-map": ^1.16.6
-    "@nextgis/ol-map-adapter": ^1.16.6
+    "@nextgis/ngw-map": ^1.18.2
+    "@nextgis/ol-map-adapter": ^1.18.1
     "@types/events": ^3.0.0
     events: ^3.3.0
     ol: ^6.15.1
-  checksum: ff22f10dac65ab6ae25616053a4ff0ce6ac59f0f8572a22b0121ec6191629ee8026af903216d327a5c81bc3f4de5173767475b6b6a76e0ef93fac33cd0947275
+  checksum: 7f01ceb8e761c4641a41be5a03272425708e75e8c7ebef7f9c637db6eb22df96ae65163827bde3345e5423e09f7977f24891cadbb4fd01c6d68dfd0d7e5d142d
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-orm@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ngw-orm@npm:1.16.6"
+"@nextgis/ngw-orm@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/ngw-orm@npm:1.18.1"
   dependencies:
-    "@nextgis/ngw-connector": ^1.16.6
-    "@nextgis/ngw-kit": ^1.16.6
-    "@nextgis/utils": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
+    "@nextgis/ngw-connector": ^1.17.0
+    "@nextgis/ngw-kit": ^1.18.1
+    "@nextgis/utils": ^1.17.0
+    "@nextgis/webmap": ^1.18.1
     reflect-metadata: ^0.1.13
-  checksum: 99040c19ca9f9e1ce9527bf0e48a84690aa2dba34fc9044f59adc5fe327e17b8e67d422e988a887457ebbb2df1f6743d5782bd27690f0c70110df72781504ace
+  checksum: 9dd3febf95f6527e8b7a552083c2f6d07909d601dccdd607985732fdaeb4107ffbdb8816b99bd1a19b6374ee07463463ae77143dccff5d45895f70a2ab99f987
   languageName: node
   linkType: hard
 
-"@nextgis/ol-map-adapter@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/ol-map-adapter@npm:1.16.6"
+"@nextgis/ol-map-adapter@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/ol-map-adapter@npm:1.18.1"
   dependencies:
-    "@nextgis/control-container": ^1.16.6
-    "@nextgis/dom": ^1.16.6
-    "@nextgis/paint": ^1.16.6
-    "@nextgis/properties-filter": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
+    "@nextgis/control-container": ^1.18.1
+    "@nextgis/dom": ^1.17.0
+    "@nextgis/paint": ^1.18.1
+    "@nextgis/properties-filter": ^1.18.0
+    "@nextgis/webmap": ^1.18.1
     "@types/events": ^3.0.0
     "@types/polylabel": ^1.0.5
     events: ^3.3.0
     polylabel: ^1.1.0
   peerDependencies:
     ol: ">=6.0.0"
-  checksum: 95022f6462ad073ca9b96635db50581ce85cbb95eb05665fb979b1d0ecc8766fd3c74840f2d6b1033715e3b9fc44ffc9f318001b70ebc2db5a8cb09ff8befa3d
+  checksum: e0f9c17ec54bf121974cb2d39e28c6bdfe7b7a44620a7bf77c0663b3306153789eab565d3d7657b15a5270c560fe7d2c36646efb66c50ffb787fd0642cb929c3
   languageName: node
   linkType: hard
 
-"@nextgis/paint@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/paint@npm:1.16.6"
+"@nextgis/paint@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/paint@npm:1.18.1"
   dependencies:
-    "@nextgis/properties-filter": ^1.16.6
-    geojson: ^0.5.0
-  checksum: 8cb83b14e3647e2452f2412e07db41887227406913af9a2d51b7f1d50e60866b82ed3af57ae7f94309aa9baa3ebe85e2305357b5bb8803613aef0618a3ed2baf
+    "@nextgis/expression": ^1.18.0
+    "@nextgis/properties-filter": ^1.18.0
+    "@types/geojson": ^7946.0.8
+  checksum: 0b3ba0e05d3f6f245b43ae6b307d4024733c91833ee8af333c107bc4f36239524343630a0ae4718fa0ef93c15b28e63e6ec6e561ad8ab8e73be0e32fa3c5cf6a
   languageName: node
   linkType: hard
 
-"@nextgis/paint@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/paint@npm:1.16.8"
+"@nextgis/properties-filter@npm:^1.18.0":
+  version: 1.18.0
+  resolution: "@nextgis/properties-filter@npm:1.18.0"
   dependencies:
-    "@nextgis/properties-filter": ^1.16.8
-    geojson: ^0.5.0
-  checksum: 8f66f85a6474f5a6b96ad8e57caf489bd4fbff0d72ed9597c9e70eda59fa664ae35f024d413ad0f5b479a294ba5788bb146399cffe8295e69c72b64b05490eaa
+    "@nextgis/utils": ^1.17.0
+    "@types/geojson": ^7946.0.8
+  checksum: 4ce60910475aadd5b6c0e6de668af4a26615a6668d2dc9a1f782e20d641d059df3e670a0bdae65fbd65d66fc502d7b16ee0d1edf42aa5fc1a27a1e6a293d30ff
   languageName: node
   linkType: hard
 
-"@nextgis/properties-filter@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/properties-filter@npm:1.16.6"
+"@nextgis/qms-kit@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/qms-kit@npm:1.18.1"
   dependencies:
-    "@nextgis/utils": ^1.16.6
-    geojson: ^0.5.0
-  checksum: 9f6020eb178e581146d8a427f8148d87699631c4b6763fbc4fdf106f6d9054d1802d9a1712f97cef37908eb3263830b9f12fca02b103328f6d16d61f08dff341
+    "@nextgis/utils": ^1.17.0
+    "@nextgis/webmap": ^1.18.1
+  checksum: 363acb6888067ed97eeb81e09fb8a18eb9f086029d7870c02ddd530590c34c1c98a06f95de4c7a193390d6c403a44c81f67e7cbb40047798146905b533e5323d
   languageName: node
   linkType: hard
 
-"@nextgis/properties-filter@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/properties-filter@npm:1.16.8"
+"@nextgis/react-ngw-leaflet@npm:^1.18.1":
+  version: 1.18.2
+  resolution: "@nextgis/react-ngw-leaflet@npm:1.18.2"
   dependencies:
-    "@nextgis/utils": ^1.16.8
-    geojson: ^0.5.0
-  checksum: 19a796389e51b97bac45f090b07099d740a8f07ef82b9ed4b61605c716ebd89de065f6a76ce4ea948018008d4cadbae0eb802203b1211a3d131753a56fec39dd
+    "@nextgis/leaflet-map-adapter": ^1.18.1
+    "@nextgis/react-ngw-map": ^1.18.2
+  checksum: 00f9f1cb08a802de74c5bfead207085bc3c5fe6eb6ae07126aa2e94fd1d850eb4d345dcf5e5d2a61a84df9f6aad63c8b9d1fd22b48e4e478483cd882cfdafd1b
   languageName: node
   linkType: hard
 
-"@nextgis/qms-kit@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/qms-kit@npm:1.16.6"
+"@nextgis/react-ngw-map@npm:^1.18.2":
+  version: 1.18.2
+  resolution: "@nextgis/react-ngw-map@npm:1.18.2"
   dependencies:
-    "@nextgis/utils": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
-  checksum: b027ac2270930a07dcaacb8e6c56befba4c4095732745ff728a2b878f2368ce87dc9295179a7a7323168dd0531e4627ac926e890b684026a5ee5bb2df04ab905
-  languageName: node
-  linkType: hard
-
-"@nextgis/qms-kit@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/qms-kit@npm:1.16.8"
-  dependencies:
-    "@nextgis/utils": ^1.16.8
-    "@nextgis/webmap": ^1.16.8
-  checksum: 44ba4331bff8575d9d9abf892a80a705b4651f1f4ffe3669db7a9788b5e2ab59c030dc68443d040a238952f0626b935ef190bff94ba0638a8d53318b9dc54ce7
-  languageName: node
-  linkType: hard
-
-"@nextgis/react-ngw-leaflet@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/react-ngw-leaflet@npm:1.16.6"
-  dependencies:
-    "@nextgis/leaflet-map-adapter": ^1.16.6
-    "@nextgis/react-ngw-map": ^1.16.6
-  checksum: f5f0aa1f663e1b14cd47e9ac6b2b582d602f0db20f4d6bad9d5b6d4e33886b1aab4efee89d3ccb533e9b4c56a0e51c09c70d3e985085395b201866e5d2aae481
-  languageName: node
-  linkType: hard
-
-"@nextgis/react-ngw-map@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/react-ngw-map@npm:1.16.6"
-  dependencies:
-    "@nextgis/ngw-map": ^1.16.6
-    "@nextgis/utils": ^1.16.6
+    "@nextgis/ngw-map": ^1.18.2
+    "@nextgis/utils": ^1.17.0
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: f96801ebb8b7b6d5d95c92eec9c2fde28ce6b1f8be4df656660046873e3d32ce28543360ff2cd9784d0a752cd3123414ce219db268bf350ae0cbdb79f56871f3
+  checksum: 24abccf2d5fabf01cc36d85466d87914da81a30f59ff20686c9148e1057fdbb1b415c1c6c6034e01ef61cd07e4caa0393ecb2226263ac27bb21bba7a7c11a66d
   languageName: node
   linkType: hard
 
-"@nextgis/react-ngw-mapbox@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/react-ngw-mapbox@npm:1.16.6"
+"@nextgis/react-ngw-mapbox@npm:^1.18.1":
+  version: 1.18.2
+  resolution: "@nextgis/react-ngw-mapbox@npm:1.18.2"
   dependencies:
-    "@nextgis/mapboxgl-map-adapter": ^1.16.6
-    "@nextgis/react-ngw-map": ^1.16.6
-  checksum: 59ac795678d62d4e0209f169bc82c8cce4865526f5bbb3331a02629a4c2b87a848b3b6f86f05423b81b9c837bee634ee6cd8d4638737f4280f5b18ae30642e0c
+    "@nextgis/mapboxgl-map-adapter": ^1.18.2
+    "@nextgis/react-ngw-map": ^1.18.2
+  checksum: d4a09632e73315d5952a5bde912c3d5aad2efe9faeae4decf2f87a37dab408c49d8bf8d6f703d5a4cbdec37ab56169d6a63b3b891183e4e15a88bbb7a5256f4d
   languageName: node
   linkType: hard
 
-"@nextgis/tree@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/tree@npm:1.16.6"
+"@nextgis/tree@npm:^1.18.0":
+  version: 1.18.0
+  resolution: "@nextgis/tree@npm:1.18.0"
   dependencies:
-    "@nextgis/properties-filter": ^1.16.6
-    "@nextgis/utils": ^1.16.6
-  checksum: f19395c34a0cb789c3cd0893fac6cbcf62e688e49cca4eebab7f698e809cf46520512cdacf3e2295d93057bed86808c3888287ccef4979deb3fa54cef8db35e7
+    "@nextgis/properties-filter": ^1.18.0
+    "@nextgis/utils": ^1.17.0
+  checksum: 19f33e8fa87a1c69ff9b22eccc2a78096257b041cd6069cd9277f1c74ee09681c731e0250f0ec10001b6a0c6b234deb679b6a6315c6b0e10889e250be5c592cf
   languageName: node
   linkType: hard
 
-"@nextgis/tree@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/tree@npm:1.16.8"
+"@nextgis/utils@npm:^1.17.0":
+  version: 1.17.0
+  resolution: "@nextgis/utils@npm:1.17.0"
+  checksum: 67cfd71ce3899ccfb00ab8d879283a0b497b9bcb3f44cb1376aa89bbb0b0ab3c70f1e8ecdd68f7028795fd9acdd2da983a49a080546483d17ccdf55d078cd21c
+  languageName: node
+  linkType: hard
+
+"@nextgis/webmap@npm:^1.18.1":
+  version: 1.18.1
+  resolution: "@nextgis/webmap@npm:1.18.1"
   dependencies:
-    "@nextgis/properties-filter": ^1.16.8
-    "@nextgis/utils": ^1.16.8
-  checksum: 9d5127b04fab8372d51af219ab7219bfcf57fc6aec4db351d91cdc374cf16f3719d129adc11e345f79b46c15738f1bb2acc28b4b3cfba3f1a20a5fbe353256fe
-  languageName: node
-  linkType: hard
-
-"@nextgis/utils@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/utils@npm:1.16.6"
-  checksum: b8db607e01deb8002fd45985b2dd50cbc7253ac2f0bad75b4aa2ea7ebb473f0fc6af4d7a525e3f786cab47dceaf29d71e2fb492276687b7c15af1c9816cc2242
-  languageName: node
-  linkType: hard
-
-"@nextgis/utils@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/utils@npm:1.16.8"
-  checksum: 213f08e72bda41842ef9b54be4e43f8ebb6574e9e1d3660f34fe7dd8287e4a9215e4156702d61ca0f9c86adee7ba99f6fd11e5f36bab8266eea85e1d852473f8
-  languageName: node
-  linkType: hard
-
-"@nextgis/webmap@npm:^1.16.6":
-  version: 1.16.6
-  resolution: "@nextgis/webmap@npm:1.16.6"
-  dependencies:
-    "@nextgis/cancelable-promise": ^1.16.6
-    "@nextgis/paint": ^1.16.6
-    "@nextgis/properties-filter": ^1.16.6
-    "@nextgis/utils": ^1.16.6
+    "@nextgis/cancelable-promise": ^1.17.0
+    "@nextgis/paint": ^1.18.1
+    "@nextgis/properties-filter": ^1.18.0
+    "@nextgis/utils": ^1.17.0
     "@types/events": ^3.0.0
     "@types/geojson": ^7946.0.8
     events: ^3.3.0
     strict-event-emitter-types: ^2.0.0
-  checksum: 05262270ac692b016bc773bf5b2c82f1a4738308bfb1cc273c92b0206a55dc78178b4935af5446969e0e3dc7c5b920eaf8a7a214189090c33d93f7099bf70336
-  languageName: node
-  linkType: hard
-
-"@nextgis/webmap@npm:^1.16.8":
-  version: 1.16.8
-  resolution: "@nextgis/webmap@npm:1.16.8"
-  dependencies:
-    "@nextgis/cancelable-promise": ^1.16.8
-    "@nextgis/paint": ^1.16.8
-    "@nextgis/properties-filter": ^1.16.8
-    "@nextgis/utils": ^1.16.8
-    "@types/events": ^3.0.0
-    "@types/geojson": ^7946.0.8
-    events: ^3.3.0
-    strict-event-emitter-types: ^2.0.0
-  checksum: 54e82e33734026ab9404c51b81c4128afa0126ee61599abe3ae3bba45a77996402fc843c47317ddfa7ef98d969c03947b17b5790853a3e9c7361f4f29205b287
+  checksum: 58d638483ae9d8e2a1721409a864ce9435bea30a5aa2ccb4e2672ccd62ec9303f8283a549d85702e95be496af9cd6d2baa24d8262dc7806c962460a57d7633d1
   languageName: node
   linkType: hard
 
@@ -2744,6 +2648,15 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: b9bbb2b5c5ead2fb884bb019f61a014e37410bddd295de28184e1b2e71ee6b04120c5ba7b9954617f0bdf962c13d06249ce65004490889c747c80d3f628ea842
+  languageName: node
+  linkType: hard
+
+"@types/supercluster@npm:^7.1.0":
+  version: 7.1.1
+  resolution: "@types/supercluster@npm:7.1.1"
+  dependencies:
+    "@types/geojson": "*"
+  checksum: 2255432478ab7258c297d5c5da54ce26480088cb92c6e9d06203f43bfd442d089a5e80f808a91f1ddb0d90d7ee55835d8c15d17e5686feb3be0d912faf5967b2
   languageName: node
   linkType: hard
 
@@ -4083,6 +3996,25 @@ __metadata:
   version: 3.1.2
   resolution: "bytes@npm:3.1.2"
   checksum: e4bcd3948d289c5127591fbedf10c0b639ccbf00243504e4e127374a15c3bc8eed0d28d4aaab08ff6f1cf2abc0cce6ba3085ed32f4f90e82a5683ce0014e1b6e
+  languageName: node
+  linkType: hard
+
+"bytewise-core@npm:^1.2.2":
+  version: 1.2.3
+  resolution: "bytewise-core@npm:1.2.3"
+  dependencies:
+    typewise-core: ^1.2
+  checksum: e0d28fb7ff5bb6fd9320eef31c6b37e98da3b9a24d9893e2c17e0ee544457e0c76c2d3fc642c99d82daa0f18dcd49e7dce8dcc338711200e9ced79107cb78e8e
+  languageName: node
+  linkType: hard
+
+"bytewise@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "bytewise@npm:1.1.0"
+  dependencies:
+    bytewise-core: ^1.2.2
+    typewise: ^1.0.3
+  checksum: 20d7387ecf8c29adc4740e626fb02eaa27f34ae4c5ca881657d403e792730c0625ba4fed824462b3ddb7d3ebe41b7abbfe24f1cd3bf07cecc5a631f154d2d8d2
   languageName: node
   linkType: hard
 
@@ -6648,13 +6580,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"geojson@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "geojson@npm:0.5.0"
-  checksum: 44fbf916dc66d17f1561fb56fd2741f21e26da5dd7daf842a794119c841c7f6d611ccc21d9797c9c62a78c41a0f841c0648042989a5a5a05045835c6ada8612f
-  languageName: node
-  linkType: hard
-
 "geotiff@npm:2.0.4":
   version: 2.0.4
   resolution: "geotiff@npm:2.0.4"
@@ -6705,7 +6630,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-value@npm:^2.0.3, get-value@npm:^2.0.6":
+"get-value@npm:^2.0.2, get-value@npm:^2.0.3, get-value@npm:^2.0.6":
   version: 2.0.6
   resolution: "get-value@npm:2.0.6"
   checksum: 5c3b99cb5398ea8016bf46ff17afc5d1d286874d2ad38ca5edb6e87d75c0965b0094cb9a9dddef2c59c23d250702323539a7fbdd870620db38c7e7d7ec87c1eb
@@ -8205,6 +8130,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-stringify-pretty-compact@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "json-stringify-pretty-compact@npm:3.0.0"
+  checksum: 01ab5c5c8260299414868d96db97f53aef93c290fe469edd9a1363818e795006e01c952fa2fd7b47cbbab506d5768998eccc25e1da4fa2ccfebd1788c6098791
+  languageName: node
+  linkType: hard
+
 "json-stringify-safe@npm:~5.0.1":
   version: 5.0.1
   resolution: "json-stringify-safe@npm:5.0.1"
@@ -8260,6 +8192,13 @@ __metadata:
   version: 3.0.0
   resolution: "kdbush@npm:3.0.0"
   checksum: bc5fa433958e42664a8a92457e4f0d1db55b3b8e36956aac0102964adb2eab043bdbff156570dc8d867144ceff588fb7a1c6e099ba9be068cd1767a73e1ace92
+  languageName: node
+  linkType: hard
+
+"kdbush@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "kdbush@npm:4.0.2"
+  checksum: 6782ef2cdaec9322376b9955a16b0163beda0cefa2f87da76e8970ade2572d8b63bec915347aaeac609484b0c6e84d7b591f229ef353b68b460238095bacde2d
   languageName: node
   linkType: hard
 
@@ -8593,7 +8532,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"maplibre-gl@npm:2.4.0, maplibre-gl@npm:^2.4.0":
+"maplibre-gl@npm:2.4.0":
   version: 2.4.0
   resolution: "maplibre-gl@npm:2.4.0"
   dependencies:
@@ -8622,6 +8561,39 @@ __metadata:
     tinyqueue: ^2.0.3
     vt-pbf: ^3.1.3
   checksum: ee3f422332596616861c243ced39b5b58b9d071487f0de75df49e5140fe04c4a9c112a83eb1e5f82bb34a11e78a0d54c39b62f65ef773f371b06b0b319a5a7a2
+  languageName: node
+  linkType: hard
+
+"maplibre-gl@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "maplibre-gl@npm:3.3.1"
+  dependencies:
+    "@mapbox/geojson-rewind": ^0.5.2
+    "@mapbox/jsonlint-lines-primitives": ^2.0.2
+    "@mapbox/point-geometry": ^0.1.0
+    "@mapbox/tiny-sdf": ^2.0.6
+    "@mapbox/unitbezier": ^0.0.1
+    "@mapbox/vector-tile": ^1.3.1
+    "@mapbox/whoots-js": ^3.1.0
+    "@maplibre/maplibre-gl-style-spec": ^19.3.0
+    "@types/geojson": ^7946.0.10
+    "@types/mapbox__point-geometry": ^0.1.2
+    "@types/mapbox__vector-tile": ^1.3.0
+    "@types/pbf": ^3.0.2
+    "@types/supercluster": ^7.1.0
+    earcut: ^2.2.4
+    geojson-vt: ^3.2.1
+    gl-matrix: ^3.4.3
+    global-prefix: ^3.0.0
+    kdbush: ^4.0.2
+    murmurhash-js: ^1.0.0
+    pbf: ^3.2.1
+    potpack: ^2.0.0
+    quickselect: ^2.0.0
+    supercluster: ^8.0.1
+    tinyqueue: ^2.0.3
+    vt-pbf: ^3.1.3
+  checksum: 0e91dee84ac75abbe69b1d6fcd944de1abe6af31661b96d64947da439f882ce7c126868133249245d3357459f70a0b36541d14111a5713bea07daf972a26c2e1
   languageName: node
   linkType: hard
 
@@ -8817,7 +8789,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.1.3, minimist@npm:^1.2.0, minimist@npm:^1.2.6":
+"minimist@npm:^1.1.3, minimist@npm:^1.2.0, minimist@npm:^1.2.6, minimist@npm:^1.2.8":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
@@ -9043,7 +9015,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-ol": ^1.16.6
+    "@nextgis/ngw-ol": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9055,7 +9027,7 @@ __metadata:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
     "@geoman-io/leaflet-geoman-free": ^2.14.2
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9074,7 +9046,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9085,7 +9057,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9096,7 +9068,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9107,7 +9079,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9118,7 +9090,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9129,7 +9101,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.21.4
     "@babel/preset-env": ^7.21.4
-    "@nextgis/ngw-mapbox": ^1.16.6
+    "@nextgis/ngw-mapbox": ^1.18.1
     babel-core: ^7.0.0-bridge.0
     babel-eslint: ^10.1.0
     babel-loader: ^9.1.2
@@ -9160,7 +9132,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9171,7 +9143,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9182,7 +9154,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9191,7 +9163,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-no-map-ngw-connector@workspace:tutorials/6_1_no_map_ngw_connector"
   dependencies:
-    "@nextgis/ngw-connector": ^1.16.8
+    "@nextgis/ngw-connector": ^1.17.0
   languageName: unknown
   linkType: soft
 
@@ -9199,7 +9171,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-no-map-ngw-kit@workspace:tutorials/6_2_no_map_ngw_kit"
   dependencies:
-    "@nextgis/ngw-kit": ^1.16.8
+    "@nextgis/ngw-kit": ^1.18.1
   languageName: unknown
   linkType: soft
 
@@ -9207,7 +9179,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-no-map-ngw-orm@workspace:tutorials/6_3_no_map_ngw_orm"
   dependencies:
-    "@nextgis/ngw-orm": ^1.16.6
+    "@nextgis/ngw-orm": ^1.18.1
     chalk: ^5.2.0
     ts-node: ^10.9.1
     typescript: ^5.0.4
@@ -9223,8 +9195,8 @@ __metadata:
     "@babel/preset-env": 7.21.4
     "@babel/preset-react": ^7.18.6
     "@mdi/js": ^7.2.96
-    "@nextgis/react-ngw-leaflet": ^1.16.6
-    "@nextgis/react-ngw-mapbox": ^1.16.6
+    "@nextgis/react-ngw-leaflet": ^1.18.1
+    "@nextgis/react-ngw-mapbox": ^1.18.1
     leaflet: 1.7.1
     maplibre-gl: 2.4.0
     parcel-bundler: ^1.12.5
@@ -9239,7 +9211,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9250,7 +9222,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9261,9 +9233,9 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
-    "@nextgis/ngw-mapbox": ^1.16.6
-    "@nextgis/ngw-ol": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
+    "@nextgis/ngw-mapbox": ^1.18.1
+    "@nextgis/ngw-ol": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9274,11 +9246,11 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/leaflet-map-adapter": ^1.16.6
-    "@nextgis/ngw-kit": ^1.16.6
-    "@nextgis/ol-map-adapter": ^1.16.6
-    "@nextgis/qms-kit": ^1.16.6
-    "@nextgis/webmap": ^1.16.6
+    "@nextgis/leaflet-map-adapter": ^1.18.1
+    "@nextgis/ngw-kit": ^1.18.1
+    "@nextgis/ol-map-adapter": ^1.18.1
+    "@nextgis/qms-kit": ^1.18.1
+    "@nextgis/webmap": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9289,7 +9261,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9300,9 +9272,9 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-connector": ^1.16.6
-    "@nextgis/ngw-leaflet": ^1.16.6
-    "@nextgis/qms-kit": ^1.16.6
+    "@nextgis/ngw-connector": ^1.17.0
+    "@nextgis/ngw-leaflet": ^1.18.1
+    "@nextgis/qms-kit": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9313,7 +9285,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9324,7 +9296,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9335,7 +9307,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9346,7 +9318,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -9357,7 +9329,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.21.4
     "@babel/preset-env": 7.21.4
-    "@nextgis/ngw-leaflet": ^1.16.6
+    "@nextgis/ngw-leaflet": ^1.18.1
     parcel-bundler: ^1.12.5
   languageName: unknown
   linkType: soft
@@ -10737,6 +10709,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"potpack@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "potpack@npm:2.0.0"
+  checksum: 6dd41692349936b436c29c28cf9ff1268c03ed6ec96c4384b2d9eb95e58e422fab75d428648f475507dd167934984d1002df2010b83e5747b5c358bea371e8f7
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -11896,10 +11875,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sort-asc@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "sort-asc@npm:0.2.0"
+  checksum: b3610ab695dc8b2cba1c3e6ead06ce97a41f013ed0a002ff7a0d2a39ca297fd2f58c92d3de67dda3a9313ecb1073de4eacc30da3a740ff8d57eb668c9bb151bd
+  languageName: node
+  linkType: hard
+
 "sort-desc@npm:^0.1.1":
   version: 0.1.1
   resolution: "sort-desc@npm:0.1.1"
   checksum: f2a2568f4eaf9a7315700ae9e46e74ae7b395f24323bf807f07b20269a7c162b549b0bac6d5bb8e26f7ee15af72a74fdaf09d47257227dbe31c4ac8f13b19e1d
+  languageName: node
+  linkType: hard
+
+"sort-desc@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "sort-desc@npm:0.2.0"
+  checksum: fb2c02ea38815c79c0127d014f18926a473a1988c01f4c00de467584b99fc7e9f6e4f61c8386f4c2ac3501c60842931c5a499330b3086be6d8cff4d0b8602bed
   languageName: node
   linkType: hard
 
@@ -11910,6 +11903,20 @@ __metadata:
     sort-asc: ^0.1.0
     sort-desc: ^0.1.1
   checksum: 701fac8b49e9c720f4e5f4b70e995a795771dbecab2368b2e362c5c02cc269418a061f3303c47137d22fc3fe1ded03b4fd4215edec0960c4721274d320dae2b4
+  languageName: node
+  linkType: hard
+
+"sort-object@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "sort-object@npm:3.0.3"
+  dependencies:
+    bytewise: ^1.1.0
+    get-value: ^2.0.2
+    is-extendable: ^0.1.1
+    sort-asc: ^0.2.0
+    sort-desc: ^0.2.0
+    union-value: ^1.0.1
+  checksum: 381a6b6fe2309d400bd6ae3a8d0188b2b3b3855345d16d953b4bb5875d28fd5512501c85bd4eb951543056cd3095ff8e197ab3efc11389dcfa0e3334bf4a23a5
   languageName: node
   linkType: hard
 
@@ -12300,6 +12307,15 @@ __metadata:
   dependencies:
     kdbush: ^3.0.0
   checksum: 69863238870093b96617135884721b6343746e14f396b2d67d6b55c52c362ec0516c5e386aa21815e75a9cef2054e831ac34023d0d8b600091d28cea0794f027
+  languageName: node
+  linkType: hard
+
+"supercluster@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "supercluster@npm:8.0.1"
+  dependencies:
+    kdbush: ^4.0.2
+  checksum: 39d141f768a511efa53260252f9dab9a2ce0228b334e55482c8d3019e151932f05e1a9a0252d681737651b13c741c665542a6ddb40ec27de96159ea7ad41f7f4
   languageName: node
   linkType: hard
 
@@ -12763,6 +12779,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typewise-core@npm:^1.2, typewise-core@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "typewise-core@npm:1.2.0"
+  checksum: c21e83544546d1aba2f17377c25ae0eb571c2153b2e3705932515bef103dbe43e05d2286f238ad139341b1000da40583115a44cb5e69a2ef408572b13dab844b
+  languageName: node
+  linkType: hard
+
+"typewise@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "typewise@npm:1.0.3"
+  dependencies:
+    typewise-core: ^1.2.0
+  checksum: eb3452b1387df8bf8e3b620720d240425a50ce402d7c064c21ac4b5d88c551ee4d1f26cd649b8a17a6d06f7a3675733de841723f8e06bb3edabfeacc4924af4a
+  languageName: node
+  linkType: hard
+
 "uglify-js@npm:^2.7.3":
   version: 2.8.29
   resolution: "uglify-js@npm:2.8.29"
@@ -12858,7 +12890,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"union-value@npm:^1.0.0":
+"union-value@npm:^1.0.0, union-value@npm:^1.0.1":
   version: 1.0.1
   resolution: "union-value@npm:1.0.1"
   dependencies:

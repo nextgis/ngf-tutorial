@@ -7,7 +7,7 @@
     "start": "parcel src/index.html -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-ol": "^1.16.6"
+    "@nextgis/ngw-ol": "^1.18.1"
   },
   "keywords": [
     "NGF",

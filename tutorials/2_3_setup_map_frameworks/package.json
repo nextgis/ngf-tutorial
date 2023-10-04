@@ -7,9 +7,9 @@
     "start": "parcel src/index.html -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "^1.16.6",
-    "@nextgis/ngw-mapbox": "^1.16.6",
-    "@nextgis/ngw-ol": "^1.16.6"
+    "@nextgis/ngw-leaflet": "^1.18.1",
+    "@nextgis/ngw-mapbox": "^1.18.1",
+    "@nextgis/ngw-ol": "^1.18.1"
   },
   "devDependencies": {
     "@babel/core": "7.21.4",
