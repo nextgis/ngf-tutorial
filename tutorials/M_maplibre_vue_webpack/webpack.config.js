@@ -48,7 +48,7 @@ module.exports = (env, argv) => {
         context: path.join(__dirname, "../.."),
         fix: true,
         files: ["packages/"],
-        extensions: ["ts"],
+        extensions: ["js","ts"],
       }),
       new webpack.DefinePlugin({
         __VUE_OPTIONS_API__: false,
