@@ -7,9 +7,9 @@
     "start": "parcel src/index.html -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-connector": "^1.17.0",
-    "@nextgis/ngw-leaflet": "^1.18.1",
-    "@nextgis/qms-kit": "^1.18.1"
+    "@nextgis/ngw-connector": "^1.18.4",
+    "@nextgis/ngw-leaflet": "^1.18.6",
+    "@nextgis/qms-kit": "^1.18.6"
   },
   "devDependencies": {
     "@babel/core": "7.21.4",

@@ -11,7 +11,8 @@ import type {
   FeatureCollection,
 } from 'geojson';
 import type { MapContainerProps } from '@nextgis/react-ngw-map';
-import type { NgwMap, VectorLayerAdapter } from '@nextgis/ngw-map';
+import type { VectorLayerAdapter } from '@nextgis/webmap';
+import type { NgwMap } from '@nextgis/ngw-map';
 
 function getArrowPoints(
   end: Position,

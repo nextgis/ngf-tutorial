@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "^2.14.2",
-    "@nextgis/ngw-leaflet": "^1.18.1"
+    "@nextgis/ngw-leaflet": "^1.18.6"
   },
   "devDependencies": {
     "@babel/core": "7.21.4",

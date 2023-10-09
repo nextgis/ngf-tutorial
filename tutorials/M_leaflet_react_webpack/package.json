@@ -11,7 +11,7 @@
   "author": "",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@nextgis/react-ngw-leaflet": "^1.18.1",
+    "@nextgis/react-ngw-leaflet": "^1.18.6",
     "leaflet": "1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

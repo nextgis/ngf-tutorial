@@ -7,11 +7,11 @@
     "start": "parcel src/index.html -p 8080"
   },
   "dependencies": {
-    "@nextgis/leaflet-map-adapter": "^1.18.1",
-    "@nextgis/ngw-kit": "^1.18.1",
-    "@nextgis/ol-map-adapter": "^1.18.1",
-    "@nextgis/qms-kit": "^1.18.1",
-    "@nextgis/webmap": "^1.18.1"
+    "@nextgis/leaflet-map-adapter": "^1.18.6",
+    "@nextgis/ngw-kit": "^1.18.6",
+    "@nextgis/ol-map-adapter": "^1.18.6",
+    "@nextgis/qms-kit": "^1.18.6",
+    "@nextgis/webmap": "^1.18.6"
   },
   "devDependencies": {
     "@babel/core": "7.21.4",
