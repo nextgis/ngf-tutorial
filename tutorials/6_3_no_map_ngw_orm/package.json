@@ -7,7 +7,7 @@
     "start": "ts-node ./src/main.ts"
   },
   "dependencies": {
-    "@nextgis/ngw-orm": "^1.18.6"
+    "@nextgis/ngw-orm": "^1.19.2"
   },
   "keywords": [
     "NGF",
@@ -21,8 +21,8 @@
     "last 1 version"
   ],
   "devDependencies": {
-    "chalk": "^5.2.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "chalk": "^5.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }

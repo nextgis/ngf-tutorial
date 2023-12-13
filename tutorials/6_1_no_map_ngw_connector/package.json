@@ -7,7 +7,7 @@
     "start": "node ./src/main.js"
   },
   "dependencies": {
-    "@nextgis/ngw-connector": "^1.18.4"
+    "@nextgis/ngw-connector": "^1.19.0"
   },
   "keywords": [
     "NGF",
