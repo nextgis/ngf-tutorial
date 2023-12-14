@@ -6,6 +6,7 @@ import NgwMap from "@nextgis/ngw-leaflet";
 import {
   createGeoJsonAdapter,
   fetchNgwLayerFeatureCollection,
+  fetchNgwExtent,
 } from "@nextgis/ngw-kit";
 
 import type {
@@ -37,7 +38,7 @@ NgwMap.create({
     }
   }
 
-  // Method 1 - Creating a layer with pre-fetched data
+  // // Method 1 - Creating a layer with pre-fetched data
   fetchNgwLayerFeatureCollection({
     connector: ngwMap.connector,
     resourceId: 3982,
@@ -58,7 +59,36 @@ NgwMap.create({
     );
   });
 
-  // Method 2 - Creating a layer based on data from an NGW vector layer
+  // Method 2 - Add data to the exist layer
+  // fetchNgwExtent({ connector: ngwMap.connector, resourceId: 3982 }).then(
+  //   (extent) => {
+  //     extent && ngwMap.fitBounds(extent);
+  //     fetchNgwLayerFeatureCollection({
+  //       connector: ngwMap.connector,
+  //       resourceId: 3982,
+  //     }).then((data) => {
+  //       ngwMap
+  //         .addGeoJsonLayer(
+  //           {
+  //             id: "mylayer",
+  //             paint: {
+  //               color: "red",
+  //               stroke: true,
+  //               strokeColor: "white",
+  //               radius: 4,
+  //               fillOpacity: 1,
+  //             },
+  //           },
+  //           ClusterAdapter,
+  //         )
+  //         .then(() => {
+  //           ngwMap.addLayerData("mylayer", data);
+  //         });
+  //     });
+  //   },
+  // );
+
+  // Method 3 - Creating a layer based on data from an NGW vector layer
   // ngwMap.connector.getResourceOrFail(3982).then((item) => {
   //   ngwMap.addGeoJsonLayer(
   //     {
