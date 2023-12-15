@@ -1,12 +1,13 @@
-import "leaflet";
+import * as L from "leaflet";
 // @ts-ignore
 import { MarkerClusterGroup } from "leaflet.markercluster";
 
+import {getCoordinates} from "@nextgis/utils";
 import NgwMap from "@nextgis/ngw-leaflet";
 import {
-  createGeoJsonAdapter,
+
   fetchNgwLayerFeatureCollection,
-  fetchNgwExtent,
+
 } from "@nextgis/ngw-kit";
 
 import type {
@@ -17,6 +18,7 @@ import type { Type } from "@nextgis/utils";
 
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+import { FeatureCollection, GeoJsonObject } from "geojson";
 
 NgwMap.create({
   baseUrl: "https://demo.nextgis.com",
@@ -29,12 +31,19 @@ NgwMap.create({
   class ClusterAdapter extends DefaultGeojsonAdapter {
     // https://github.com/nextgis/nextgis_frontend/blob/969d0a366e331d52737ac5fa50d28b6d5423c3a5/packages/leaflet-map-adapter/src/layer-adapters/GeoJsonAdapter/GeoJsonAdapter.ts#L71
     addLayer(options: GeoJsonAdapterOptions) {
-      Object.assign(this.options, options);
       this.layer = new MarkerClusterGroup();
       if (options.data && this.addData) {
         this.addData(options.data);
       }
       return this.layer;
+    }
+
+    addData(geojson: GeoJsonObject): void | Promise<void> {
+      for (const [lat, lng] of getCoordinates(geojson as FeatureCollection)) {
+        const myIcon = L.divIcon({ className: 'my-div-icon' });
+
+        L.marker([lat, lng], { icon: myIcon }).addTo(this.layer);
+      }
     }
   }
 
@@ -47,67 +56,8 @@ NgwMap.create({
       {
         data,
         fit: true,
-        paint: {
-          color: "red",
-          stroke: true,
-          strokeColor: "white",
-          radius: 4,
-          fillOpacity: 1,
-        },
       },
       ClusterAdapter,
     );
   });
-
-  // Method 2 - Add data to the exist layer
-  // fetchNgwExtent({ connector: ngwMap.connector, resourceId: 3982 }).then(
-  //   (extent) => {
-  //     extent && ngwMap.fitBounds(extent);
-  //     fetchNgwLayerFeatureCollection({
-  //       connector: ngwMap.connector,
-  //       resourceId: 3982,
-  //     }).then((data) => {
-  //       ngwMap
-  //         .addGeoJsonLayer(
-  //           {
-  //             id: "mylayer",
-  //             paint: {
-  //               color: "red",
-  //               stroke: true,
-  //               strokeColor: "white",
-  //               radius: 4,
-  //               fillOpacity: 1,
-  //             },
-  //           },
-  //           ClusterAdapter,
-  //         )
-  //         .then(() => {
-  //           ngwMap.addLayerData("mylayer", data);
-  //         });
-  //     });
-  //   },
-  // );
-
-  // Method 3 - Creating a layer based on data from an NGW vector layer
-  // ngwMap.connector.getResourceOrFail(3982).then((item) => {
-  //   ngwMap.addGeoJsonLayer(
-  //     {
-  //       fit: true,
-  //       paint: {
-  //         color: "red",
-  //         stroke: true,
-  //         strokeColor: "white",
-  //         radius: 4,
-  //         fillOpacity: 1,
-  //       },
-  //     },
-  //     createGeoJsonAdapter({
-  //       webMap: ngwMap,
-  //       connector: ngwMap.connector,
-  //       item,
-  //       layerOptions: { resource: 3982 },
-  //       Adapter: ClusterAdapter,
-  //     }),
-  //   );
-  // });
 });
