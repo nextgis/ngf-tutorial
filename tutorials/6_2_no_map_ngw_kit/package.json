@@ -7,7 +7,7 @@
     "start": "node ./src/main.js"
   },
   "dependencies": {
-    "@nextgis/ngw-kit": "^1.19.2"
+    "@nextgis/ngw-kit": "2.0.0-alpha.0"
   },
   "keywords": [
     "NGF",

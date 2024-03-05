@@ -1,7 +1,7 @@
 {
   "template": "node",
   "container": {
-    "node": "16",
+    "node": "18",
     "port": 8080
   },
   "hardReloadOnChange": true

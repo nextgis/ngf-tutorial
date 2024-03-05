@@ -7,18 +7,18 @@
     "start": "parcel index.html -p 8080"
   },
   "dependencies": {
-    "@mdi/js": "^7.3.67",
-    "@nextgis/react-ngw-leaflet": "^1.19.3",
-    "@nextgis/react-ngw-mapbox": "^1.19.3",
-    "leaflet": "1.7.1",
-    "maplibre-gl": "3.6.2",
+    "@mdi/js": "^7.4.47",
+    "@nextgis/react-ngw-leaflet": "2.0.0-alpha.0",
+    "@nextgis/react-ngw-maplibre-gl": "2.0.0-alpha.0",
+    "leaflet": "1.9.4",
+    "maplibre-gl": "4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.23.6",
+    "@babel/core": "7.24.0",
     "@babel/plugin-syntax-jsx": "^7.23.3",
-    "@babel/preset-env": "7.23.6",
+    "@babel/preset-env": "7.24.0",
     "@babel/preset-react": "^7.23.3",
     "parcel-bundler": "^1.12.5"
   },

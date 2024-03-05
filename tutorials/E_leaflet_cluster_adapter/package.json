@@ -7,12 +7,12 @@
     "start": "parcel src/index.html -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "^1.19.2",
+    "@nextgis/ngw-leaflet": "2.0.0-alpha.0",
     "leaflet.markercluster": "^1.5.3"
   },
   "devDependencies": {
-    "@babel/core": "7.23.6",
-    "@babel/preset-env": "7.23.6",
+    "@babel/core": "7.24.0",
+    "@babel/preset-env": "7.24.0",
     "@types/leaflet.markercluster": "^1.5.4",
     "parcel-bundler": "^1.12.5"
   },
