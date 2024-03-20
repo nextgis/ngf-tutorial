@@ -11,7 +11,7 @@ import {
   ref,
   h,
 } from "vue";
-import NgwMap from "@nextgis/ngw-mapbox";
+import NgwMap from "@nextgis/ngw-maplibre-gl";
 
 const DEFAULT_MAP_OPTIONS = {
   bounds: [-179, -90, 180, 90],

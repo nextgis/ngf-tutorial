@@ -2,7 +2,7 @@
 
 ## Theory
 
-NgwMap assemblies like `@nextgis/ngw-leaflet`, `@nextgis/ngw-ol` and `@nextgis/ngw-mapbox` are so convenient that we use them even where communication with NGW is not required.
+NgwMap assemblies like `@nextgis/ngw-leaflet`, `@nextgis/ngw-ol` and `@nextgis/ngw-maplibre-gl` are so convenient that we use them even where communication with NGW is not required.
 
 In fact, [NgwMap](https://code-api.nextgis.com/classes/ngw_map.NgwMap.html) is an extension of the [WebMap](https://code-api.nextgis.com/classes/ngw_map.WebMap.html) with methods and configuration options that simplify interaction with [NextGIS Web REST API](https://docs.nextgis.ru/docs_ngweb_dev/doc/developer/toc.html#nextgis-web-rest-api).
 
@@ -15,20 +15,28 @@ NgwMap.create({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
   resources: [
-    // Basemap resource
-    1665,
-    // Digital Elevation Model (DEM)-style
-    4117,
-    // Hillshade-style
-    { resource: 4115, adapter: "TILE", opacity: 0.3 },
-    // Elevation contours-style
-    4113,
-    // Vector from Order boundary-style
+    // basemap resource
+    7144,
+    // Graz administrative border
     {
-      resource: 4111,
-      fit: true,
+      resource: 7159,
       adapter: "GEOJSON",
-      adapterOptions: { paint: { color: "red", fill: false, weight: 4 } },
+      fit: true,
+      adapterOptions: { paint: { color: "green", fill: false, weight: 2 } },
+    },
+    // ambulance availability style
+    { resource: 7160, adapter: "TILE", opacity: 0.7 },
+    // ambulance station layer
+    {
+      resource: 7157,
+      adapter: "GEOJSON",
+      adapterOptions: { type: "point", paint: { type: "pin" } },
+    },
+    // residential areas outside 15 minute ambulance availability
+    {
+      resource: 7158,
+      adapter: "GEOJSON",
+      adapterOptions: { type: "polygon", paint: { color: "red" } },
     },
   ],
 });

@@ -3,14 +3,15 @@ import NgwMap from "@nextgis/ngw-leaflet";
 const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
+  center: [24.94, 60.17],
+  zoom: 16,
   osm: true,
 });
 
 ngwMap.addNgwLayer({
   id: "building",
-  resource: 5300,
+  resource: 6569,
   adapterOptions: {
-    fit: true,
     propertiesFilter: [
       "any",
       ["BUILDING", "eq", "apartments"],

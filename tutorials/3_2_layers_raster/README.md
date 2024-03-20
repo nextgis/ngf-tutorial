@@ -7,19 +7,21 @@ There are several ways to add GeoJSON to the map in NgwMap
 Common:
 
 ```javascript
-ngwMap.addLayer("TILE", {
-  url:
-    baseUrl + "/api/component/render/tile?z={z}&x={x}&y={y}&resource=" + 4111,
-  attribution: `<a href=${baseUrl + "/resource/4110"} target="_blank">4111</a>`,
-});
+  ngwMap.addLayer("TILE", {
+    url:
+      baseUrl + "/api/component/render/tile?z={z}&x={x}&y={y}&resource=" + 7149,
+    attribution: `<a href=${
+      baseUrl + "/resource/7141"
+    } target="_blank">7142</a>`,
+  });
 ```
 
 Shortcut way:
 
 ```javascript
-ngwMap.addTileLayer(
-  baseUrl + "/api/component/render/tile?x={x}&y={y}&z={z}&resource=" + 4117
-);
+  ngwMap.addTileLayer(
+    baseUrl + "/api/component/render/tile?x={x}&y={y}&z={z}&resource=" + 7149
+  );
 ```
 
 All options are documented [here](https://code-api.nextgis.com/interfaces/ngw_map.RasterAdapterOptions.html).

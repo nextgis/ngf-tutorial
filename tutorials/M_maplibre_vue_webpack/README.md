@@ -1,4 +1,4 @@
-# Misc.1 NgwMapbox with Vue and Webpack
+# Misc.1 NgwMaplibreGL with Vue and Webpack
 
 ## Practice
 

@@ -1,6 +1,5 @@
 import NgwMap from "@nextgis/ngw-leaflet";
 
-const bounds = [37.65972, 55.7299, 37.66735, 55.73278];
 
 const adapterOptions = (resourceId, opt) => {
   return Object.assign(
@@ -46,40 +45,17 @@ const adapterOptions = (resourceId, opt) => {
 const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
-  bounds: bounds,
+  center: [24.94, 60.17],
+  zoom: 16,
   osm: true,
 });
 
 ngwMap.addNgwLayer({
   id: "building",
-  resource: 5300,
-  adapterOptions: adapterOptions(5300, {
+  resource: 6569,
+  adapterOptions: adapterOptions(6569, {
     unselectOnSecondClick: true,
     paint: { color: "brown" },
     selectedPaint: { color: "red" },
-  }),
-});
-
-ngwMap.addNgwLayer({
-  id: "railway",
-  resource: 5304,
-  adapterOptions: adapterOptions(5304, {
-    paint: { color: "green", weight: 3 },
-    selectedPaint: { color: "limegreen", weight: 4 },
-  }),
-});
-
-const stationPaint = {
-  opacity: 1,
-  color: "orange",
-  strokeColor: "white",
-};
-ngwMap.addNgwLayer({
-  id: "station",
-  resource: 5298,
-  adapterOptions: adapterOptions(5298, {
-    unselectOnClick: false,
-    paint: Object.assign({ radius: 6 }, stationPaint),
-    selectedPaint: Object.assign({ radius: 8 }, stationPaint),
   }),
 });

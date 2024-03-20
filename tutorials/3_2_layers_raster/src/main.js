@@ -9,7 +9,7 @@ NgwMap.create({
   target: "map",
   osm: true,
 }).then((ngwMap) => {
-  fetchNgwLayerExtent({ connector: ngwMap.connector, resourceId: 4110 }).then(
+  fetchNgwLayerExtent({ connector: ngwMap.connector, resourceId: 7141 }).then(
     (extent) => {
       ngwMap.fitBounds(extent);
     }
@@ -17,13 +17,13 @@ NgwMap.create({
 
   ngwMap.addLayer("TILE", {
     url:
-      baseUrl + "/api/component/render/tile?z={z}&x={x}&y={y}&resource=" + 4111,
+      baseUrl + "/api/component/render/tile?z={z}&x={x}&y={y}&resource=" + 7149,
     attribution: `<a href=${
-      baseUrl + "/resource/4110"
-    } target="_blank">4111</a>`,
+      baseUrl + "/resource/7141"
+    } target="_blank">7142</a>`,
   });
 
-  ngwMap.addTileLayer(
-    baseUrl + "/api/component/render/tile?x={x}&y={y}&z={z}&resource=" + 4117
-  );
+  // ngwMap.addTileLayer(
+  //   baseUrl + "/api/component/render/tile?x={x}&y={y}&z={z}&resource=" + 7149
+  // );
 });

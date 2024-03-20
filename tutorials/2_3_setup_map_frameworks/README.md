@@ -2,7 +2,7 @@
 
 ## Theory
 
-The super power of the NGF is to provide a common interface for different map and layer adapters. The same code will work with different mapping frameworks (such as `openlayers`, `leaflet`, `mapbox-gl-js`). And it's really cool!
+The super power of the NGF is to provide a common interface for different map and layer adapters. The same code will work with different mapping frameworks (such as `openlayers`, `leaflet`, `maplibre-gl-js`). And it's really cool!
 
 Though you won't probably have to run the same code with multiple adapters in the one project at the same time, the ability to do this we believe is important. At the same tim there have been cases in our experience when it was necessary to change frameworks in the middle of a project.
 
@@ -13,7 +13,7 @@ Install one of these libraries in your project and you are ready to create inter
 ```bash
 npm i -S @nextgis/ngw-leaflet
 npm i -S @nextgis/ngw-ol
-npm i -S @nextgis/ngw-mapbox
+npm i -S @nextgis/ngw-maplibre-gl
 ```
 
 Import NgwMap from each of these three libraries and see how the webapp changes:

@@ -14,7 +14,7 @@ There are two main methods for working with controls in NgwMap: [addControl](htt
 
   NgwMap.create({
     target: "map",
-    center: [104, 52],
+    center: [13, 56],
     osm: true,
     zoom: 6,
   }).then((ngwMap) => {

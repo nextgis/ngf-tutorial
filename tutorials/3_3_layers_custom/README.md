@@ -21,7 +21,7 @@ const createCustomAdapter = (ngwMap) => {
   };
 };
 
-ngwMap.addLayer(createCustomAdapter(ngwMap), { resourceId: 5300 });
+ngwMap.addLayer(createCustomAdapter(ngwMap), { resourceId: 7152 });
 ```
 
 Pay attention to this `ngwMap.mapAdapter.layerAdapters.GEOJSON`. We inherit from the layer adapter that corresponds to the GeoJSON layer for the current map adapter. Although the `leaflet` has one behavior and the `ol` another, they will work the same way because of the common interfaces.

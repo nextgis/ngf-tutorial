@@ -46,7 +46,7 @@ export default defineComponent({
             ],
             "fill-outline-color": "black",
           },
-          // Set this parameter to use native Mapbox-gl-js style for both paint and selected paint
+          // Set this parameter to use native Maplibre-gl-js style for both paint and selected paint
           nativePaint: true,
         },
       });

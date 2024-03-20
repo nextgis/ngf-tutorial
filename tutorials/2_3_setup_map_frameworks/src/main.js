@@ -1,6 +1,6 @@
 // import NgwMap from "@nextgis/ngw-leaflet";
 import NgwMap from "@nextgis/ngw-ol";
-// import NgwMap from "@nextgis/ngw-mapbox";
+// import NgwMap from "@nextgis/ngw-maplibre-gl";
 
 const tree = document.getElementById("tree");
 const ngwMap = new NgwMap({
@@ -16,7 +16,7 @@ const ngwMap = new NgwMap({
 ngwMap.onLoad().then(() => {
   const webMapLayer = ngwMap
     .addNgwLayer({
-      resource: 4355,
+      resource: 6245,
       fit: true,
     })
     .then((webmap) => {
@@ -80,7 +80,7 @@ function createTreeItem(layer) {
 function createLayerOpacitySlider(layer) {
   const wrapper = document.createElement("span");
   const slider = document.createElement("input");
-  slider.style.width = "30px";
+  slider.style.width = "100px";
   slider.id = layer.id;
   [
     ["type", "range"],

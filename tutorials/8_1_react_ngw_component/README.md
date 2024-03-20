@@ -9,7 +9,7 @@ You can install specific version of `Leaflet` and `React` in `package.json`
 ```jsx
 import React, {useRef} from 'react';
 import { render } from 'react-dom';
-import ReactNgwMap from '@nextgis/react-ngw-leaflet'; // '@nextgis/react-ngw-ol', '@nextgis/react-ngw-mapbox'
+import ReactNgwMap from '@nextgis/react-ngw-leaflet'; // '@nextgis/react-ngw-ol', '@nextgis/react-ngw-maplibre-gl'
 import { MapControl, ToggleControl } from '@nextgis/react-ngw-map';
 
 function App() {

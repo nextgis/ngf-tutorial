@@ -15,7 +15,7 @@ import "leaflet/dist/leaflet.css";
 createWebMap({
   target: "map",
   mapAdapter: new MapAdapter(),
-  center: [104, 52],
+  center: [13, 56],
   zoom: 6,
 }).then((webmap) => {
   webmap.addBaseLayer('OSM');

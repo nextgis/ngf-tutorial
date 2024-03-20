@@ -4,17 +4,18 @@ import NgwConnector from "@nextgis/ngw-connector";
 import { fetchNgwLayerFeatures } from "@nextgis/ngw-kit";
 
 const connector = new NgwConnector({ baseUrl: "https://demo.nextgis.com" });
-const bounds = [37.65972, 55.7299, 37.66735, 55.73278];
+const bounds = [15.276, 47.035, 15.604, 47.105];
 
 const fetchGeoJson = (resourceId) =>
-  fetchNgwLayerFeatures({ connector, resourceId, intersects: bounds });
+  fetchNgwLayerFeatures({ connector, resourceId, intersects: bounds});
 
 NgwMap.create({
   target: "map",
   osm: true,
   bounds,
 }).then((ngwMap) => {
-  fetchGeoJson(5300).then((geojson) => {
+  console.log(ngwMap.getBounds())
+  fetchGeoJson(7154).then((geojson) => {
     ngwMap.addLayer("GEOJSON", {
       data: geojson,
       order: 1,
@@ -23,13 +24,13 @@ NgwMap.create({
   });
 
   ngwMap.addGeoJsonLayer({
-    id: "line-layer",
-    type: "line",
+    id: "point-layer",
+    type: "point",
     order: 2,
     interactive: false,
     paint: { weight: 4, color: "purple" },
   });
-  fetchGeoJson(5304).then((geojson) => {
-    ngwMap.setLayerData("line-layer", geojson);
+  fetchGeoJson(7152).then((geojson) => {
+    ngwMap.setLayerData("point-layer", geojson);
   });
 });

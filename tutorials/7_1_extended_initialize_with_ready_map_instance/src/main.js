@@ -20,7 +20,7 @@ const ngwMap = new NgwMap({
 
 ngwMap.addNgwLayer({
   id: "building",
-  resource: 5300,
+  resource: 6569,
   adapter: 'IMAGE',
   adapterOptions: {
     fit: true,

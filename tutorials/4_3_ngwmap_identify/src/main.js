@@ -7,7 +7,7 @@ const ngwMap = new NgwMap({
 });
 
 ngwMap.addNgwLayer({
-  resource: 4249,
+  resource: 7155,
   fit: true,
   adapterOptions: {
     selectable: true,
@@ -31,7 +31,7 @@ function drawLayer(identify) {
     ngwMap.addLayer("GEOJSON", {
       id: "highlight",
       data: geojson,
-      paint: { color: "green", stroke: true, fillOpacity: 0.8 },
+      paint: { color: "yellow", stroke: true, fillOpacity: 0.8 },
     });
     console.log(geojson);
   });

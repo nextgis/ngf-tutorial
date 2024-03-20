@@ -13,8 +13,8 @@ const connector = new NgwConnector({ baseUrl: "https://demo.nextgis.com" });
 createWebMap({
   target: "map",
   mapAdapter: new MapAdapter(),
-  center: [104, 52],
-  zoom: 6,
+  zoom: 8,
+  center: [-34.6, -58.48],
   starterKits: [
     new NgwKit({
       connector,
@@ -23,11 +23,10 @@ createWebMap({
     new QmsKit(),
   ],
 }).then((webmap) => {
-  webmap.addBaseLayer("QMS", { qmsId: 506 });
-  webmap.addLayer("WEBMAP", { resourceId: 4119, fit: true });
-
-  // webmap.addLayer(
-  //   createNgwLayerAdapter({ resource: 4117 }, webmap, connector),
-  //   { fit: true }
-  // );
+  webmap.addLayer("WEBMAP", { resourceId: 6246, fit: true, useBasemap: false });
+  webmap.addBaseLayer("QMS", { qmsId: 529 });
+  webmap.addLayer(
+    createNgwLayerAdapter({ resource: 6223 }, webmap, connector),
+    { fit: true }
+  );
 });

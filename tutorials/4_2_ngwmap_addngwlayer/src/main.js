@@ -4,23 +4,30 @@ NgwMap.create({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
 }).then((ngwMap) => {
-  // // Digital Elevation Model (DEM)-style
-  // ngwMap.addNgwLayer({ resource: 4117 });
-  // // Hillshade-style
-  // ngwMap.addNgwLayer({ resource: 4115, adapter: "TILE", opacity: 0.3 });
-  // // Elevation contours-style
-  // ngwMap.addNgwLayer({ resource: 4113 });
-  // Vector from Order boundary-style
+    // // ambulance availability style
+    // { resource: 7160, adapter: "TILE", opacity: 0.7 },
+    // // ambulance station layer
+    // {
+    //   resource: 7157,
+    //   adapter: "GEOJSON",
+    //   adapterOptions: { type: "point", paint: { type: "pin" } }
+    // },
+    // // residential areas outside 15 minute ambulance availability
+    // {
+    //   resource: 7158,
+    //   adapter: "GEOJSON",
+    //   adapterOptions: { type: "polygon", paint: { color: "red" } }
+    // },
   ngwMap.addNgwLayer({
     fit: true,
-    resource: "data-elevation-order-boundary-style",
+    resourceId: 7154,
     adapter: "GEOJSON",
     adapterOptions: { paint: { color: "red", fill: false, weight: 4 } },
   });
   // Baselayer
   ngwMap.addNgwLayer({ resource: 1665 });
 
-  // 4117 4115 4113
+  // 7160 7157 7158
   const addNgwLayerControl = ngwMap.createControl(
     {
       onAdd() {

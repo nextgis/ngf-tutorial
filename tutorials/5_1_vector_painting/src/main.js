@@ -8,7 +8,7 @@ const ngwMap = new NgwMap({
 
 ngwMap.addNgwLayer({
   id: "building",
-  resource: 5300,
+  resource: 6223,
   adapterOptions: {
     fit: true,
     paint: [
@@ -22,7 +22,7 @@ ngwMap.addNgwLayer({
 
 ngwMap.addNgwLayer({
   id: "railway",
-  resource: 5304,
+  resource: 6237,
   adapterOptions: {
     paint: function (feature) {
       let color = "gray";
@@ -43,7 +43,7 @@ ngwMap.addNgwLayer({
 
 ngwMap.addNgwLayer({
   id: "station",
-  resource: 5298,
+  resource: 6228,
   adapterOptions: {
     paint: {
       opacity: 1,

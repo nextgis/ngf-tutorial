@@ -1,7 +1,7 @@
 import NgwMap from "@nextgis/ngw-leaflet";
 import { fetchNgwLayerFeatures } from "@nextgis/ngw-kit";
 
-const bounds = [37.65972, 55.7299, 37.66735, 55.73278];
+const bounds = [15.276, 47.035, 15.604, 47.105];
 
 const createCustomAdapter = (ngwMap) => {
   return class CustomAdapter extends ngwMap.mapAdapter.layerAdapters.GEOJSON {
@@ -36,5 +36,5 @@ NgwMap.create({
   osm: true,
   bounds,
 }).then((ngwMap) => {
-  ngwMap.addLayer(createCustomAdapter(ngwMap), { resourceId: 5300 });
+  ngwMap.addLayer(createCustomAdapter(ngwMap), { resourceId: 7152 });
 });

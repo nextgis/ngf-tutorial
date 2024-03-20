@@ -6,7 +6,7 @@ const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
   osm: true,
-  resources: [{ resource: 3991, fit: true, id }],
+  resources: [{ resource: 6246, fit: true, id }],
 });
 
 const onMapEvent = (ev) => {

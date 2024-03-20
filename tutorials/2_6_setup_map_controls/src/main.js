@@ -6,7 +6,7 @@ const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
   qmsId: [448, qmsBaseLayerName],
-  resources: [{ resource: 4119, id: webMapName, useBasemap: false, fit: true }],
+  resources: [{ resource: 6245, id: webMapName, useBasemap: false, fit: true }],
   controls: ["ZOOM", "ATTRIBUTION", "ToggleBaseMap"],
   controlsOptions: {
     ToggleBaseMap: {
@@ -26,9 +26,6 @@ ngwMap.onLoad().then(() => {
     title: "Toggle DEM",
     onClick: () => {
       const ngwLayer = ngwMap.getLayer(webMapName);
-      const mapLayer = ngwLayer.layer.tree.getDescendants((x) => {
-        return x.item.display_name === "Digital Elevation Model (DEM)";
-      })[0];
       mapLayer.properties.set(
         "visibility",
         !mapLayer.properties.get("visibility")

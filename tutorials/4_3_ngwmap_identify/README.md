@@ -13,7 +13,7 @@ In order to indicate that identification is allowed for this resource, you need 
 
 ```javascript
 ngwMap.addNgwLayer({
-  resource: 4249,
+  resource: 7155,
   adapterOptions: {
     selectable: true,
   },

@@ -5,13 +5,14 @@
 To add resources from NGW after the map has already been created, there is a very convenient [addNgwLayer](https://code-api.nextgis.com/classes/ngw_map.NgwMap.html#addNgwLayer) method.
 
 ```javascript
-// add raster layer resourceId is the style of 4004 layer
-ngwMap.addNgwLayer({ resource: 4005 });
+// add raster layer resourceId is the style of 7154 layer
+ngwMap.addNgwLayer({ resource: 7159 });
 // add vector data from layer GEOJSON source
 ngwMap.addNgwLayer({
-  resource: 4038,
-  adapter: 'GEOJSON',
-  adapterOptions: { paint: { color: 'red' } }
+  fit: true,
+  resourceId: 7154,
+  adapter: "GEOJSON",
+  adapterOptions: { paint: { color: "red", fill: false, weight: 4 } },
 });
 ```
 
