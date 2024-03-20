@@ -1,4 +1,4 @@
-# 4.1. Vector. Painting
+# 5.1. Vector. Painting
 
 ## Theory
 

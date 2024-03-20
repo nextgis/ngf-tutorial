@@ -26,8 +26,7 @@ cd ./ngf-tutorial
 With yarn, you can install dependencies for all lessons at once
 
 > [!NOTE]  
-> Modern releases of Yarn aren't meant to be installed globally, or from npm. 
-> Refer to https://yarnpkg.com/getting-started/install for installation instructions
+> Modern releases of Yarn aren't meant to be installed globally, or from npm. Refer to https://yarnpkg.com/getting-started/install for installation instructions
 
 ```bash
 yarn

@@ -2,7 +2,7 @@ import NgwMap from "@nextgis/ngw-leaflet";
 import "@geoman-io/leaflet-geoman-free";
 import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
 
-const bounds = [37.65972, 55.7299, 37.66735, 55.73278];
+const bounds = [-58.39, -34.6, -58.36, -34.61];
 NgwMap.create({
   baseUrl: "https://demo.nextgis.com",
   target: "map",

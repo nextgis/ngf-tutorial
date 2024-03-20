@@ -45,8 +45,8 @@ const adapterOptions = (resourceId, opt) => {
 const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
-  center: [24.94, 60.17],
-  zoom: 16,
+  center: [24.9798, 60.189],
+  zoom: 17,
   osm: true,
 });
 

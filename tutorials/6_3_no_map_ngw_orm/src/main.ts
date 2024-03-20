@@ -31,7 +31,7 @@ async function sync() {
     });
     if (needUpdate) {
       try {
-        await await connection.updateResource(resource);
+        await connection.updateResource(resource);
         console.log(chalk.green("  resource updated"));
       } catch (er) {
         console.log(chalk.red(`  failed to update resource - ${er}`));

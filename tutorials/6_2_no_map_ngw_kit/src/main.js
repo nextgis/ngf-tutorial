@@ -12,7 +12,7 @@ const connector = new NgwConnector({
   baseUrl,
 });
 
-fetchNgwExtent({ connector, resourceId: 3988, cache: true }).then((extent) => {
+fetchNgwExtent({ connector, resourceId: 4224, cache: true }).then((extent) => {
   console.log(`Resource extent is ${extent}`);
 });
 

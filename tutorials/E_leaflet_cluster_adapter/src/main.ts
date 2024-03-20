@@ -50,7 +50,7 @@ NgwMap.create({
   // // Method 1 - Creating a layer with pre-fetched data
   fetchNgwLayerFeatureCollection({
     connector: ngwMap.connector,
-    resourceId: 3982,
+    resourceId: 5500,
   }).then((data) => {
     ngwMap.addGeoJsonLayer(
       {

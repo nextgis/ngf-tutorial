@@ -1,4 +1,4 @@
-# 4.1. Vector. Filtering
+# 5.4. Vector. Filtering
 
 ## Theory
 

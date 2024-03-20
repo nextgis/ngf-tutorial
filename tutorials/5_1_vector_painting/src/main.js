@@ -4,13 +4,14 @@ const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
   target: "map",
   osm: true,
+  center: [-58.3723, -34.6084],
+  zoom: 16
 });
 
 ngwMap.addNgwLayer({
   id: "building",
   resource: 6223,
   adapterOptions: {
-    fit: true,
     paint: [
       { stroke: true, fillOpacity: 0.5, color: "gray" },
       [[["BUILDING", "eq", "apartments"]], { color: "purple" }],

@@ -1,6 +1,6 @@
 import NgwMap from "@nextgis/ngw-leaflet";
 
-const bounds = [-58.37, -34.64, -58.4, -34.63];
+const bounds = [-58.39, -34.6, -58.36, -34.61];
 
 const ngwMap = new NgwMap({
   baseUrl: "https://demo.nextgis.com",
@@ -9,7 +9,6 @@ const ngwMap = new NgwMap({
   osm: true,
 });
 
-console.log(ngwMap.getBounds())
 
 
 ngwMap.addNgwLayer({
