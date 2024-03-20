@@ -8,10 +8,8 @@
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
-    "@nextgis/react-ngw-leaflet": "2.0.0-alpha.0",
-    "@nextgis/react-ngw-maplibre-gl": "2.0.0-alpha.0",
-    "leaflet": "1.9.4",
-    "maplibre-gl": "4.1.0",
+    "@nextgis/react-ngw-leaflet": "2.0.1",
+    "leaflet": "1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

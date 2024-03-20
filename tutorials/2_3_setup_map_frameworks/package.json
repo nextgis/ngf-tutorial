@@ -7,9 +7,9 @@
     "start": "parcel src/index.html -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "2.0.0-alpha.0",
-    "@nextgis/ngw-maplibre-gl": "2.0.0-alpha.0",
-    "@nextgis/ngw-ol": "2.0.0-alpha.0"
+    "@nextgis/ngw-leaflet": "2.0.0",
+    "@nextgis/ngw-maplibre-gl": "2.0.0",
+    "@nextgis/ngw-ol": "2.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.24.0",

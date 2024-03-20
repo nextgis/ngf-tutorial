@@ -7,7 +7,7 @@
     "start": "ts-node ./src/main.ts"
   },
   "dependencies": {
-    "@nextgis/ngw-orm": "2.0.0-alpha.0"
+    "@nextgis/ngw-orm": "2.0.0"
   },
   "keywords": [
     "NGF",

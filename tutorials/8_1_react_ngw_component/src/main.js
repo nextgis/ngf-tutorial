@@ -10,6 +10,8 @@ function App() {
 
   const mapOptions = {
     baseUrl: "https://demo.nextgis.com",
+    osm: true,
+    id: "map",
     resources: [
       { resource: 6118, id: "webmap", fit: true },
       { resource: 6106, id: "railway-vector" },
