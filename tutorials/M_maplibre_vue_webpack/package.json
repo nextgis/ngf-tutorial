@@ -1,15 +1,14 @@
 {
   "name": "ngf-tutorial-misc-maplibre-vue-webmap",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "module": "src/main.ts",
   "scripts": {
     "start": "webpack serve --config webpack.config.js"
   },
   "dependencies": {
-    "@nextgis/ngw-maplibre-gl": "2.0.0",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "@nextgis/ngw-maplibre-gl": "2.0.2",
+    "maplibre-gl": "4.1.1",
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
@@ -41,8 +40,11 @@
     "Frontend",
     "tutorial"
   ],
-  "license": "MIT",
-  "browserslist": [
-    "last 1 version"
-  ]
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "author": "NextGIS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextgis/ngf-tutorial.git"
+  },
+  "license": "MIT"
 }

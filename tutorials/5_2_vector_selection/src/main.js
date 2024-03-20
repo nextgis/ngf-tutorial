@@ -9,8 +9,6 @@ const ngwMap = new NgwMap({
   osm: true,
 });
 
-
-
 ngwMap.addNgwLayer({
   id: "building",
   resource: 6223,

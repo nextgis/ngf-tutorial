@@ -1,24 +1,20 @@
 {
   "name": "ngf-tutorial-react-ngw-component",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "src/index.js",
+  "source": "./src/index.html",
   "scripts": {
-    "start": "parcel index.html -p 8080"
+    "start": "parcel -p 8080"
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
-    "@nextgis/react-ngw-leaflet": "2.0.1",
+    "@nextgis/react-ngw-leaflet": "2.0.2",
     "leaflet": "1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.24.0",
-    "@babel/plugin-syntax-jsx": "^7.23.3",
-    "@babel/preset-env": "7.24.0",
-    "@babel/preset-react": "^7.23.3",
-    "parcel-bundler": "^1.12.5"
+    "parcel": "^2.12.0"
   },
   "keywords": [
     "NGF",
@@ -27,8 +23,11 @@
     "Frontend",
     "tutorial"
   ],
-  "license": "MIT",
-  "browserslist": [
-    "last 1 version"
-  ]
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "author": "NextGIS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextgis/ngf-tutorial.git"
+  },
+  "license": "MIT"
 }

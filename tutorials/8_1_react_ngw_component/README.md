@@ -16,6 +16,7 @@ function App() {
   const ngwMap = useRef();
 
   const mapOptions = {
+    id: "map",
     baseUrl: 'https://demo.nextgis.com',
     resources:[{resource: 6118, id: 'webmap', fit: true}],
     whenCreated: (n) => { 

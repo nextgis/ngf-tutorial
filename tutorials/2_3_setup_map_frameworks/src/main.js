@@ -9,12 +9,12 @@ const ngwMap = new NgwMap({
   osm: true,
 });
 
-// The code below is only necessary to show 
-// that different adapters work the same way 
+// The code below is only necessary to show
+// that different adapters work the same way
 // even with such non-trivial mechanics
 
 ngwMap.onLoad().then(() => {
-  const webMapLayer = ngwMap
+  ngwMap
     .addNgwLayer({
       resource: 6245,
       fit: true,
@@ -78,22 +78,24 @@ function createTreeItem(layer) {
 }
 
 function createLayerOpacitySlider(layer) {
-  const wrapper = document.createElement("span");
-  const slider = document.createElement("input");
-  slider.style.width = "100px";
-  slider.id = layer.id;
-  [
-    ["type", "range"],
-    ["min", "0"],
-    ["max", "1"],
-    ["step", "0.1"],
-  ].forEach((x) => slider.setAttribute(...x));
-  slider.value =
-    layer.options.opacity !== undefined ? layer.options.opacity : 1;
+  const sliderWrapper = document.createElement("span");
+  const opacitySlider = document.createElement("input");
 
-  slider.onchange = () => {
-    layer.properties.set("opacity", slider.value);
-  };
-  wrapper.appendChild(slider);
-  return wrapper;
+  opacitySlider.style.width = "100px";
+  opacitySlider.id = String(layer.id);
+  opacitySlider.type = "range";
+  opacitySlider.min = "0";
+  opacitySlider.max = "1";
+  opacitySlider.step = "0.1";
+
+  const initialOpacity =
+    layer.options.opacity !== undefined ? layer.options.opacity : 1;
+  opacitySlider.value = String(initialOpacity);
+
+  opacitySlider.addEventListener("change", () => {
+    layer.properties.set("opacity", opacitySlider.value);
+  });
+
+  sliderWrapper.appendChild(opacitySlider);
+  return sliderWrapper;
 }

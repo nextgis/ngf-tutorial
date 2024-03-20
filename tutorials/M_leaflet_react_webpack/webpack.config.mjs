@@ -12,12 +12,11 @@ const config = (env, argv) => {
   const plugins = [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      // favicon: 'src/images/favicon.ico',
     }),
     new ForkTsCheckerWebpackPlugin({
       async: false,
     }),
-    new FaviconsWebpackPlugin('src/images/favicon.svg'),
+    new FaviconsWebpackPlugin('src/images/favicon-32x32.png'),
     new ESLintPlugin({
       extensions: ['js', 'jsx', 'ts', 'tsx'],
     }),

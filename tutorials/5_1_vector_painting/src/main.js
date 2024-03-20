@@ -5,7 +5,7 @@ const ngwMap = new NgwMap({
   target: "map",
   osm: true,
   center: [-58.3723, -34.6084],
-  zoom: 16
+  zoom: 16,
 });
 
 ngwMap.addNgwLayer({
@@ -15,8 +15,11 @@ ngwMap.addNgwLayer({
     paint: [
       { stroke: true, fillOpacity: 0.5, color: "gray" },
       [[["BUILDING", "eq", "apartments"]], { color: "purple" }],
-      [[["BUILDING", "eq", "commercial"]], { color: "darkgreen", fillOpacity: 1 }],
-      [[["BUILDING", "eq", "school"]], { color: "brown"}],
+      [
+        [["BUILDING", "eq", "commercial"]],
+        { color: "darkgreen", fillOpacity: 1 },
+      ],
+      [[["BUILDING", "eq", "school"]], { color: "brown" }],
     ],
   },
 });

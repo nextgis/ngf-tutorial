@@ -2,7 +2,7 @@ import { PolygonLayer, NgwResource, Column } from "@nextgis/ngw-orm";
 
 @NgwResource({
   type: "vector_layer",
-  display_name: "Лесосеки",
+  display_name: "Plot",
 })
 export default class Plot extends PolygonLayer {
   @Column({

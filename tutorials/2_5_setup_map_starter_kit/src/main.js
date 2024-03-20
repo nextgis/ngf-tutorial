@@ -15,6 +15,10 @@ createWebMap({
   mapAdapter: new MapAdapter(),
   zoom: 8,
   center: [-34.6, -58.48],
+  controls: ["ZOOM", "ATTRIBUTION"],
+  controlsOptions: {
+    ATTRIBUTION: { position: "bottom-right" },
+  },
   starterKits: [
     new NgwKit({
       connector,
@@ -27,6 +31,6 @@ createWebMap({
   webmap.addBaseLayer("QMS", { qmsId: 529 });
   webmap.addLayer(
     createNgwLayerAdapter({ resource: 6223 }, webmap, connector),
-    { fit: true }
+    { fit: true },
   );
 });

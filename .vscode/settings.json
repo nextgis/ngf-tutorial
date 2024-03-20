@@ -1,8 +1,10 @@
 {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "markdownlint.config": {
     "default": true,
     "MD033": {
-      "allowed_elements": [ "summary", "details" ]
+      "allowed_elements": ["summary", "details"]
     }
   }
 }

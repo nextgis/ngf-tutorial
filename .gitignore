@@ -236,3 +236,4 @@ dist
 .yarn
 .yarnrc.yml
 .pnp*
+.parcel-cache

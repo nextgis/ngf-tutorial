@@ -1,6 +1,6 @@
 import NgwMap from "@nextgis/ngw-leaflet";
 
-import { fetchNgwLayerExtent, ngwApiToAdapterOptions } from "@nextgis/ngw-kit";
+import { fetchNgwLayerExtent } from "@nextgis/ngw-kit";
 
 const baseUrl = "https://demo.nextgis.com";
 
@@ -12,15 +12,12 @@ NgwMap.create({
   fetchNgwLayerExtent({ connector: ngwMap.connector, resourceId: 7141 }).then(
     (extent) => {
       ngwMap.fitBounds(extent);
-    }
+    },
   );
 
   ngwMap.addLayer("TILE", {
-    url:
-      baseUrl + "/api/component/render/tile?z={z}&x={x}&y={y}&resource=" + 7149,
-    attribution: `<a href=${
-      baseUrl + "/resource/7141"
-    } target="_blank">7142</a>`,
+    url: `${baseUrl}/api/component/render/tile?z={z}&x={x}&y={y}&resource=7149`,
+    attribution: `<a href=${baseUrl}/resource/7149" target="_blank">7149</a>`,
   });
 
   // ngwMap.addTileLayer(

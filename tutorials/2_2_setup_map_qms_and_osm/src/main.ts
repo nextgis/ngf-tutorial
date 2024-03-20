@@ -4,7 +4,7 @@ NgwMap.create({
   target: "map",
   center: [13, 56],
   zoom: 7,
-  // osm: true,
+  osm: true,
   // qmsId: 510,
 }).then((ngwMap) => {
   // ngwMap.addBaseLayer("QMS", { qmsId: 448 });

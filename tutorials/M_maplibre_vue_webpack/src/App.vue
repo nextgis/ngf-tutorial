@@ -1,5 +1,5 @@
 <template>
-  <VueNgwMap :mapOptions="mapOptions" @load="onMapLoad" fullFilling/>
+  <VueNgwMap :mapOptions="mapOptions" @load="onMapLoad" fullFilling />
 </template>
 
 <script>
@@ -23,7 +23,7 @@ export default defineComponent({
         adapterOptions: {
           selectable: true,
           selectedPaint: {
-            "fill-color": "black",
+            "fill-color": "yellow",
             "fill-opacity": 1,
           },
           paint: {

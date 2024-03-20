@@ -159,8 +159,7 @@ The library can be used both in the browser and in the Node.js environment.
 
 ### API request names
 
-Api request names are available in the Swagger API panel https://demo.nextgis.com/doc/api#
-
+Api request names are available in the Swagger API panel <https://demo.nextgis.com/doc/api#>
 
 ### More examples
 
@@ -172,7 +171,7 @@ Api request names are available in the Swagger API panel https://demo.nextgis.co
 
 ## Practice
 
-Figure out the example, run it in the Node.js locally or on `codesandbox.io `.
+Figure out the example, run it in the Node.js locally or on `codesandbox.io`.
 
 Rewrite the example so that:
 

@@ -1,13 +1,12 @@
 {
   "name": "ngf-tutorial-no-map-ngw-orm",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "module": "src/main.ts",
   "scripts": {
     "start": "ts-node ./src/main.ts"
   },
   "dependencies": {
-    "@nextgis/ngw-orm": "2.0.0"
+    "@nextgis/ngw-orm": "2.0.2"
   },
   "keywords": [
     "NGF",
@@ -16,12 +15,15 @@
     "Frontend",
     "tutorial"
   ],
+  "author": "NextGIS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextgis/ngf-tutorial.git"
+  },
   "license": "MIT",
-  "browserslist": [
-    "last 1 version"
-  ],
   "devDependencies": {
-    "chalk": "^5.3.0",
+    "@types/cli-color": "^2.0.6",
+    "cli-color": "^2.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }

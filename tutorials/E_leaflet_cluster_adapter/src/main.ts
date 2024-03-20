@@ -2,13 +2,9 @@ import * as L from "leaflet";
 // @ts-ignore
 import { MarkerClusterGroup } from "leaflet.markercluster";
 
-import {getCoordinates} from "@nextgis/utils";
+import { getCoordinates } from "@nextgis/utils";
 import NgwMap from "@nextgis/ngw-leaflet";
-import {
-
-  fetchNgwLayerFeatureCollection,
-
-} from "@nextgis/ngw-kit";
+import { fetchNgwLayerFeatureCollection } from "@nextgis/ngw-kit";
 
 import type {
   VectorLayerAdapter,
@@ -40,7 +36,7 @@ NgwMap.create({
 
     addData(geojson: GeoJsonObject): void | Promise<void> {
       for (const [lat, lng] of getCoordinates(geojson as FeatureCollection)) {
-        const myIcon = L.divIcon({ className: 'my-div-icon' });
+        const myIcon = L.divIcon({ className: "my-div-icon" });
 
         L.marker([lat, lng], { icon: myIcon }).addTo(this.layer);
       }

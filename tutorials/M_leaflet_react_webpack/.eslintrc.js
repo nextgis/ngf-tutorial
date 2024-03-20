@@ -35,7 +35,10 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'off',
     'prettier/prettier': ['error'],
-    'max-len': ['error', { code: 80, ignoreStrings: true }],
+    'max-len': [
+      'error',
+      { code: 80, ignoreStrings: true, ignoreComments: true },
+    ],
     '@typescript-eslint/no-var-requires': 'off',
   },
 };
