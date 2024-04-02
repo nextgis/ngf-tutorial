@@ -16,6 +16,7 @@ const ngwMap = new NgwMap({
 });
 
 ngwMap.onLoad().then(async () => {
+  ngwMap.setCursor("pointer");
   const connector = ngwMap.connector;
 
   // Get the resource ID of the vector layer or create a new one if it doesn't exist
