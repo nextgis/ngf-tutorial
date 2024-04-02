@@ -4275,13 +4275,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/devtools-api@npm:^6.5.1":
-  version: 6.6.1
-  resolution: "@vue/devtools-api@npm:6.6.1"
-  checksum: 10/040f7307904e23fd02a3f65b024ac7fe71b9e1f5f66244a5ba30d9f3d1b58a79dd5a3b46e8ed4c6a51a153688a356f776bb3260f801df39a7a3cf972c9c79505
-  languageName: node
-  linkType: hard
-
 "@vue/reactivity@npm:3.4.21":
   version: 3.4.21
   resolution: "@vue/reactivity@npm:3.4.21"
@@ -10244,6 +10237,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"ngf-tutorial-layers-refresh@workspace:tutorials/3_5_layers_refresh":
+  version: 0.0.0-use.local
+  resolution: "ngf-tutorial-layers-refresh@workspace:tutorials/3_5_layers_refresh"
+  dependencies:
+    "@nextgis/ngw-leaflet": "npm:2.0.2"
+    leaflet: "npm:1.7.1"
+    parcel: "npm:^2.12.0"
+  languageName: unknown
+  linkType: soft
+
 "ngf-tutorial-misc-leaflet-react-webmap@workspace:tutorials/M_leaflet_react_webpack":
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-misc-leaflet-react-webmap@workspace:tutorials/M_leaflet_react_webpack"
@@ -10314,7 +10317,6 @@ __metadata:
     style-loader: "npm:^3.3.4"
     vue: "npm:^3.4.21"
     vue-loader: "npm:^17.4.2"
-    vue-router: "npm:^4.3.0"
     vue-style-loader: "npm:^4.1.3"
     vue-template-compiler: "npm:^2.7.16"
     webpack: "npm:^5.90.3"
@@ -10520,8 +10522,6 @@ __metadata:
 "ngf-tutorial@workspace:.":
   version: 0.0.0-use.local
   resolution: "ngf-tutorial@workspace:."
-  dependencies:
-    process: "npm:^0.11.10"
   languageName: unknown
   linkType: soft
 
@@ -11581,13 +11581,6 @@ __metadata:
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
   checksum: 10/1d38588e520dab7cea67cbbe2efdd86a10cc7a074c09657635e34f035277b59fbb57d09d8638346bf7090f8e8ebc070c96fa5fd183b777fff4f5edff5e9466cf
-  languageName: node
-  linkType: hard
-
-"process@npm:^0.11.10":
-  version: 0.11.10
-  resolution: "process@npm:0.11.10"
-  checksum: 10/dbaa7e8d1d5cf375c36963ff43116772a989ef2bb47c9bdee20f38fd8fc061119cf38140631cf90c781aca4d3f0f0d2c834711952b728953f04fd7d238f59f5b
   languageName: node
   linkType: hard
 
@@ -13823,17 +13816,6 @@ __metadata:
     vue:
       optional: true
   checksum: 10/88760fe6a56fbf7d9422caea98f49613012e6a656d31c959b6bdeb84ff1075a5000798928048aa29b0c6b0734d6aba8eea03daf5f356233ec2146de1b849cea1
-  languageName: node
-  linkType: hard
-
-"vue-router@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "vue-router@npm:4.3.0"
-  dependencies:
-    "@vue/devtools-api": "npm:^6.5.1"
-  peerDependencies:
-    vue: ^3.2.0
-  checksum: 10/511689a38f2824223eec9a6c50745af81de01c027fa54107221ec09918aebd72817c0c2dd462f4e8829ed06f74dc1816f304e2aaf5b03bb7436a222dd0f5b4cb
   languageName: node
   linkType: hard
 
