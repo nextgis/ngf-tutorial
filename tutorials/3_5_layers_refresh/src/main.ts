@@ -26,7 +26,7 @@ ngwMap.onLoad().then(async () => {
   let styleId = await getOrCreateStyle(connector, resourceId);
 
   // Add the map layer with the obtained style
-  addMapLayer(styleId);
+  setupMap(styleId);
 
   // Function to create a new vector resource
   function createVectorResource() {
@@ -73,11 +73,12 @@ ngwMap.onLoad().then(async () => {
     );
   }
 
-  // Function to add a map layer
-  function addMapLayer(resource: number) {
+  function setupMap(resource: number) {
+    // Add a map layer
     ngwMap.addNgwLayer({
       id: vectorLayerKeyName,
       resource: resource,
+      adapter: "TILE",
     });
 
     // Create an information control

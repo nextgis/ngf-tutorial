@@ -26,7 +26,7 @@ cd ./ngf-tutorial
 With yarn, you can install dependencies for all lessons at once
 
 > [!NOTE]  
-> Modern releases of Yarn aren't meant to be installed globally, or from npm. Refer to https://yarnpkg.com/getting-started/install for installation instructions
+> Modern releases of Yarn aren't meant to be installed globally, or from npm. Refer to <https://yarnpkg.com/getting-started/install> for installation instructions
 
 ```bash
 yarn
@@ -101,6 +101,7 @@ Working with the repository, make a fork, complete tasks and upload back to gith
 2. [Raster](tutorials/3_2_layers_raster/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_2_layers_raster)
 3. [Custom](tutorials/3_3_layers_custom/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_3_layers_custom)
 4. [Baselayers](tutorials/3_4_layers_baselayer/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_4_layers_baselayer)
+5. [Refresh](tutorials/3_5_layers_refresh/README.md) | [LIVE](https://githubbox.com/nextgis/ngf-tutorial/tree/master/tutorials/3_5_layers_refresh)
 
 ### 4. NgwMap
 
@@ -137,5 +138,5 @@ Working with the repository, make a fork, complete tasks and upload back to gith
 npm install -g yarn
 yarn set version stable
 yarn plugin import workspace-tools
-yarn workspaces foreach exec 'ncu -u -f /@nextgis/'
+yarn workspaces foreach --all exec 'ncu -u -f /@nextgis/'
 ```
