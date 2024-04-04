@@ -7,9 +7,9 @@
     "start": "parcel -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-connector": "2.0.2",
-    "@nextgis/ngw-leaflet": "2.0.2",
-    "@nextgis/qms-kit": "2.0.2",
+    "@nextgis/ngw-connector": "2.1.0",
+    "@nextgis/ngw-leaflet": "2.1.0",
+    "@nextgis/qms-kit": "2.1.0",
     "leaflet": "1.7.1"
   },
   "devDependencies": {

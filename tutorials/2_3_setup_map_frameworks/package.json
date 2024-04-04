@@ -7,9 +7,9 @@
     "start": "parcel -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "2.0.2",
-    "@nextgis/ngw-maplibre-gl": "2.0.2",
-    "@nextgis/ngw-ol": "2.0.2",
+    "@nextgis/ngw-leaflet": "2.1.0",
+    "@nextgis/ngw-maplibre-gl": "2.1.0",
+    "@nextgis/ngw-ol": "2.1.0",
     "leaflet": "1.7.1",
     "maplibre-gl": "4.1.1",
     "ol": "9.0.0"

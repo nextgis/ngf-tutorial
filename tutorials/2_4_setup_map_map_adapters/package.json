@@ -7,12 +7,12 @@
     "start": "parcel -p 8080"
   },
   "dependencies": {
-    "@nextgis/leaflet-map-adapter": "2.0.2",
-    "@nextgis/maplibre-gl-map-adapter": "2.0.2",
-    "@nextgis/ngw-kit": "2.0.2",
-    "@nextgis/ol-map-adapter": "2.0.2",
-    "@nextgis/qms-kit": "2.0.2",
-    "@nextgis/webmap": "2.0.2",
+    "@nextgis/leaflet-map-adapter": "2.1.0",
+    "@nextgis/maplibre-gl-map-adapter": "2.1.0",
+    "@nextgis/ngw-kit": "2.1.0",
+    "@nextgis/ol-map-adapter": "2.1.0",
+    "@nextgis/qms-kit": "2.1.0",
+    "@nextgis/webmap": "2.1.0",
     "leaflet": "1.7.1",
     "maplibre-gl": "4.1.1",
     "ol": "9.0.0"

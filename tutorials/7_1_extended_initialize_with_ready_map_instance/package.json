@@ -7,7 +7,7 @@
     "start": "parcel -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-ol": "2.0.2",
+    "@nextgis/ngw-ol": "2.1.0",
     "ol": "9.0.0"
   },
   "keywords": [
