@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@nextgis/ngw-connector": "2.1.0",
-    "@nextgis/ngw-leaflet": "2.1.0",
+    "@nextgis/ngw-leaflet": "2.1.1",
     "@nextgis/qms-kit": "2.1.0",
     "leaflet": "1.7.1"
   },

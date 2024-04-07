@@ -2022,9 +2022,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-kit@npm:2.1.0, @nextgis/ngw-kit@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/ngw-kit@npm:2.1.0"
+"@nextgis/ngw-kit@npm:2.1.1, @nextgis/ngw-kit@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/ngw-kit@npm:2.1.1"
   dependencies:
     "@nextgis/cancelable-promise": "npm:^2.1.0"
     "@nextgis/item": "npm:^2.1.0"
@@ -2036,70 +2036,70 @@ __metadata:
     "@types/events": "npm:^3.0.0"
     events: "npm:*"
     strict-event-emitter-types: "npm:^2.0.0"
-  checksum: 10/de389e6612d3f6a40a899c26cd8f556f4e1f8a0d52940c0455e726432362656056eec3842af5037d23b8a051fe4fe0ec1f9b883623f47cbe034b95760d4b14c7
+  checksum: 10/f6c72ab728508fa392a328a8692f0b4f9514fb3025b1dd401fb4ff4eb453cb77ae3be16e56e4effc775ddc936e42180d8feb713afd7430f91ae275d267aff461
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-leaflet@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/ngw-leaflet@npm:2.1.0"
+"@nextgis/ngw-leaflet@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/ngw-leaflet@npm:2.1.1"
   dependencies:
     "@nextgis/leaflet-map-adapter": "npm:^2.1.0"
-    "@nextgis/ngw-map": "npm:^2.1.0"
+    "@nextgis/ngw-map": "npm:^2.1.1"
     leaflet.wms: "npm:*"
-  checksum: 10/0f0a3c0fe382c27826971d5a077f2b41ba51359061c6c749b4fd5fab5ca09f232e86a927f2e9af669bd25cebed5540451577ba3768cd4da00104785fad3d7032
+  checksum: 10/207bebdeabadcae84b251292443260cacb85690e9ca26d151dbfad5c8990ea956628e65eec5e4c040d3e18e304e172af8ac085db69f4f56578d9cfc908d5d358
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-map@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/ngw-map@npm:2.1.0"
+"@nextgis/ngw-map@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/ngw-map@npm:2.1.1"
   dependencies:
     "@nextgis/icons": "npm:^2.1.0"
     "@nextgis/ngw-connector": "npm:^2.1.0"
-    "@nextgis/ngw-kit": "npm:^2.1.0"
+    "@nextgis/ngw-kit": "npm:^2.1.1"
     "@nextgis/qms-kit": "npm:^2.1.0"
     "@nextgis/utils": "npm:^2.1.0"
     "@nextgis/webmap": "npm:^2.1.0"
     "@types/events": "npm:^3.0.0"
     events: "npm:*"
     strict-event-emitter-types: "npm:^2.0.0"
-  checksum: 10/56d63cbc38f84fd877f720abca6d1aba78a646a91725d907c60ea837bf19f25c51f92799accb16db72e584d64729f078ff3fafbd1f7d1d089647c546bdca2f31
+  checksum: 10/7a90956eee9caf457791bfbf9209d0229131f26b50856aa8ef84e98dc5c87621409bdbebbd46e4a38857d3abe41c64f4696651d3933b294f7f1b5ffa5eebb37f
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-maplibre-gl@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/ngw-maplibre-gl@npm:2.1.0"
+"@nextgis/ngw-maplibre-gl@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/ngw-maplibre-gl@npm:2.1.1"
   dependencies:
     "@nextgis/maplibre-gl-map-adapter": "npm:^2.1.0"
-    "@nextgis/ngw-map": "npm:^2.1.0"
-  checksum: 10/cddd3d9f38bd4a1e2d171f410240809adbe664fe4e5c1aa9d102b2b90cda21f56b0687bac20bde086f9be4b71511c0de1eae6b80424ded6c8dcc7bee07116534
+    "@nextgis/ngw-map": "npm:^2.1.1"
+  checksum: 10/0bbbf332eada023134f9a71f0e34eccf04783a11f53f4c009b1eddb78b2f1f7838410d649e7de1f977d30d71078df5b4b9962756a6e39e8e46c128eebc9a0848
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-ol@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/ngw-ol@npm:2.1.0"
+"@nextgis/ngw-ol@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/ngw-ol@npm:2.1.1"
   dependencies:
-    "@nextgis/ngw-map": "npm:^2.1.0"
+    "@nextgis/ngw-map": "npm:^2.1.1"
     "@nextgis/ol-map-adapter": "npm:^2.1.0"
     "@types/events": "npm:^3.0.0"
     events: "npm:*"
-  checksum: 10/c0b2d87092f00a08142b14cf56854a039207d35ffcf6cd11d5e67c8353e497bd1712b22b4b1dae1440218141e5aec9d014722b1dd308f0592d43104350b2e159
+  checksum: 10/52c88fae67e679c8460779c3a6ea2249c769206a0e8f28be600a1f6522a8f68bd6a385c0fbf477a2857d4b05f64f22afd754e92bb9ab85e481fbfee99120c29f
   languageName: node
   linkType: hard
 
-"@nextgis/ngw-orm@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/ngw-orm@npm:2.1.0"
+"@nextgis/ngw-orm@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/ngw-orm@npm:2.1.1"
   dependencies:
     "@nextgis/ngw-connector": "npm:^2.1.0"
-    "@nextgis/ngw-kit": "npm:^2.1.0"
+    "@nextgis/ngw-kit": "npm:^2.1.1"
     "@nextgis/utils": "npm:^2.1.0"
     "@nextgis/webmap": "npm:^2.1.0"
     reflect-metadata: "npm:^0.1.13"
-  checksum: 10/0a8537d4d7cd7659616657a35f62c5f69a461b02d0977b108531d85cca6f79e6508834f2b2de61e3a751f794fcf20bbad7a76d0cad09d275b5ee875887d61506
+  checksum: 10/cc6a967b64fc34e2291aadaabd03d685c358454f0e872fb5336d47b12d3f712e7bbd3b89e2325578f69e5a4532e86e557ae3ee5ff4af07fc017232d00009de4c
   languageName: node
   linkType: hard
 
@@ -2154,26 +2154,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextgis/react-ngw-leaflet@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/react-ngw-leaflet@npm:2.1.0"
+"@nextgis/react-ngw-leaflet@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/react-ngw-leaflet@npm:2.1.1"
   dependencies:
     "@nextgis/leaflet-map-adapter": "npm:^2.1.0"
-    "@nextgis/react-ngw-map": "npm:^2.1.0"
-  checksum: 10/a54d95d2a2d71ba57e93aff5bbd576933e5ccaa0443d8eae5ca38d2e9f6352612ec9efcf858f6cdbb23b3f3e6bb97147a8b0b3ca2b758f087fc426a514a72e27
+    "@nextgis/react-ngw-map": "npm:^2.1.1"
+  checksum: 10/dc04be73209852cb4856f8da157915af71f3530d3d0f857567ba51b8117b78a8e70b2647dfe94e1bba41e2ce48d0c4d454d82536eec8d2a5f0e73b2aaf7e306b
   languageName: node
   linkType: hard
 
-"@nextgis/react-ngw-map@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@nextgis/react-ngw-map@npm:2.1.0"
+"@nextgis/react-ngw-map@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@nextgis/react-ngw-map@npm:2.1.1"
   dependencies:
-    "@nextgis/ngw-map": "npm:^2.1.0"
+    "@nextgis/ngw-map": "npm:^2.1.1"
     "@nextgis/utils": "npm:^2.1.0"
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: 10/56b62a47b81c51c36e59333a9239f63a5756f7949e0a184cefdff4468ee0a45da286f97e38a727e226ad5e5981fbafd44040c25b03eaad1516bdb5b23e7a38e9
+  checksum: 10/9454b5fffb719b99eba96f30925f03071a9321d73caadb3e00c003847731cf3196b95c55ee89de4fa9dfc4477b561c89e1abdff3965c917c9d14ffa13e6d244c
   languageName: node
   linkType: hard
 
@@ -10150,7 +10150,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-extended-initialize-with-ready-map-instance@workspace:tutorials/7_1_extended_initialize_with_ready_map_instance"
   dependencies:
-    "@nextgis/ngw-ol": "npm:2.1.0"
+    "@nextgis/ngw-ol": "npm:2.1.1"
     ol: "npm:9.0.0"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10160,7 +10160,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-extensions-leaflet-cluster-adapter@workspace:tutorials/E_leaflet_cluster_adapter"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     "@types/leaflet.markercluster": "npm:^1.5.4"
     leaflet: "npm:1.7.1"
     leaflet.markercluster: "npm:^1.5.3"
@@ -10173,7 +10173,7 @@ __metadata:
   resolution: "ngf-tutorial-extensions-leaflet-geoman@workspace:tutorials/E_leaflet_geoman"
   dependencies:
     "@geoman-io/leaflet-geoman-free": "npm:^2.16.0"
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10191,7 +10191,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-install-npm@workspace:tutorials/1_2_install_from_npm"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10201,7 +10201,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-layers-baselayer@workspace:tutorials/3_4_layers_baselayer"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10211,7 +10211,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-layers-custom@workspace:tutorials/3_3_layers_custom"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10221,7 +10221,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-layers-geojson@workspace:tutorials/3_1_layers_geojson"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10231,7 +10231,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-layers-raster@workspace:tutorials/3_2_layers_raster"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10241,7 +10241,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-layers-refresh@workspace:tutorials/3_5_layers_refresh"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10258,7 +10258,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.24.0"
     "@babel/preset-react": "npm:^7.23.3"
     "@babel/preset-typescript": "npm:^7.23.3"
-    "@nextgis/react-ngw-leaflet": "npm:2.1.0"
+    "@nextgis/react-ngw-leaflet": "npm:2.1.1"
     "@types/react": "npm:^18.2.63"
     "@types/react-dom": "npm:^18.2.19"
     "@typescript-eslint/eslint-plugin": "npm:^7.1.1"
@@ -10300,7 +10300,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.24.0"
     "@babel/preset-env": "npm:^7.24.0"
-    "@nextgis/ngw-maplibre-gl": "npm:2.1.0"
+    "@nextgis/ngw-maplibre-gl": "npm:2.1.1"
     babel-core: "npm:^7.0.0-bridge.0"
     babel-eslint: "npm:^10.1.0"
     babel-loader: "npm:^9.1.3"
@@ -10329,7 +10329,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-ngwmap-addngwlayer@workspace:tutorials/4_2_ngwmap_addngwlayer"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10339,7 +10339,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-ngwmap-identify@workspace:tutorials/4_3_ngwmap_identify"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10349,7 +10349,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-ngwmap-resources@workspace:tutorials/4_1_ngwmap_resources"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10367,7 +10367,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-no-map-ngw-kit@workspace:tutorials/6_2_no_map_ngw_kit"
   dependencies:
-    "@nextgis/ngw-kit": "npm:2.1.0"
+    "@nextgis/ngw-kit": "npm:2.1.1"
   languageName: unknown
   linkType: soft
 
@@ -10375,7 +10375,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-no-map-ngw-orm@workspace:tutorials/6_3_no_map_ngw_orm"
   dependencies:
-    "@nextgis/ngw-orm": "npm:2.1.0"
+    "@nextgis/ngw-orm": "npm:2.1.1"
     "@types/cli-color": "npm:^2.0.6"
     cli-color: "npm:^2.0.4"
     ts-node: "npm:^10.9.2"
@@ -10388,7 +10388,7 @@ __metadata:
   resolution: "ngf-tutorial-react-ngw-component@workspace:tutorials/8_1_react_ngw_component"
   dependencies:
     "@mdi/js": "npm:^7.4.47"
-    "@nextgis/react-ngw-leaflet": "npm:2.1.0"
+    "@nextgis/react-ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
     react: "npm:^18.2.0"
@@ -10400,7 +10400,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-setup-map-controls@workspace:tutorials/2_6_setup_map_controls"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10410,7 +10410,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-setup-map-events@workspace:tutorials/2_7_setup_map_events"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10420,9 +10420,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-setup-map-frameworks@workspace:tutorials/2_3_setup_map_frameworks"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
-    "@nextgis/ngw-maplibre-gl": "npm:2.1.0"
-    "@nextgis/ngw-ol": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
+    "@nextgis/ngw-maplibre-gl": "npm:2.1.1"
+    "@nextgis/ngw-ol": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     maplibre-gl: "npm:4.1.1"
     ol: "npm:9.0.0"
@@ -10436,7 +10436,7 @@ __metadata:
   dependencies:
     "@nextgis/leaflet-map-adapter": "npm:2.1.0"
     "@nextgis/maplibre-gl-map-adapter": "npm:2.1.0"
-    "@nextgis/ngw-kit": "npm:2.1.0"
+    "@nextgis/ngw-kit": "npm:2.1.1"
     "@nextgis/ol-map-adapter": "npm:2.1.0"
     "@nextgis/qms-kit": "npm:2.1.0"
     "@nextgis/webmap": "npm:2.1.0"
@@ -10451,7 +10451,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-setup-map-qms-and-osm@workspace:tutorials/2_2_setup_map_qms_and_osm"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10462,7 +10462,7 @@ __metadata:
   resolution: "ngf-tutorial-setup-map-starter-kit@workspace:tutorials/2_5_setup_map_starter_kit"
   dependencies:
     "@nextgis/ngw-connector": "npm:2.1.0"
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     "@nextgis/qms-kit": "npm:2.1.0"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
@@ -10473,7 +10473,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-setup-map-view@workspace:tutorials/2_1_setup_map_view"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10483,7 +10483,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-vector-filtering@workspace:tutorials/5_4_vector_filtering"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10493,7 +10493,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-vector-painting@workspace:tutorials/5_1_vector_painting"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10503,7 +10503,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-vector-popup@workspace:tutorials/5_3_vector_popup"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
@@ -10513,7 +10513,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ngf-tutorial-vector-selection@workspace:tutorials/5_2_vector_selection"
   dependencies:
-    "@nextgis/ngw-leaflet": "npm:2.1.0"
+    "@nextgis/ngw-leaflet": "npm:2.1.1"
     leaflet: "npm:1.7.1"
     parcel: "npm:^2.12.0"
   languageName: unknown
