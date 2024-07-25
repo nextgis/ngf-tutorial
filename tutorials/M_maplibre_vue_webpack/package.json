@@ -6,7 +6,7 @@
     "start": "webpack serve --config webpack.config.js"
   },
   "dependencies": {
-    "@nextgis/ngw-maplibre-gl": "2.1.1",
+    "@nextgis/ngw-maplibre-gl": "2.5.1",
     "maplibre-gl": "4.1.1",
     "vue": "^3.4.21"
   },

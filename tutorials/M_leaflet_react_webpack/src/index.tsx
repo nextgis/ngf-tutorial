@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import ReactNgwMap from '@nextgis/react-ngw-leaflet';
+// import ReactNgwMap from '@nextgis/react-ngw-ol';
+// import ReactNgwMap from '@nextgis/react-ngw-maplibre-gl';
 
 import type {
   Point,
