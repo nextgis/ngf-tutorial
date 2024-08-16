@@ -9,7 +9,7 @@
   "dependencies": {
     "@nextgis/leaflet-map-adapter": "2.5.0",
     "@nextgis/maplibre-gl-map-adapter": "2.5.0",
-    "@nextgis/ngw-kit": "2.5.1",
+    "@nextgis/ngw-kit": "2.5.2",
     "@nextgis/ol-map-adapter": "2.5.0",
     "@nextgis/qms-kit": "2.5.0",
     "@nextgis/webmap": "2.5.0",

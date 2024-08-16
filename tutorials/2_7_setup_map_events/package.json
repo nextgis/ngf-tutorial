@@ -7,7 +7,7 @@
     "start": "parcel -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "2.5.1",
+    "@nextgis/ngw-leaflet": "2.5.2",
     "leaflet": "1.7.1"
   },
   "devDependencies": {

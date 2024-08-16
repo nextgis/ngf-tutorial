@@ -11,9 +11,9 @@
   "author": "",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@nextgis/react-ngw-leaflet": "2.5.1",
-    "@nextgis/react-ngw-maplibre-gl": "2.5.1",
-    "@nextgis/react-ngw-ol": "2.5.1",
+    "@nextgis/react-ngw-leaflet": "2.5.2",
+    "@nextgis/react-ngw-maplibre-gl": "2.5.2",
+    "@nextgis/react-ngw-ol": "2.5.2",
     "leaflet": "1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
