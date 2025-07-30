@@ -1,6 +1,6 @@
 # NextGIS Frontend tutorial
 
-[![http://code.nextgis.com](https://raw.githubusercontent.com/nextgis/nextgis_frontend/master/demo/src/images/logo_96x96.png)](http://code.nextgis.com)
+[![https://code.nextgis.com](https://raw.githubusercontent.com/nextgis/nextgis_frontend/master/demo/src/images/logo_96x96.png)](http://code.nextgis.com)
 
 Learn NextGIS Frontend step by step with this tutorial.
 
