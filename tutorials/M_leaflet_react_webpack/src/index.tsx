@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react';
-import { createRoot } from 'react-dom/client';
 import ReactNgwMap from '@nextgis/react-ngw-leaflet';
+import { useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
 // import ReactNgwMap from '@nextgis/react-ngw-ol';
 // import ReactNgwMap from '@nextgis/react-ngw-maplibre-gl';
 
-import type {
-  Point,
-  Feature,
-  Position,
-  LineString,
-  FeatureCollection,
-} from 'geojson';
+import type { NgwMap } from '@nextgis/ngw-map';
 import type { MapContainerProps } from '@nextgis/react-ngw-map';
 import type { VectorLayerAdapter } from '@nextgis/webmap';
-import type { NgwMap } from '@nextgis/ngw-map';
+import type {
+  Feature,
+  FeatureCollection,
+  LineString,
+  Point,
+  Position,
+} from 'geojson';
 
 // Function to calculate arrow points for visualization
 function getArrowPoints(

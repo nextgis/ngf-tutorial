@@ -1,9 +1,10 @@
 <template>
-  <VueNgwMap :mapOptions="mapOptions" @load="onMapLoad" fullFilling />
+  <VueNgwMap :map-options="mapOptions" full-filling @load="onMapLoad" />
 </template>
 
 <script>
 import { defineComponent, ref } from "vue";
+
 import VueNgwMap from "./components/VueNgwMap";
 
 export default defineComponent({
@@ -17,7 +18,7 @@ export default defineComponent({
     });
 
     const onMapLoad = (ngwMap) => {
-      ngwMap.value.addNgwLayer({
+      ngwMap.addNgwLayer({
         resource: 6101,
         adapter: "MVT",
         adapterOptions: {
@@ -51,6 +52,7 @@ export default defineComponent({
         },
       });
     };
+
     return { mapOptions, onMapLoad };
   },
 });
@@ -60,7 +62,8 @@ export default defineComponent({
 html,
 body,
 #app,
-.ngw-map-container {
+.ngw-map-container,
+.vue-ngw-map {
   width: 100%;
   height: 100%;
   padding: 0;

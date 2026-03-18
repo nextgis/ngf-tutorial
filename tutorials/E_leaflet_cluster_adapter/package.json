@@ -7,13 +7,13 @@
     "start": "parcel -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-leaflet": "2.5.2",
+    "@nextgis/ngw-leaflet": "3.0.1",
     "leaflet": "1.7.1",
     "leaflet.markercluster": "^1.5.3"
   },
   "devDependencies": {
     "@types/leaflet.markercluster": "^1.5.4",
-    "parcel": "^2.12.0"
+    "parcel": "^2.16.4"
   },
   "keywords": [
     "NGF",

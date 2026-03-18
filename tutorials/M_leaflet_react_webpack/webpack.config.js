@@ -1,9 +1,9 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
-import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ESLintPlugin from 'eslint-webpack-plugin';
+import { EsbuildPlugin } from 'esbuild-loader';
 import CompressionPlugin from 'compression-webpack-plugin';
 
 const config = (env, argv) => {
@@ -16,7 +16,6 @@ const config = (env, argv) => {
     new ForkTsCheckerWebpackPlugin({
       async: false,
     }),
-    new FaviconsWebpackPlugin('src/images/favicon-32x32.png'),
     new ESLintPlugin({
       extensions: ['js', 'jsx', 'ts', 'tsx'],
     }),
@@ -40,13 +39,13 @@ const config = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.(ts|js)x?$/i,
+          test: /\.[jt]sx?$/i,
           exclude: /node_modules/,
-          use: [
-            {
-              loader: 'babel-loader',
-            },
-          ],
+          loader: 'esbuild-loader',
+          options: {
+            loader: 'tsx',
+            target: 'es2018',
+          },
         },
         {
           test: /\.css$/i,
@@ -70,8 +69,6 @@ const config = (env, argv) => {
     },
     plugins,
     devtool: isProd ? 'source-map' : 'inline-source-map',
-    // target: isProd ? 'browserslist' : 'web',
-    target: ['web', 'es5'],
     devServer: {
       historyApiFallback: true,
       open: false,
@@ -84,6 +81,12 @@ const config = (env, argv) => {
         minSize: 10000,
         maxSize: 250000,
       },
+      minimizer: [
+        new EsbuildPlugin({
+          target: 'es2022',
+          css: true,
+        }),
+      ],
     },
   };
 

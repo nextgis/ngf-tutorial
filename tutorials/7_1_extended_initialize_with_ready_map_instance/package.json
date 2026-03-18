@@ -7,8 +7,8 @@
     "start": "parcel -p 8080"
   },
   "dependencies": {
-    "@nextgis/ngw-ol": "2.5.2",
-    "ol": "9.0.0"
+    "@nextgis/ngw-ol": "3.0.1",
+    "ol": "10.1.0"
   },
   "keywords": [
     "NGF",
@@ -18,7 +18,7 @@
     "tutorial"
   ],
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.16.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "author": "NextGIS",

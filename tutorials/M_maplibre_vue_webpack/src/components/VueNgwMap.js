@@ -1,17 +1,17 @@
+import NgwMap from "@nextgis/ngw-maplibre-gl";
 import {
+  computed,
   defineComponent,
+  h,
+  nextTick,
   onBeforeUnmount,
   onMounted,
-  shallowRef,
-  computed,
-  nextTick,
   provide,
-  watch,
-  unref,
   ref,
-  h,
+  shallowRef,
+  unref,
+  watch,
 } from "vue";
-import NgwMap from "@nextgis/ngw-maplibre-gl";
 
 const DEFAULT_MAP_OPTIONS = {
   bounds: [-179, -90, 180, 90],
@@ -29,13 +29,26 @@ export default defineComponent({
       type: Object,
       default: () => DEFAULT_MAP_OPTIONS,
     },
-    maxBounds: { type: [Array, null] },
-    bounds: {
-      type: [Array, null],
+    maxBounds: {
+      type: Array,
+      default: null,
     },
-    center: { type: [Array, null] },
-    zoom: { type: [Number, null] },
-    cursor: { type: [String, null]},
+    bounds: {
+      type: Array,
+      default: null,
+    },
+    center: {
+      type: Array,
+      default: null,
+    },
+    zoom: {
+      type: Number,
+      default: null,
+    },
+    cursor: {
+      type: String,
+      default: null,
+    },
     controls: {
       type: Array,
       default: () => ["ZOOM", "ATTRIBUTION"],
@@ -123,7 +136,7 @@ export default defineComponent({
         nextTick().then(() => {
           onReady();
           ready.value = true;
-          emit("load", ngwMap);
+          emit("load", ngwMap.value);
         });
         addMapEventsListener();
       });
