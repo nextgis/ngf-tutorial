@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nextgis/ngw-maplibre-gl": "3.0.1",
+    "@nextgis/ngw-maplibre-gl": "3.1.0",
     "maplibre-gl": "4.1.1",
     "vue": "^3.5.30"
   },

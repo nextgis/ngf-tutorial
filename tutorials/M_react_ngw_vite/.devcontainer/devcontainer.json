@@ -1,0 +1,4 @@
+{
+  "name": "ngf tutorial vite",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22"
+}

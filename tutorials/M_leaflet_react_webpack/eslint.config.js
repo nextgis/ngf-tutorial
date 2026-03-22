@@ -25,6 +25,7 @@ export default [
         ecmaVersion: 2022,
         sourceType: 'module',
         ecmaFeatures: { jsx: true },
+        tsconfigRootDir: import.meta.dirname,
       },
       globals: {
         ...globals.browser,
